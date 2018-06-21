@@ -1,0 +1,254 @@
+/*CSS CREATED BY SAMMY ROBENS-PARADISE
+    CURRENT AS OF: 2018-06-19
+*/
+
+/* unvisited link */
+
+a:link {
+    color: #adadad;
+}
+
+/* visited link */
+
+a:visited {
+    color: #adadad;
+}
+
+/* mouse over link */
+
+a:hover {
+    color: #adadad;
+}
+
+/* selected link */
+
+a:active {
+    color: #adadad;
+}
+
+.container,
+br {
+    background-color: #2e1114;
+    /*background: linear-gradient(to right, , #64485c);*/
+}
+
+body {
+    background-color: #2e1114;
+    /* background: linear-gradient(to right, #2e1114, #64485c);*/
+}
+
+#navbarNav {
+    opacity: 0.6;
+}
+
+p,
+h1,
+h2,
+h4,
+li,
+.display-3,
+.lead,
+.navbar-brand {
+    color: #ffff;
+}
+
+#landing_page_img {
+    -webkit-mask-image: -webkit-gradient(linear, left 80%, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+}
+
+.nav-link {
+    color: #ffff;
+}
+
+.navbar.navbar-default {
+    background-color: #2e1114;
+    opacity: 0.6;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.ul {
+    list-style-type: disc;
+}
+
+.projects-section-title {
+    background-color: #64485c;
+    opacity: 0.6;
+    padding: 0;
+    height: 35;
+    border-radius: 5px;
+    color: #ffff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffff;
+}
+
+h3 {
+    color: #ffff;
+}
+
+.projects-left-header {
+    background-color: #2e1114;
+    opacity: 0.9;
+    padding: 0;
+    height: 36px;
+    border-color: #adadad;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 7px;
+    color: #ffff;
+}
+
+.row {
+    padding: 7px;
+}
+
+.projects-right-header {
+    background-color: #2e1114;
+    opacity: 0.9;
+    padding: 0;
+    height: 36px;
+    border-color: #adadad;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 7px;
+    color: #ffff;
+}
+
+.img_ {
+    border-radius: 10px;
+    box-shadow: #64485c;
+    opacity: 0.8;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.experience-section-title {
+    background-color: #64485c;
+    opacity: 0.6;
+    padding: 0;
+    height: 35;
+    border-radius: 5px;
+    color: #ffff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffff;
+}
+
+.experience-left-header {
+    background-color: #2e1114;
+    opacity: 0.9;
+    padding: 0;
+    height: 36px;
+    border-color: #adadad;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 7px;
+    color: #ffff;
+}
+
+.experience-right-header {
+    background-color: #2e1114;
+    opacity: 0.9;
+    padding: 0;
+    height: 36px;
+    border-color: #adadad;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 7px;
+    color: #ffff;
+}
+
+.education-section-title {
+    background-color: #64485c;
+    opacity: 0.6;
+    padding: 0;
+    height: 35;
+    border-radius: 5px;
+    color: #ffff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffff;
+}
+
+.education-left-header {
+    background-color: #2e1114;
+    opacity: 0.9;
+    padding: 0;
+    height: 36px;
+    border-color: #adadad;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 7px;
+    color: #ffff;
+}
+
+.education-right-header {
+    background-color: #2e1114;
+    opacity: 0.9;
+    padding: 0;
+    height: 36px;
+    border-color: #adadad;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 7px;
+    color: #ffff;
+}
+
+.sammy-section-title {
+    background-color: #64485c;
+    opacity: 0.6;
+    padding: 0;
+    height: 35;
+    border-radius: 5px;
+    color: #ffff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffff;
+}
+
+.sammy-left-header {
+    background-color: #2e1114;
+    opacity: 0.9;
+    padding: 0;
+    height: 36px;
+    border-color: #adadad;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 7px;
+    color: #ffff;
+}
+
+.sammy-right-header {
+    background-color: #2e1114;
+    opacity: 0.9;
+    padding: 0;
+    height: 36px;
+    border-color: #adadad;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 7px;
+    color: #ffff;
+}
+
+.fa {
+    color: #ffff;
+}
+
+.blockquote {
+    color: #ffff;
+}
