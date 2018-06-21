@@ -1,26 +1,13 @@
-# WISTEM Intro To Coding Workshop 2017
-An intro to coding workshop run by UWaterloo's Women in STEM
+# SAMMY ROBENS PARADISE PERSONAL WEBSITE
+    This Repository is the personal website of Sammy Robens-Paradise
+    It's purpose is to serve as a merketing platform for Sammy's skillset
+    and other possible oppertunities.
 
-Come learn the basics of web development and get to make your own personal website in the process!
-We are starting from absolute scratch **(no experience necessary)**
-
-## What we are covering
-0. Overview of HTML and CSS
-1. What an element is
-2. How to make your elements look pretty with CSS
-3. Hosting your website using github pages
-4. Flexbox
-
-### If you liked this workshop and want to learn more:
-- [Learn HTML on CodeCademy](https://www.codecademy.com/learn/learn-html)
-- [Learn CSS on CodeCademy](https://www.codecademy.com/learn/learn-css)
-- [Learn Flexbox using this cheatsheet](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-- [Learn more about doctype declarations](https://developer.mozilla.org/en-US/docs/Quirks_Mode_and_Standards_Mode)
-- [Check the validity of your HTML](https://validator.w3.org/#validate_by_input)
-
-### If you want to learn even more:
-- Check out ReactJS and Bootstrap. Its a really great way to get deeper into web development
-- Check out some courses on [udemy](https://www.udemy.com/the-web-developer-bootcamp/)
-- [Codepen](https://codepen.io/) has a lot of people's creations along with the code they used to do it. It's a great way to learn neat things you can do with css, html and JavaScript 
-
-### [Don't forget to check us out on Facebook!](https://www.facebook.com/UWWiSTEM/)
+ ## Requirements (Frameworks CSS libraries ect):
+     bootstrap-social.css
+    https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css
+    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+    https://code.jquery.com/jquery-3.2.1.slim.min.js
+    https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js
+    https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js
+    https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js
