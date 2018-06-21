@@ -49,7 +49,7 @@ li,
 .display-3,
 .lead,
 .navbar-brand {
-    color: #ffff;
+    color: #ffff !important; 
 }
 
 #landing_page_img {
