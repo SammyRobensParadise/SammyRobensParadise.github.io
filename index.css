@@ -38,11 +38,9 @@ body {
 }
 
 #navbarNav {
-    opacity: 0.85;
+    opacity: 0.8;
 }
-.navbar-toggler-icon{
-    color: #ffff;
-}
+
 p,
 h1,
 h2,
