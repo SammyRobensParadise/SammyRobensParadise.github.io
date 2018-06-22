@@ -38,7 +38,7 @@ body {
 }
 
 #navbarNav {
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 p,
@@ -50,6 +50,7 @@ li,
 .lead,
 .navbar-brand {
     color: #ffff !important; 
+    color: white;
 }
 
 #landing_page_img {
