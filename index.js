@@ -7,7 +7,6 @@
 
 $(function () {
     //this is the loading page section
-    $(document).ready(function() {
         var counter = 0;
       
         // Start the changing images
@@ -22,8 +21,7 @@ $(function () {
       
         // Set the percentage off
         loading();
-      });
-      
+        
       function changeImage(counter) {
         var images = [
           '<i class="fa fa-fighter-jet"></i>',
