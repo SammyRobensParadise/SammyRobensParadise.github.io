@@ -7,11 +7,6 @@
 
 
 $(function () {
-    //this is the loading page section
-$(window).load(function() {
-    // Animate loader off screen
-    $(".loader").fadeOut("slow");
-});
     //Enable ToolTip feature using JQuery.js.3.2.1
     $(document).ready(function () {
         $('[data-toggle="tooltip"]').tooltip();
@@ -80,13 +75,13 @@ $(window).load(function() {
     });
     $('#navbar_whos_sammy').click(function () {
         closeNavbar(function () {
-        if (!(isVisible('.about'))) {
-            $('#div_goExploring').slideToggle(1000);
-            toggleExploreText('#goExploring');
+            if (!(isVisible('.about'))) {
+                $('#div_goExploring').slideToggle(1000);
+                toggleExploreText('#goExploring');
                 $('#whos_sammy_btn').click();
-        } else {
+            } else {
                 $('#whos_sammy_btn').click();
-        }
+            }
         });
     });
     $('#navbar_resume').click(function () {
@@ -99,13 +94,13 @@ $(window).load(function() {
         closeNavbar();
     });
     //these buttons are what is clicked at the bottom of the resume div
-    $('#moreAboutSammy').click(function(){
+    $('#moreAboutSammy').click(function () {
         $('#navbar_whos_sammy').click();
     });
-    $('#aboutProjects').click(function(){
+    $('#aboutProjects').click(function () {
         $('#navbar_projects').click();
     });
-    $('#resumeGoExploring').click(function(){
+    $('#resumeGoExploring').click(function () {
         $('#goExploring').click();
     })
     //BUTTONS FOR SELECTIVE DIVS
