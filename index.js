@@ -4,14 +4,14 @@
 //srobensp@edu.uwaterloo.ca  //
 //Latest Update: 2018-06-19  //
 //***************************//
+
+
+$(function () {
+    //this is the loading page section
 $(window).load(function() {
     // Animate loader off screen
     $(".se-pre-con").fadeOut("slow");;
 });
-
-$(function () {
-    //this is the loading page section
-
     //Enable ToolTip feature using JQuery.js.3.2.1
     $(document).ready(function () {
         $('[data-toggle="tooltip"]').tooltip();
