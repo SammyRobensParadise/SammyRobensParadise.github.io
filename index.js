@@ -10,7 +10,7 @@ $(function () {
     //this is the loading page section
 $(window).load(function() {
     // Animate loader off screen
-    $("#loading").fadeOut("slow");
+    $("#loader").fadeOut("slow");
 });
     //Enable ToolTip feature using JQuery.js.3.2.1
     $(document).ready(function () {
