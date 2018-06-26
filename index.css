@@ -288,9 +288,9 @@ h3 {
     color: #ffff;
 }
 /*This section is the loading page section */
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-.se-pre-con {
+.no-js #loading { display: none;  }
+.js #loading { display: block; position: absolute; left: 100px; top: 0; }
+.fa-bicycle {
 	position: fixed;
 	left: 0px;
 	top: 0px;
