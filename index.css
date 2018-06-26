@@ -17,7 +17,7 @@ a:visited {
 /* mouse over link */
 
 a:hover {
-    color: #adadad;
+    color: #ffff;
 }
 
 /* selected link */
@@ -28,17 +28,17 @@ a:active {
 
 .container,
 br {
-    background-color: #2e1114;
+    background-color: #000000;
     /*background: linear-gradient(to right, , #64485c);*/
 }
 
 body {
-    background-color: #2e1114;
+    background-color: #000000;
     /* background: linear-gradient(to right, #2e1114, #64485c);*/
 }
 
 #navbarNav {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 p,
@@ -49,8 +49,7 @@ li,
 .display-3,
 .lead,
 .navbar-brand {
-    color: #ffff !important; 
-    color: white;
+    color: #ffff;
 }
 
 #landing_page_img {
@@ -61,9 +60,14 @@ li,
     color: #ffff;
 }
 
+.nav-link:hover {
+    color: #000000;
+}
+
 .navbar.navbar-default {
-    background-color: #2e1114;
-    opacity: 0.6;
+    background-color: #404040;
+    opacity: 0.7;
+    box-shadow: 0px 0.3px #ffff;
 }
 
 .center {
@@ -86,15 +90,18 @@ li,
 }
 
 .projects-section-title {
-    background-color: #64485c;
-    opacity: 0.6;
+    background-color: #adadad;
     padding: 0;
-    height: 35;
-    border-radius: 5px;
+    height: auto;
     color: #ffff;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #ffff;
+    -webkit-transition: background-color 1s;
+    /* For Safari 3.1 to 6.0 */
+    transition: background-color 1s;
+    box-shadow: 0px 5px #ffff;
+}
+
+.projects-section-title:hover {
+    background-color: #404040;
 }
 
 h3 {
@@ -102,148 +109,175 @@ h3 {
 }
 
 .projects-left-header {
-    background-color: #2e1114;
-    opacity: 0.9;
+    background-color: #404040;
     padding: 0;
-    height: 36px;
-    border-color: #adadad;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 7px;
+    height: auto;
     color: #ffff;
+    -webkit-transition: background-color 1s;
+    /* For Safari 3.1 to 6.0 */
+    transition: background-color 1s;
+}
+
+.projects-left-header:hover {
+    background-color: #000000;
 }
 
 .row {
-    padding: 7px;
+    padding: 4px;
 }
 
 .projects-right-header {
-    background-color: #2e1114;
-    opacity: 0.9;
+    background-color: #404040;
     padding: 0;
-    height: 36px;
-    border-color: #adadad;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 7px;
+    height: auto;
     color: #ffff;
+    -webkit-transition: background-color 1s;
+    /* For Safari 3.1 to 6.0 */
+    transition: background-color 1s;
 }
 
-.img_ {
-    border-radius: 10px;
-    box-shadow: #64485c;
-    opacity: 0.8;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.projects-right-header:hover {
+    background-color: #000000;
 }
 
 .experience-section-title {
-    background-color: #64485c;
-    opacity: 0.6;
+    background-color: #adadad;
     padding: 0;
-    height: 35;
-    border-radius: 5px;
+    height: auto;
     color: #ffff;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #ffff;
+    -webkit-transition: background-color 1s;
+    /* For Safari 3.1 to 6.0 */
+    transition: background-color 1s;
+    box-shadow: 0px 5px #ffff;
+}
+
+.experience-section-title:hover {
+    background-color: #404040;
 }
 
 .experience-left-header {
-    background-color: #2e1114;
-    opacity: 0.9;
+    background-color: #404040;
     padding: 0;
-    height: 36px;
-    border-color: #adadad;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 7px;
+    height: auto;
     color: #ffff;
+    -webkit-transition: background-color 1s;
+    /* For Safari 3.1 to 6.0 */
+    transition: background-color 1s;
+}
+
+.experience-left-header:hover {
+    background-color: #000000;
 }
 
 .experience-right-header {
-    background-color: #2e1114;
-    opacity: 0.9;
+    background-color: #404040;
     padding: 0;
-    height: 36px;
-    border-color: #adadad;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 7px;
+    height: auto;
     color: #ffff;
+    -webkit-transition: background-color 1s;
+    /* For Safari 3.1 to 6.0 */
+    transition: background-color 1s;
+}
+
+.experience-right-header:hover {
+    background-color: #000000;
 }
 
 .education-section-title {
-    background-color: #64485c;
-    opacity: 0.6;
+    background-color: #adadad;
     padding: 0;
-    height: 35;
-    border-radius: 5px;
+    height: auto;
     color: #ffff;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #ffff;
+    -webkit-transition: background-color 1s;
+    /* For Safari 3.1 to 6.0 */
+    transition: background-color 1s;
+    box-shadow: 0px 5px #ffff;
+}
+
+.education-section-title:hover {
+    background-color: #404040;
 }
 
 .education-left-header {
-    background-color: #2e1114;
-    opacity: 0.9;
+    background-color: #404040;
     padding: 0;
-    height: 36px;
-    border-color: #adadad;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 7px;
+    height: auto;
     color: #ffff;
+    -webkit-transition: background-color 1s;
+    /* For Safari 3.1 to 6.0 */
+    transition: background-color 1s;
+}
+
+.education-left-header:hover {
+    background-color: #000000;
 }
 
 .education-right-header {
-    background-color: #2e1114;
-    opacity: 0.9;
+    background-color: #404040;
     padding: 0;
-    height: 36px;
-    border-color: #adadad;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 7px;
+    height: auto;
     color: #ffff;
+    -webkit-transition: background-color 1s;
+    /* For Safari 3.1 to 6.0 */
+    transition: background-color 1s;
+}
+
+.education-right-header:hover {
+    background-color: #000000;
 }
 
 .sammy-section-title {
-    background-color: #64485c;
-    opacity: 0.6;
+    background-color: #adadad;
     padding: 0;
-    height: 35;
-    border-radius: 5px;
+    height: auto;
     color: #ffff;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #ffff;
+    -webkit-transition: background-color 1s;
+    /* For Safari 3.1 to 6.0 */
+    transition: background-color 1s;
+    box-shadow: 0px 5px #ffff;
+}
+
+.sammy-section-title:hover {
+    background-color: #404040;
 }
 
 .sammy-left-header {
-    background-color: #2e1114;
-    opacity: 0.9;
+    background-color: #404040;
     padding: 0;
-    height: 36px;
-    border-color: #adadad;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 7px;
+    height: auto;
     color: #ffff;
+    -webkit-transition: background-color 1s;
+    /* For Safari 3.1 to 6.0 */
+    transition: background-color 1s;
+}
+
+.sammy-left-header:hover {
+    background-color: #000000;
 }
 
 .sammy-right-header {
-    background-color: #2e1114;
-    opacity: 0.9;
+    background-color: #404040;
     padding: 0;
-    height: 36px;
-    border-color: #adadad;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 7px;
+    height: auto;
     color: #ffff;
+    -webkit-transition: background-color 1s;
+    /* For Safari 3.1 to 6.0 */
+    transition: background-color 1s;
+}
+
+.sammy-right-header:hover {
+    background-color: #000000;
+}
+
+.img_ {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(253, 253, 253, 0.19);
+    opacity: 0.6;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .fa {
