@@ -295,6 +295,9 @@ h3 {
 	height: 100%;
     z-index: 9999;
     background-color: #ffff;
+    border: solid;
+    border-width: 16px;
+    border-color: #000000;
 }
 .loaderIcon{
     border: 20px solid #f3f3f3;
@@ -305,9 +308,10 @@ h3 {
     -webkit-animation: spin 1.5s linear infinite; /* Safari */
     animation: spin 1.5s linear infinite;
     display: block;
-    margin-top: 50%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
+    box-shadow: 5px 5px #000000;
     
   }
   
