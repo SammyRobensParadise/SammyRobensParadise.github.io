@@ -288,7 +288,7 @@ h3 {
     color: #ffff;
 }
 .loader {
-	position: relative;
+	position: fixed;
 	left: 0px;
 	top: 0px;
 	width: 100%;
@@ -296,7 +296,7 @@ h3 {
     z-index: 9999;
     background-color: #ffff;
     border: solid;
-    border-width: 10px;
+    border-width: 16px;
     border-color: #000000;
 }
 .loaderIcon{
@@ -307,11 +307,10 @@ h3 {
     height: 120px;
     -webkit-animation: spin 1.5s linear infinite; /* Safari */
     animation: spin 1.5s linear infinite;
-    position: absolute;
-    top: 50%;
-    height: 100px;
-    margin-top: -50px; /* account for padding and border if not using box-sizing: border-box; */
-    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;   
   }
   
   /* Safari */
