@@ -23,7 +23,7 @@ a:hover {
 /* selected link */
 
 a:active {
-    color: #adadad;
+    color: #ffff;
 }
 
 .container,
@@ -49,7 +49,7 @@ li,
 .display-3,
 .lead,
 .navbar-brand {
-    color: #ffff;
+    color: #ffff !important;
 }
 
 #landing_page_img {
@@ -105,7 +105,7 @@ li,
 }
 
 h3 {
-    color: #ffff;
+    color: #ffff !important;
 }
 
 .projects-left-header {
