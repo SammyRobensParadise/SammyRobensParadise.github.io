@@ -6,24 +6,15 @@
 //***************************//
 $(function () {
     //add scrolling to navbar
-    'use strict';
-  
-    var c, currentScrollTop = 0,
-        navbar = $('nav');
- 
-    $(window).scroll(function () {
-       var a = $(window).scrollTop();
-       var b = navbar.height();
-      
-       currentScrollTop = a;
-      
-       if (c < currentScrollTop && a > b + b) {
-         navbar.addClass("scrollUp");
-       } else if (c > currentScrollTop && !(a <= b)) {
-         navbar.removeClass("scrollUp");
-       }
-       c = currentScrollTop;
-   });
+    var prev = 0;
+    var $window = $(window);
+    var nav = $('.nav');
+
+    $window.on('scroll', function () {
+        var scrollTop = $window.scrollTop();
+        nav.toggleClass('hidden', scrollTop > prev);
+        prev = scrollTop;
+    });
 
 
 
@@ -95,13 +86,13 @@ $(function () {
     });
     $('#navbar_whos_sammy').click(function () {
         closeNavbar(function () {
-        if (!(isVisible('.about'))) {
-            $('#div_goExploring').slideToggle(1000);
-            toggleExploreText('#goExploring');
+            if (!(isVisible('.about'))) {
+                $('#div_goExploring').slideToggle(1000);
+                toggleExploreText('#goExploring');
                 $('#whos_sammy_btn').click();
-        } else {
+            } else {
                 $('#whos_sammy_btn').click();
-        }
+            }
         });
     });
     $('#navbar_resume').click(function () {
@@ -114,13 +105,13 @@ $(function () {
         closeNavbar();
     });
     //these buttons are what is clicked at the bottom of the resume div
-    $('#moreAboutSammy').click(function(){
+    $('#moreAboutSammy').click(function () {
         $('#navbar_whos_sammy').click();
     });
-    $('#aboutProjects').click(function(){
+    $('#aboutProjects').click(function () {
         $('#navbar_projects').click();
     });
-    $('#resumeGoExploring').click(function(){
+    $('#resumeGoExploring').click(function () {
         $('#goExploring').click();
     })
     //BUTTONS FOR SELECTIVE DIVS
@@ -282,9 +273,9 @@ function isVisible(element) {
 function splash(param) {
     var time = param;
     setTimeout(function () {
-      $('#splashscreen').slideUp(1500);
+        $('#splashscreen').slideUp(1500);
     }, time);
-   }
+}
 //checks to see if divs with .about class are NOT VISIBLE
 
 //INACTIVE FUNCTIONS------------------------------------------------------------
