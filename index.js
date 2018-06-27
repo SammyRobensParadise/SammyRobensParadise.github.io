@@ -38,6 +38,14 @@ $(function () {
             hideCloseBottom();
         }
     });
+    //this function will be called when a user clicks 'learn more about pynn'
+    $('#moreAboutPynn').click(function(){
+        $('#navbar_projects').click();
+    });
+    //this function will be called when the user clicks 'learn more about gangl'
+    $('#moreAboutGangl').click(function(){
+        $('#navbar_projects').click();
+    })
     //thses functions control the navbar links
     $('#navbar_projects').click(function () {
         closeNavbar(function () {
@@ -261,7 +269,7 @@ function isVisible(element) {
 function splash(param) {
     var time = param;
     setTimeout(function () {
-        $('#splashscreen').slideUp(1500);
+        $('#splashscreen').slideUp(1200);
     }, time);
 }
 //checks to see if divs with .about class are NOT VISIBLE
