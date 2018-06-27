@@ -257,6 +257,12 @@ function isVisible(element) {
     return (element.css('display') !== 'none' && element.css('visibility') !== 'hidden' && element.css('opacity') !== 0);
 }
 //set Booleans
+function splash(param) {
+    var time = param;
+    setTimeout(function () {
+      $('#splashscreen').hide();
+    }, time);
+   }
 //checks to see if divs with .about class are NOT VISIBLE
 
 //INACTIVE FUNCTIONS------------------------------------------------------------
