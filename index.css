@@ -298,7 +298,7 @@ h3 {
     border: solid;
     border-width: 16px;
     border-color: #000000;
-    -webkit-transition: background-color 4s;
+    -webkit-transition: background-color 6s;
 }
 .loader:hover{
     background-color: #adadad;
