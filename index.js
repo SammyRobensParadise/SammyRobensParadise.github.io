@@ -4,6 +4,10 @@
 //srobensp@edu.uwaterloo.ca  //
 //Latest Update: 2018-06-19  //
 //***************************//
+$(window).load(function() {
+	$(".loader").fadeOut("slow");
+})
+
 
 $(function () {
     //Enable ToolTip feature using JQuery.js.3.2.1
