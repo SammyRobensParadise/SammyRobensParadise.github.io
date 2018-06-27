@@ -5,7 +5,7 @@
 //Latest Update: 2018-06-19  //
 //***************************//
 $(window).load(function() {
-	$(".loader").fadeOut("slow");
+	$(".loader").hide(3000);
 })
 
 
