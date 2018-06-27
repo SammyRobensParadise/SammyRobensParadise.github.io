@@ -298,6 +298,10 @@ h3 {
     border: solid;
     border-width: 16px;
     border-color: #000000;
+    -webkit-transition: background-color 4s;
+}
+.loader:hover{
+    background-color: #adadad;
 }
 .loaderIcon{
     border: 20px solid #f3f3f3;
