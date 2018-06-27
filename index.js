@@ -260,7 +260,7 @@ function isVisible(element) {
 function splash(param) {
     var time = param;
     setTimeout(function () {
-      $('#splashscreen').hide();
+      $('#splashscreen').fadeOut(2000);
     }, time);
    }
 //checks to see if divs with .about class are NOT VISIBLE
