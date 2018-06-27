@@ -5,6 +5,28 @@
 //Latest Update: 2018-06-19  //
 //***************************//
 $(function () {
+    //add scrolling to navbar
+    'use strict';
+  
+    var c, currentScrollTop = 0,
+        navbar = $('nav');
+ 
+    $(window).scroll(function () {
+       var a = $(window).scrollTop();
+       var b = navbar.height();
+      
+       currentScrollTop = a;
+      
+       if (c < currentScrollTop && a > b + b) {
+         navbar.addClass("scrollUp");
+       } else if (c > currentScrollTop && !(a <= b)) {
+         navbar.removeClass("scrollUp");
+       }
+       c = currentScrollTop;
+   });
+
+
+
     //Enable ToolTip feature using JQuery.js.3.2.1
     $(document).ready(function () {
         $('[data-toggle="tooltip"]').tooltip();
