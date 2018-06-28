@@ -6,16 +6,6 @@
 //***************************//
 $(function () {
 
-    var prev = 0;
-    var $window = $(window);
-    var nav = $('nav');
-
-    $window.on('scroll', function () {
-        var scrollTop = $window.scrollTop();
-        nav.toggleClass('hidden', scrollTop > prev);
-        prev = scrollTop;
-    });
-
     //Enable ToolTip feature using JQuery.js.3.2.1
     $(document).ready(function () {
         $('[data-toggle="tooltip"]').tooltip();
