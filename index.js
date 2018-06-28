@@ -5,6 +5,15 @@
 //Latest Update: 2018-06-19  //
 //***************************//
 $(function () {
+    var prev = 0;
+    var $window = $(window);
+    var nav = $('.nav');
+
+    $window.on('scroll', function () {
+        var scrollTop = $window.scrollTop();
+        nav.toggleClass('hidden', scrollTop > prev);
+        prev = scrollTop;
+    });
 
     //Enable ToolTip feature using JQuery.js.3.2.1
     $(document).ready(function () {
@@ -39,11 +48,11 @@ $(function () {
         }
     });
     //this function will be called when a user clicks 'learn more about pynn'
-    $('#moreAboutPynn').click(function(){
+    $('#moreAboutPynn').click(function () {
         $('#navbar_projects').click();
     });
     //this function will be called when the user clicks 'learn more about gangl'
-    $('#moreAboutGangl').click(function(){
+    $('#moreAboutGangl').click(function () {
         $('#navbar_projects').click();
     })
     //thses functions control the navbar links
