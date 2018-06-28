@@ -252,7 +252,7 @@ function toggleExploreText(divId) {
 //toggle function Resume button text
 function toggleResumeText(divId) {
     $(divId).text(function (i, v) {
-        return v === 'Close Resume' ? 'Resume . . .' : 'Close Resume'
+        return v === 'Close Résumé' ? 'Résumé . . .' : 'Close Résumé'
     })
 }
 
