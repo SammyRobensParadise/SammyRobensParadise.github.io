@@ -32,6 +32,11 @@
         crossorigin="anonymous"></script>
     <!-- Internal JavaScript main.js file-->
     <script src="index.js"></script>
+    <script type="text/JavaScript">
+        var prevScrollpos = window.pageYOffset; window.onscroll = function() { var currentScrollPos = window.pageYOffset; if (prevScrollpos
+        > currentScrollPos) { document.getElementById("navbarScroll").style.top = "0"; } else { document.getElementById("navbarScroll").style.top
+        = "-50px"; } prevScrollpos = currentScrollPos; }
+    </script>
 </head>
 <!--BEGINNING OF THE BODY OF THE HTML DOCUMENT-->
 
@@ -61,7 +66,7 @@
     </div>
 
     <!--THIS IS THE TOP STICKY NAVIGATION BAR-->
-    <nav class="navbar navbar-expand-md navbar-default nav">
+    <nav id="navbarScroll" class="navbar navbar-expand-md navbar-default ">
         <a class="navbar-brand active" href="index.html">
             Main
         </a>
@@ -448,7 +453,8 @@
                     provide solutions. rubikGo is currently in the program architecture phase of design and will soon be
                     moving to the program development phase. The prospective plan for rubikGo is to merge the backend complex
                     algorithm with a GUI to create a workable model that could be leveraged by users to test themselves agains
-                    an algorithm that will <b>always</b> find the fastest solution.
+                    an algorithm that will
+                    <b>always</b> find the fastest solution.
                 </p>
                 <p class="lead">
                     RubikGo is currently in the system architecture phase and will be moving to the development phase. The program will be written
@@ -506,9 +512,9 @@
         <div class="row">
             <div class="col-sm-8">
                 <p class="lead">
-                    <a href="http://waterloorocketry.com/index.html" target="_blank">Waterloo Rocketry</a> is an Undergraduate design team at the University of Waterloo. Yup... we
-                    put the phrase "It's not rocket science" to shame. As an active member of the Payload sub-team, I designed
-                    and developed one of the deadweight
+                    <a href="http://waterloorocketry.com/index.html" target="_blank">Waterloo Rocketry</a> is an Undergraduate design team at the University of Waterloo. Yup... we put the
+                    phrase "It's not rocket science" to shame. As an active member of the Payload sub-team, I designed and
+                    developed one of the deadweight
                     <a href="https://en.wikipedia.org/wiki/CubeSat" target="_blank">cubsats</a> for the
                     <a href="http://waterloorocketry.com/vidar3.html" target="_blank"> Vidar III Rocket</a>. I additionally designed the eye-bolt that secures the rocket's recovery parachute
                     to the rocket's fuselage.
@@ -554,15 +560,15 @@
             <div class="col-sm-8">
                 <p class="lead">
                     As a Software Engineering Co-op student I worked with Environment and Climate Change Canada's Transportation Division on
-                    the Regulatory Administration team to assist in the upgrading and testing of the
-                    On-Road Vehicle Engine and Emissions Regulations Database
-                    to allow auto-manufacturers to submit critical vehicle emissions data to the Government of Canada.
+                    the Regulatory Administration team to assist in the upgrading and testing of the On-Road Vehicle Engine
+                    and Emissions Regulations Database to allow auto-manufacturers to submit critical vehicle emissions data
+                    to the Government of Canada.
                 </p>
                 <p class="lead">
                     As part of the Regulatory Administration team I developed essental documentation and a "User Manual" to provide guidance
-                    for clients on how to use the database and submit correct data. I created and implemented test data
-                    for the database as well as wrote SQL scripts design to validate data parced into the database to ensure its
-                    validity and compliance with federal environmental regulations.
+                    for clients on how to use the database and submit correct data. I created and implemented test data for
+                    the database as well as wrote SQL scripts design to validate data parced into the database to ensure
+                    its validity and compliance with federal environmental regulations.
                 </p>
                 <p class="lead">
                     Go-to tools: VB/VBA, Microsoft Suite (Excel,Access,Word etc...), SQL.
@@ -642,13 +648,13 @@
                     </ul>
                 </p>
                 <p class="lead">
-                        Administration:
-                        <ul>
-                            <li>Microsoft Suite</li>
-                            <li>Github source control</li>
-                            <li>Technical writing</li>
-                        </ul>
-                    </p>
+                    Administration:
+                    <ul>
+                        <li>Microsoft Suite</li>
+                        <li>Github source control</li>
+                        <li>Technical writing</li>
+                    </ul>
+                </p>
             </div>
         </div>
         <br>
@@ -716,7 +722,8 @@
                 <p class="lead">
                     Systems Design Engineering transends the traditional fields of engineering and works to combine the best of
                     <b>all worlds</b>. Systems promotes innovative optimized solutions to some of todays most challenging problems
-                    by tackling them from a socioeconomic perspective. Systems Engineers look for the problem first, and <b>then</b>
+                    by tackling them from a socioeconomic perspective. Systems Engineers look for the problem first, and
+                    <b>then</b>
                     derive a solution, rather than attempt to apply a solution to a problem.
                 </p>
                 <p class="lead">
@@ -765,8 +772,8 @@
                     specifically, the unique impact of that understanding.
                 </p>
                 <p class="lead">
-                    Through my exposure and interest to software, and my personal persuit of web development I found a keen interest in the connection between
-                    a user's experience and the interface that is presented to that user.
+                    Through my exposure and interest to software, and my personal persuit of web development I found a keen interest in the connection
+                    between a user's experience and the interface that is presented to that user.
                 </p>
             </div>
         </div>
@@ -784,9 +791,9 @@
             <div class="col-sm-8">
                 <p class="lead">
                     How would you define Sammy? My interests vary from guitar to snowboarding (a sport that has landed me with many injury-related
-                    setbacks). I believe that a person's experience shapes who they are. As an active individual, I emphasize the importance of physcial Activity
-                    as well as Music in my work. I also advocate accessibility of technology. whether cross-cultural, demographic, or physical, I believe
-                    that technology should  reach all people.
+                    setbacks). I believe that a person's experience shapes who they are. As an active individual, I emphasize
+                    the importance of physcial Activity as well as Music in my work. I also advocate accessibility of technology.
+                    whether cross-cultural, demographic, or physical, I believe that technology should reach all people.
                 </p>
             </div>
             <div class="col-sm-4">
