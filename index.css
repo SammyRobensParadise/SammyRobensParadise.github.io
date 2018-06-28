@@ -70,6 +70,7 @@ li,
     background-color: #404040;
     opacity: 0.7;
     box-shadow: 0px 0.3px #ffff;
+    position: fixed;
 }
 
 .center {
