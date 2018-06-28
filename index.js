@@ -5,9 +5,10 @@
 //Latest Update: 2018-06-19  //
 //***************************//
 $(function () {
+
     var prev = 0;
     var $window = $(window);
-    var nav = $('.nav');
+    var nav = $('nav');
 
     $window.on('scroll', function () {
         var scrollTop = $window.scrollTop();
