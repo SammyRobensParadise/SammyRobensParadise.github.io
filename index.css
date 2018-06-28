@@ -55,6 +55,7 @@ li,
 
 #landing_page_img {
     -webkit-mask-image: -webkit-gradient(linear, left 80%, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+    mask-image: gradient(linear, left 80%, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
 }
 
 .nav-link {
@@ -316,6 +317,7 @@ h3 {
     border-width: 16px;
     border-color: #000000;
     -webkit-transition: background-color 6s;
+    transition: background-color 6s;
 }
 .loader:hover{
     background-color: #adadad;
