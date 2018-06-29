@@ -1,6 +1,7 @@
 # SAMMY ROBENS PARADISE PERSONAL WEBSITE
     This website was created By Sammy Robens-Paradise
-    It is incomplete
+    2018-06-29
+    Version 0.1.0
     This Repository is the personal website of Sammy Robens-Paradise
     It's purpose is to serve as a merketing platform for Sammy's skillset
     and other possible oppertunities.

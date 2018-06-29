@@ -2,28 +2,28 @@
 //Functions written by:      //
 //Samuel Robens-Paradise     //
 //srobensp@edu.uwaterloo.ca  //
-//Latest Update: 2018-06-19  //
+//Latest Update: 2018-06-29  //
+//version 0.1.0              //
 //***************************//
+//beginning of index.js file//
 $(function () {
 
-    //Enable ToolTip feature using JQuery.js.3.2.1
+    //Enable ToolTip feature
     $(document).ready(function () {
         $('[data-toggle="tooltip"]').tooltip();
     });
-
-    //these functions with ensure the text for the landing page button [ Resume ] changes from [close resume] to
-    //resume when the button in the div_resume that closes the div is clicked (activated)
+    //open and scroll to resume section
     $('#resume').click(function () {
         $.fn.closeResume();
         toggleResumeText(this);
         scrollTo('#div_resume');
     });
-    //this function closes the resume div
+    //close the resume section
     $('#close_resume').click(function () {
         $.fn.closeResume();
         toggleResumeText('#resume');
     });
-    //this function toggles the text for the [Go Exploring . . . ] button to [You're Exploring . . . ]
+    //open go exploring options and toggle 'go exploring button' text
     $('#goExploring').click(function () {
         $('#div_goExploring').slideToggle(1000);
         if ($('.about').css('visibility') == 'visible') {
@@ -31,6 +31,8 @@ $(function () {
         }
         toggleExploreText(this);
     });
+    //checks to see if about section is visible and if it is, closes it when
+    //'go exploring button' is clicked
     $('#goExploring').click(function () {
         scrollToExploring('#div_goExploring');
         if ($('.about').css('visibility') == 'visible') {
@@ -38,17 +40,18 @@ $(function () {
             hideCloseBottom();
         }
     });
-    //this function will be called when a user clicks 'learn more about pynn'
+    //opens projects section when 'learn more about pynn' is clicked
     $('#moreAboutPynn').click(function () {
         $('#navbar_projects').click();
     });
-    //this function will be called when the user clicks 'learn more about gangl'
+    //opens projects section when 'learn more about gangl' is clicked
     $('#moreAboutGangl').click(function () {
         $('#navbar_projects').click();
-    })
-    //thses functions control the navbar links
+    });
+    //when navbar projects is clicked opens projects section
     $('#navbar_projects').click(function () {
         closeNavbar(function () {
+            //check to see if projects is not already visible
             if (!(isVisible('.about'))) {
                 $('#div_goExploring').slideToggle(1000);
                 toggleExploreText('#goExploring');
@@ -58,8 +61,10 @@ $(function () {
             }
         });
     });
+    //when navbar education is clicked opens education section
     $('#navbar_education').click(function () {
         closeNavbar(function () {
+            //check to see if education is not already visible
             if (!(isVisible('.about'))) {
                 $('#div_goExploring').slideToggle(1000);
                 toggleExploreText('#goExploring');
@@ -69,8 +74,10 @@ $(function () {
             }
         });
     });
+    //when navbar experience is clicked opens experience section
     $('#navbar_experience').click(function () {
         closeNavbar(function () {
+            //check to see if experience is not already visible
             if (!(isVisible('.about'))) {
                 $('#div_goExploring').slideToggle(1000);
                 toggleExploreText('#goExploring');
@@ -80,8 +87,10 @@ $(function () {
             }
         });
     });
+    //when navbar whos sammy is clicked opens the experience section
     $('#navbar_whos_sammy').click(function () {
         closeNavbar(function () {
+            //check to see if whos sammy is not already visible
             if (!(isVisible('.about'))) {
                 $('#div_goExploring').slideToggle(1000);
                 toggleExploreText('#goExploring');
@@ -91,12 +100,14 @@ $(function () {
             }
         });
     });
+    //when navbar resume is clicked, opens navbar section and toggles resume button text
     $('#navbar_resume').click(function () {
         $.fn.closeResume();
         toggleResumeText('#resume');
         scrollTo('#div_resume');
         closeNavbar();
     });
+    //closes navbar when github link is clicked
     $('#navbar_github_link').click(function () {
         closeNavbar();
     });
@@ -110,7 +121,7 @@ $(function () {
     $('#resumeGoExploring').click(function () {
         $('#goExploring').click();
     })
-    //BUTTONS FOR SELECTIVE DIVS
+    //****BUTTONS FOR SELECTIVE DIVS************
     //  projects button
     //order: projects, experience, education, whos sammy
     $('#projects_btn').click(function () {
@@ -166,6 +177,7 @@ $(function () {
 //
 //FUNCTION DEFINITIONS
 //_____________________________________________________________________________
+//
 //toggle text function for div's listed
 $.fn.toggleText = function (callbackScroll) {
     $('#div_projects').fadeIn(1000);
