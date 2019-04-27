@@ -2,29 +2,6 @@
     CURRENT AS OF: 2018-06-29
 */
 
-/* unvisited link */
-
-a:link {
-    color: red;
-}
-
-/* visited link */
-
-a:visited {
-    color: red;
-}
-
-/* mouse over link */
-
-a:hover {
-    color: #ffff;
-}
-
-/* selected link */
-
-a:active {
-    color: #ffff;
-}
 
 
 .lead,
@@ -32,15 +9,16 @@ a:active {
     color: #ffff !important;
 }
 
-
 .landing-image{
     background-image: url("src/assets/website-coverimage2.png");
     height: 30rem;
-    background-size: contain;
+    background-size: cover;
     width: 120%;
     background-repeat: no-repeat;
     margin-left: -4rem;
     margin-right: -4rem;
+    z-index: 22;
+     
 }
 .landing-text{
     position: absolute;
@@ -73,7 +51,20 @@ a:active {
     margin-right: auto;
     width: 100%;
 }
-
+.section-link-out{
+   margin-top: -1rem;
+    background-color: #0d0d0d;
+}
+.container{
+    background-color: #0d0d0d;
+}
+.card-body{
+    background-color: #f4f8fc;
+}
+.card{
+    background-color: #f4f8fc;
+    margin-bottom: 2rem;
+}
 .embed-responsive {
     position: relative;
     display: block;
