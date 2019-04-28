@@ -9,12 +9,12 @@ html,body
     padding: 0px;
     overflow-x: hidden; 
 }
-
-a{
-
-}
+.lead,
 .navbar-brand {
     color: #333 !important;
+}
+a{
+
 }
 
 .landing-image{
@@ -79,14 +79,9 @@ a{
     background-color: #f4f8fc;
     margin-bottom: 2rem;
 }
-.embed-responsive {
-    position: relative;
-    display: block;
-    height: 0;
-    padding: 0;
-    overflow: hidden;
+.Images{
+background-color: #0d0d0d;
 }
-
 .ul {
     list-style-type: disc;
 }
@@ -120,7 +115,7 @@ footer{
     background-color: #0d0d0d;
     padding-bottom: -5rem;
 }
-  @media screen and (max-width: 870px){
+@media screen and (max-width: 870px){
     .landing-text-sub{
         top: 18rem;
     }

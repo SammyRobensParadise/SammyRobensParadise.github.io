@@ -23,7 +23,7 @@
 
         gtag('config', 'UA-122502618-1');
     </script>
-
+    <link rel="shortcut icon" href="./favicon.ico" />
     <!-- Intern al main Stylesheet-->
     <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
 
@@ -51,36 +51,13 @@
 </head>
 <!--BEGINNING OF THE BODY OF THE HTML DOCUMENT-->
 
-<body onload="splash(2000)" style="background-color:#000000;">
+<body>
     <!--SPLASH SCREEN-->
-    <div id="splashscreen" class="loader">
-        <br>
-        <br>
-        <br>
-        <div class="loaderIcon"></div>
-        <br>
-        <br>
-        <div>
-            <p class="lead text-center" style="color: #0D0D0D !important;">
-                Getting organized
-                <span class="dots">...</span>
-            </p>
-            <br>
-            <br>
-            <blockquote class="blockquote text-center">
-                <p class="mb-0 lead text-center" style="color: #000000 !important;">"Look at usual things with unusual
-                    eyes."</p>
-                <footer class="blockquote-footer">Vico Magistretti
-                    <cite title="Source Title">Industrial Designer</cite>
-                </footer>
-            </blockquote>
-        </div>
-    </div>
 
     <!--THIS IS THE TOP STICKY NAVIGATION BAR-->
     <nav class="navbar navbar-expand-md navbar-fixed-top navbar-default ">
         <a class="navbar-brand active" href="index.html">
-            Main
+            Home
         </a>
 
         <button id="navbarToggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -90,24 +67,24 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" id="navbar_projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="navbar_education">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="navbar_experience">Experience</a>
+                    <a class="nav-link" id="navbar_projects" href="https://sammy.world" target="_blank">Portfolio</a>
                 </li>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="navbar_whos_sammy">Who's Sammy</a>
+                    <a class="nav-link" href="./src/assets/Resumev4.pdf" download="Sammy Robens-Paradise Resume"
+                        id="navbar_resume">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./creations.html" download="Sammy Robens-Paradise Resume"
+                        id="navbar_resume">Creations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./me.html" id="navbar_whos_sammy">Who's Sammy</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" id="navbar_resume">Resume</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="navbar_contact" data-toggle="modal" data-target="#contactModal">Contact</a>
+                    <a class="nav-link" id="navbar_contact" data-toggle="modal" href="#"
+                        data-target="#contactModal">Connect</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="navbar_github_link" href="https://github.com/SammyRobensParadise"
@@ -148,788 +125,67 @@
     <!--END OF MODAL SECTION-->
 
     <!--THE FOLLOWING SECTION IS THE LANDING PAGE-->
-    <br>
-    <br>
-    <div class="container">
-        <div class="row">
-            <div id="landing_page_name" class="col-sm-4 center-block">
-                <h1 class="display-3" align="center">Sammy Robens-Paradise</h1>
-                <br>
-                <h2 class="lead" align="center">Systems Design Engineering</h2>
-                <h2 class="lead" align="center">The University of Waterloo</h2>
-                <br>
-                <div class="text-center">
-                    <button id="goExploring" type="button" class="btn btn-dark btn-lg toggle-text">
-                        Go Exploring . . .
-                    </button>
-                </div>
-                <br>
-                <div class="text-center">
-                    <button id="resume" type="button" class="btn btn-dark btn-lg toggle-text">
-                        Résumé . . .
-                    </button>
-                </div>
-                <br>
-            </div>
-            <div id="landing_page_pic" class="col-sm-8">
-                <br>
-                <br>
-                <img id="landing_page_img" src="landing_page_art_4.png" class="center" width="150%" height="auto"
-                    alt="Landing Page Art">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 class="center landing-text display-2">Sammy Robens-Paradise</h1>
+            <h1 class="center landing-text-sub display-4">Systems Design Engineering</h1>
+            <div class="landing-image">
             </div>
         </div>
     </div>
-    <!--END OF LANDING PAGE-->
-
-    <!--THIS SECTION IS WHAT APPEARS WHEN USER CLICKS [ GO EXPLORING . . . ] BUTTON-->
-    <div class="collapse container" id="div_goExploring">
-        <br>
-        <br>
-        <div class="well well-lg">
+    </div>
+    <div class="section-link-out">
+        <div class="container">
             <div class="row">
-                <div class="col-sm-3">
-                    <div class="text-center">
-                        <!--PROJECTS BUTTON-->
-                        <button id="projects_btn" type="button" class="btn btn-outline-light btn-lg center toggle-text">
-                            Projects
-                        </button>
+                <div class="col-sm-6 d-flex justify-content-center">
+                    <div class="card" style="width: 100%;">
+                        <a href="https://sammy.world" target="_blank"><img class="card-img-top"
+                                src="./src/assets/meta-card-portfolio@2x.png" alt="Card image cap"></a>
+                        <div class="card-body">
+                            <p class="card-text">Explore my portfolio, <b>Design & Develop with Me</b> featuring custom
+                                design, projects, work and more... <code>beta version 0.1</code></p>
+                        </div>
                     </div>
                 </div>
-                <br>
-                <div class="col-sm-3">
-                    <div class="text-center">
-                        <!--EXPERIENCE BUTTON-->
-                        <button id="experience_btn" type="button"
-                            class="btn btn-outline-light btn-lg center toggle-text">
-                            Experience
-                        </button>
+                <div class="col-sm-6 d-flex justify-content-center">
+                    <div class="card" style="width: 100%;">
+                        <a href="./src/assets/Resumev4.pdf" download="Sammy Robens-Paradise Resume"><img
+                                class="card-img-top" src="./src/assets/ResumeImage.png" alt="Card image cap"></a>
+                        <div class="card-body">
+                            <p class="card-text align-items-center">Get straight to it and check out my <b>Résumé</b>...
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <br>
-                <div class="col-sm-3">
-                    <div class="text-center">
-                        <!--EDUCATION BUTTON-->
-                        <button id="education_btn" type="button"
-                            class="btn btn-outline-light btn-lg center toggle-text">
-                            Education
-                        </button>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 d-flex justify-content-center">
+                    <div class="card" style="width: 100%;">
+                        <a href="./creations.html"><img class="card-img-top" src="./src/assets/Artworkcardcover.png"
+                                alt="Card image cap"></a>
+                        <div class="card-body">
+                            <p class="card-text">Showcase of some little designs and custom vectors <b>created by
+                                    me...</b></p>
+                        </div>
                     </div>
                 </div>
-                <br>
-                <div class="col-sm-3">
-                    <div class="text-center">
-                        <!--WHOS SAMMY (PROFILE BUTTON)-->
-                        <button id="whos_sammy_btn" type="button"
-                            class="btn btn-outline-light btn-lg center toggle-text">
-                            Who's Sammy?
-                        </button>
+                <div class="col-sm-6 d-flex justify-content-center">
+                    <div class="card" style="width: 100%;">
+                        <a href="./me.html" download="Sammy Robens-Paradise Resume"><img class="card-img-top"
+                                src="./src/assets/aboutsammy.png" alt="Card image cap"></a>
+                        <div class="card-body">
+                            <p class="card-text align-items-center">A little history about <b>me</b>...</p>
+                        </div>
                     </div>
                 </div>
-                <br>
             </div>
         </div>
     </div>
-    <br>
-    <br>
-    <!--END OF [GO EXPLORING . . . BUTTON DROP-DOWN-->
 
-    <!--THIS SECTION IS WHAT APPEARS WHEN THE USER CLICKS THE [RESUME . . .] BUTTON ON THE LANDING PAGE-->
-    <div id="div_resume" class="collapse container">
-        <!--SAMMY ROBENS-PARADISE (NAME)-->
-        <div class="row">
-            <div class="col-sm-12">
-                <h2 class="lead" align="left">Sammy Robens-Paradise</h2>
-            </div>
-        </div>
-        <!--TOP CONTACT BAR [EMAIL, PHONE, EDUCATION]-->
-        <br>
-        <br>
-        <div class="row">
-            <div class="col-sm-4">
-                <p class="lead text-center">
-                    <a href="mailto:srobensp@edu.uwaterloo.ca?Subject=Website%20Search"
-                        target="_top">srobensp@edu.uwaterloo.ca</a>
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <p class="lead text-center">Mobile: 778 - 887 - 9189</p>
-            </div>
-            <div class="col-sm-4">
-                <p class="lead text-center">
-                    <a href="https://uwaterloo.ca/systems-design-engineering/about-systems-design-engineering/what-systems-design-engineering"
-                        target="_blank"> Systems Design Engineering UI/UX</a>
-                </p>
-            </div>
-        </div>
-        <!--SUMMARY OF SKILLS SECTION OF RESUME-->
-        <div class="panel panel-default">
-            <div class="panel-heading lead heading">
-                <h4>Summary of Skills</h4>
-            </div>
-            <div class="panel-body lead">
-                <ul>
-                    <li>Exceptional written and oral communication skills developed from engagement in team-based
-                        professional
-                        projects
-                    </li>
-                    <li>Experience building, programming and applying iterative and recursive algorithms for data
-                        validation</li>
-                    <li>In-depth problem-solving skills and iterative design strengthened through engineering design
-                        projects</li>
-                    <li>Developed scalable wesbites for optimized cross-platform performance</li>
-                    <li>Experience using a variety of front-end, back-end and query languages for professional projects
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!--EXPERIENCE SECTION OF RESUME-->
-        <div class="panel panel-default">
-            <div class="panel-heading lead">
-                <h4>Experience</h4>
-            </div>
-            <div class="panel-body lead">
-                <!--EMPLOYEMENT 1-->
-                <b>Software Engineering Intern, Environment and Climate Change Canada</b>
-                <ul>
-                    <li>Used SQL and Access to iteratively develop and deploy testing scripts for complex relational
-                        databases</li>
-                    <li>Developed SQL queries to test critical business rules governing data validation</li>
-                    <li>Played critical role in documenting and facilitating complex data projects with multiple
-                        stakeholders</li>
-                </ul>
-                <!--EMPLOYEMENT 2-->
-                <b>Activity Co-Coordinator/Curriculum Designer</b>
-                <ul>
-                    <li>Demonstrated adaptivity and creativity by building programs to meet specific curriculum
-                        requirements,
-                        while fostering an engaging learning environment for youth groups ranging from 2 to 120 in size
-                    </li>
-                    <li>Spearheaded multiple initiatives to gamify learning for children aged 8-14</li>
-                </ul>
-                <!--EMPLOYEMENT 3-->
-                <b>Boating Specalist at le Parc de la Rivière des Milles Iles</b>
-                <ul>
-                    <li> Comfortably guided customers and administrated park services while working in francophone
-                        environment</li>
-                    <li>Excellent time management skills used to balance instruction of large volumes of customers in
-                        kayak/canoeing
-                        techniques, and administration of rental services, ensuring customer safety</li>
-                </ul>
-            </div>
-        </div>
-        <!--PROJECTS SECTION OF RESUME-->
-        <div class="panel panel-default">
-            <div class="panel-heading lead heading">
-                <h4>Projects</h4>
-            </div>
-            <div class="panel-body lead">
-                <!--PYNN DEVELOPMENT-->
-                <b>Pynn Development 0.1</b>
-                <ul>
-                    <li>Pynn is a multimedia, socialmedia experience sharing platfrom currently in the critical
-                        <b>development phase</b>
-                    </li>
-                    <li>Pynn leverages Android Studio's scalable IntelliJ Java platform to deliver multimedia content to
-                        adventure-driven
-                        users seeking what our beautiful world has to offer</li>
-                    <li>
-                        <a id="moreAboutPynn" style="color: #adadad">Learn more about how Pynn will change the way we
-                            share experiences</a>
-                    </li>
-                </ul>
-                <!--rubikGO-->
-                <b>rubikGo</b>
-                <ul>
-                    <li>A program designed to solve any combination of a rubik's cube</li>
-                    <li>rubikGo will leverage the low-level structure of C++ to deliver lighting-fast execiton</li>
-                    <li>rubikGo is in the
-                        <b>system architecture</b> stage and will be transitioning to software development</li>
-                </ul>
-                <!--GANGL-->
-                <b>Gangl</b>
-                <ul>
-                    <li>Iteratively designing, testing and prototyping workload management software against engineering
-                        specifications</li>
-                    <li>Gangl manages and structures student's worloads into a simple user-centered platform</li>
-                    <li>
-                        <a href="https://www.youtube.com/watch?v=QaixSsK434s" target="_blank">Watch the Gangl Team's
-                            design process</a> or
-                        <a id="moreAboutGangl">click here</a> to learn more about Gangl</li>
-                </ul>
-                <!--ROCKETRY DESIGN TEAM-->
-                <b>Waterloo Rocketry Design Team</b>
-                <ul>
-                    <li>Active member of sub-team focusing on rocket payload design and payload recovery</li>
-                    <li>Iteratively designed deadweight
-                        <a href="404_go_error.html" target="blank">cubesat</a> and parachute pin using
-                        <a href="https://www.solidworks.com/" target="_blank">SolidWorks CAD</a> for mission critical
-                        testing</li>
-                    <li>
-                        <a href="http://waterloorocketry.com/" target="_blank">Explore Waterloo Rocketry</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="text-center">
-                    <!--CONTACT BUTTON-->
-                    <a role="btn" type="btn" class="btn btn-outline-light btn-lg center" data-toggle="tooltip"
-                        title="Note: the Downloadable PDF may not be identical to the resume displayed on this webpage."
-                        href="ResumeV2.pdf" download="Sammy Robens-Paradise Resume">Download PDF
-                    </a>
-                    <br>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="text-center">
-                    <!--CONTACT BUTTON-->
-                    <button id="moreAboutSammy" type="button" class="btn btn-outline-light btn-lg center">More about
-                        Sammy</button>
-                    <br>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="text-center">
-                    <!--CONTACT BUTTON-->
-                    <button id="aboutProjects" type="button" class="btn btn-outline-light btn-lg center">About
-                        Projects</button>
-                    <br>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="text-center">
-                    <!--CONTACT BUTTON-->
-                    <button id="resumeGoExploring" type="button" class="btn btn-outline-light btn-lg center">Go
-                        exploring . . .</button>
-                    <br>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-sm-12">
-                <button id="close_resume" type="button" class="btn btn-outline-light btn-lg btn-block">Close
-                    Resume</button>
-            </div>
-            <br>
-        </div>
-    </div>
-    <br>
-    <!--THIS IS THE END OF THE DROPDOWN FROM THE [RESUME . . .] BUTTON-->
-
-    <!--THIS IS THE CLOSE ABOUT SECTIONS BUTTON-->
-    <div id="close_about" class="collapse container">
-        <div class="row">
-            <div class="col-sm-12">
-                <button id="close_about_btn" type="button" class="btn btn-outline-light btn-lg btn-block">collapse . .
-                    .</button>
-            </div>
-        </div>
-    </div>
-    <!--THIS IS THE END OF THE BUTTON THAT CLOSES THE ABOUT SECTION-->
-
-    <!--THIS SECTION IS THE SCROLL TO SECTION ELEMENT-->
-    <div id='scrollToElement' class="container">
-        <br>
-    </div>
-    <!--THIS IS THE END OF THE SCROLL TO SECTION ELEMENT-->
-
-    <!--THIS SECTION IS THE PROJECTS SECTION OF THE WEBPAGE IT IS ACTIVATED BUY THE [PROJECTS ] OR [ABOUT PROJECTS] BUTTON-->
-    <div id="div_projects" class="collapse container about">
-        <br>
-        <div class="row">
-            <div class="col-sm-12 projects-section-title text-center">
-                <h3>Projects</h3>
-
-            </div>
-        </div>
-        <br>
-        <!--PYNN DEVELOPMENT-->
-        <div class="row">
-            <div class="col-sm-8 projects-left-header text-left">
-                <h4>I. Pynn Development</h4>
-            </div>
-            <div class="col-sm-4 text-right">
-                <p class="lead">April 2018 - Ongoing</p>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-sm-4">
-                <img src="Pynn_Dev_Art_2.png" class="img_" width="80%" height="auto" alt="Pynn Logo">
-            </div>
-            <div class="col-sm-8">
-                <p class="lead">
-                    Pynn is an experience based, multimedia platform that will change the way we use social media. Pynn,
-                    in its first iteration
-                    Synthesis Phase of the
-                    <a href="https://www.invisionapp.com/blog/iterative-prototyping-and-feedback-for-better-ux-design/"
-                        target="_blank">Iterative Design Process</a>
-                    , takes a different approach towards the way we share content by moving the focus from a user's
-                    profile to the user's experiences.
-                    Users share media consisting of video, photos and text with their connections (friends/followers).
-                    Pynn
-                    compiles this media into a sharable package and allows other users to share those same experiences.
-                </p>
-                <p class="lead">
-                    Pynn is currently being written in Android Studio, leveraging the scalable flexibility of the
-                    IntelliJ Java framwork.
-                    <a href="404_go_error.html">View Wireframes</a> /
-                    <a href="404_go_error.html">View IDP documentation</a>.
-                </p>
-            </div>
-        </div>
-        <br>
-        <!--rubikGO-->
-        <div class="row">
-            <div class="col-sm-4 text-left">
-                <p class="lead">June 2018 - Ongoing</p>
-            </div>
-            <div class="col-sm-8 projects-right-header text-right">
-                <h4>II. rubiKGo </h4>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-sm-8">
-                <p class="lead">
-                    <b>rubikGo</b> is an algorithm-based program that is currently being designed to solve any possible
-                    combination
-                    of a rubik's cube. The algorithm will leverage the lighting-fast, low-level computing power of C++
-                    to
-                    quickly provide solutions. The prospective plan for rubikGo is to merge the backend complex
-                    algorithm
-                    with a GUI to create a workable model that could be leveraged by users to test themselves against an
-                    algorithm that will
-                    <b>always</b> find the fastest solution.
-                </p>
-                <p class="lead">
-                    RubikGo is currently in the system architecture phase and will be moving to the development phase.
-                </p>
-
-            </div>
-            <div class="col-sm-4">
-                <img src="rubixGo_art_4.png" class="img_" width="80%" height="auto" alt="rubikGo Art">
-            </div>
-        </div>
-        <br>
-        <!--GANGL-->
-        <div class="row">
-            <div class="col-sm-8 projects-left-header text-left">
-                <h4>III. Gangl</h4>
-            </div>
-            <div class="col-sm-4 text-right">
-                <p class="lead">September 2017 - December 2017</p>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-sm-4">
-                <img src="gangl_Art.png" class="img_" width="85%" height="auto" alt="Gangl Art">
-            </div>
-            <div class="col-sm-8">
-                <p class="lead">
-                    Gangl is an application designed by a Systems Design Team to improve the mental health of University
-                    students by managing
-                    their workload through a simple UI and reminder system. Gangl was developed using an iterative
-                    design
-                    process beginning with a problem statement. It developed into a low fidelity prototype, medium
-                    fidelity
-                    prototype and finally a functional high fidelity prototype.
-                </p>
-                <p class="lead">
-                    Gangl incorporated user testing, the usage of Marvel, and Invision app for the purposes of rapid
-                    prototyping and extensive
-                    design iteration. It was developed by the Gangl Design Team using Android Studio.
-                </p>
-                <p class="lead">
-                    <a href="https://www.youtube.com/watch?v=QaixSsK434s" target="_blank">Check out the design process
-                        video</a> or
-                    <a href="404_go_error.html">view design drocess documentation</a>.
-                </p>
-            </div>
-        </div>
-        <br>
-        <!--WATERLOO ROCKETRY TEAM-->
-        <div class="row">
-            <div class="col-sm-4 text-left">
-                <p class="lead">September 2017 - Ongoing</p>
-            </div>
-            <div class="col-sm-8 projects-right-header text-right">
-                <h4>IV. Waterloo Rocketry Team</h4>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-sm-8">
-                <p class="lead">
-                    <a href="http://waterloorocketry.com/index.html" target="_blank">Waterloo Rocketry</a> is an
-                    Undergraduate design team at the University of Waterloo. Yup... we put the
-                    phrase "It's not rocket science" to shame. As an active member of the Payload sub-team, I designed
-                    and
-                    developed one of the deadweight
-                    <a href="https://en.wikipedia.org/wiki/CubeSat" target="_blank">cubsats</a> for the
-                    <a href="http://waterloorocketry.com/vidar3.html" target="_blank"> Vidar III Rocket</a>. I
-                    additionally designed the eye-bolt that secures the rocket's recovery parachute
-                    to the rocket's fuselage.
-                </p>
-                <p class="lead">
-                    The design of these rocket components and their respective sub components was done using SolidWorks
-                    CAD software. SolidWorks
-                    provided the ability to calculate critical component features such as mass and center of gravity to
-                    the
-                    high level of accuracy required for a rocket. The Design projects also required innovative design
-                    solutions
-                    to accomedate financial, material and manufacturing constraints.
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <img src="waterloo_rocketry_Art.png" class=" img_" width="90%" height="auto"
-                    alt="Waterloo Rocketry Logo">
-            </div>
-        </div>
-        <br>
-    </div>
-    <!--THIS IS THE END OF THE PROJECTS SECTION ACTIVATED BUY THE [PROJECTS] OR [ABOUT PROJECTS] BUTTIONS -->
-
-    <!--THIS SECTION IS THE EXPERIENCE SECTION OF THE WEBPAGE THAT IS ACTIVATED BY THE [EXPERIENCE BUTTON]-->
-    <div id="div_experience" class="collapse container about">
-        <br>
-        <div class="row">
-            <div class="col-sm-12 experience-section-title text-center">
-                <h3>Experience</h3>
-            </div>
-        </div>
-        <br>
-        <!--SOFTWARE ENGINEERING INTERN-->
-        <div class="row">
-            <div class="col-sm-8 experience-left-header text-left">
-                <h4>I. Software Engineering Intern</h4>
-            </div>
-            <div class="col-sm-4 text-right">
-                <p class="lead">Janurary 2018 - April 2018</p>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-sm-4">
-                <img src="eccc_Art.png" class="center img_" width="60%" height="auto"
-                    alt="Environment and Cimate Change Image">
-            </div>
-            <div class="col-sm-8">
-                <p class="lead">
-                    As a Software Engineering Co-op student I worked with Environment and Climate Change Canada's
-                    Transportation Division on
-                    the Regulatory Administration team to assist in the upgrading and testing of the On-Road Vehicle
-                    Engine
-                    and Emissions Regulations Database to allow auto-manufacturers to submit critical vehicle emissions
-                    data
-                    to the Government of Canada.
-                </p>
-                <p class="lead">
-                    As part of the Regulatory Administration team I developed essental documentation and a "User Manual"
-                    to provide guidance
-                    for clients on how to use the database and submit correct data. I created and implemented test data
-                    for
-                    the database as well as wrote SQL scripts design to validate data parced into the database to ensure
-                    its validity and compliance with federal environmental regulations.
-                </p>
-                <p class="lead">
-                    Go-to tools: VB/VBA, Microsoft Suite (Excel,Access,Word etc...), SQL.
-                </p>
-            </div>
-        </div>
-        <br>
-        <!--FRONT END TOOLBOX-->
-        <div class="row">
-            <div class="col-sm-4 text-left">
-                <p class="lead">Ongoing</p>
-            </div>
-            <div class="col-sm-8 experience-right-header text-right">
-                <h4>II. Front-End Toolbox </h4>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-sm-8">
-                <p class="lead">
-                    Web Development:
-                    <ul>
-                        <li> HTML5/CSS</li>
-                        <li> JQuery/JQuery UI/JavaScript</li>
-                    </ul>
-                </p>
-                <p class="lead">
-                    Design:
-                    <ul>
-                        <li> Adobe Photoshop CC</li>
-                        <li> Adobe Illustrator CC</li>
-                        <li> Adobe Lightroom CC</li>
-                    </ul>
-                </p>
-                <p class="lead">
-                    Prototyping and Design Process:
-                    <ul>
-                        <li> Invision App/Invision Studio</li>
-                        <li> Adobe Experience Designer (XD)</li>
-                        <li> Marvel Rapid Protostyping Tools</li>
-                    </ul>
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <img src="front_end_logo.png" class="img_" width="100%" height="auto" alt="Front End Art">
-            </div>
-        </div>
-        <br>
-        <!--BACK END TOOLBOX-->
-        <div class="row">
-            <div class="col-sm-8 experience-left-header text-left">
-                <h4>III. Back-End Toolbox</h4>
-            </div>
-            <div class="col-sm-4 text-right">
-                <p class="lead">Ongoing</p>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-sm-4">
-                <img src="backend_Art.png" class="img_" width="100%" height="auto" alt="BackEnd Art">
-            </div>
-            <div class="col-sm-8">
-                <p class="lead">
-                    Development Languages:
-                    <ul>
-                        <li>C++</li>
-                        <li>Visual Basic For Applications/Visual Basic (VB/VBA)</li>
-                        <li>Exposure to Java and IntelliJ</li>
-                    </ul>
-                </p>
-                <p class="lead">
-                    Query Languages:
-                    <ul>
-                        <li>SQL /MS SQL</li>
-                        <li>Experience Using MS Access</li>
-                    </ul>
-                </p>
-                <p class="lead">
-                    Administration:
-                    <ul>
-                        <li>Microsoft Suite</li>
-                        <li>Github source control</li>
-                        <li>Technical writing</li>
-                    </ul>
-                </p>
-            </div>
-        </div>
-        <br>
-        <!--HARDWARE-->
-        <div class="row">
-            <div class="col-sm-4 text-left">
-                <p class="lead">Ongoing</p>
-            </div>
-            <div class="col-sm-8 experience-right-header text-right">
-                <h4>IV. Hardware Design</h4>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-sm-8">
-                <p class="lead">
-                    Computer Aided Design:
-                    <ul>
-                        <li>SolidWorks 2016-Onward</li>
-                        <li>SolidEdge 2014-Onward</li>
-                        <li>Sketchup Rapid Design Software</li>
-                        <li>Z-Suite 3D Printing Design Software</li>
-                    </ul>
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <img src="hardware_Art.png" class="img_" width="90%" height="auto" alt="Waterloo Rocketry Logo">
-            </div>
-        </div>
-        <br>
-    </div>
-    </div>
-    <!--THIS IS THE END OF THE EXPERIENCE SECTION ACTIVATED BY THE [EXPERIENCE] BUTTON-->
-
-    <!--THIS SECTION IS THE EDUCATION SECTION OF THE WEBPAGE THAT IS ACTIVATED BY THE [EDUCATION] BUTTON-->
-
-    <div id="div_education" class="collapse container about">
-        <br>
-        <div class="row">
-            <div class="col-sm-12 education-section-title text-center">
-                <h3>Education</h3>
-            </div>
-        </div>
-        <br>
-        <!--THE UNIVERSITY OF WATERLOO-->
-        <div class="row">
-            <div class="col-sm-8 education-left-header text-left">
-                <h4>I. Systems Design Engineering, The University of Waterloo</h4>
-            </div>
-            <div class="col-sm-4 text-right">
-                <p class="lead">September 2017 - May 2023</p>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-sm-4">
-                <img src="education_Art.png" class="img_" width="100%" height="auto" alt="Education Art">
-            </div>
-            <div class="col-sm-8">
-                <p class="lead">Wait... What is Systems Design?</p>
-                <p class="lead">
-                    <blockquote class="blockquote lead">(in short) Systems design covers technical, environmental,
-                        socioeconomic and political aspects of the
-                        engineering process using systems design methodology.</blockquote>
-                </p>
-                <p class="lead">
-                    Systems Design Engineering transends the traditional fields of engineering and works to combine the
-                    best of
-                    <b>all worlds</b>. Systems promotes innovative optimized solutions to some of today's most
-                    challenging problems
-                    by tackling them from a socioeconomic perspective. Systems Engineers look for the problem first, and
-                    <b>then</b>
-                    derive a solution, rather than attempt to apply a solution to a problem.
-                </p>
-                <p class="lead">
-                    <a href="https://uwaterloo.ca/systems-design-engineering/about-systems-design-engineering"
-                        target="_blank">Learn more about Systems Design Engineering
-                    </a>
-                    or
-                    <a href="https://uwaterloo.ca/systems-design-engineering/research/areas-research"
-                        target="_blank">Read about System's Leading research in the field of engineering</a>.
-                </p>
-            </div>
-        </div>
-        <br>
-    </div>
-    <!--THIS IS THE END OF THE EDUCATION SECTION ACTIVATED BY THE [EDUCATION] BUTTON-->
-
-    <!--THIS IS THE WHOS SAMMY SECTION OF THE WEBPAGE ACTIVATED BY THE [WHO'S SAMMY] BUTTON-->
-    <div id="div_whos_sammy" class="collapse container about">
-        <br>
-        <div class="row">
-            <div class="col-sm-12 sammy-section-title text-center">
-                <h3>Who's Sammy?</h3>
-            </div>
-        </div>
-        <br>
-        <br>
-        <!--WHOS SAMMY CONTENT-->
-        <div class="row">
-            <div class="col-sm-8 sammy-left-header text-left">
-                <h4>I. Sammy Robens-Paradise</h4>
-            </div>
-            <div class="col-sm-4 text-right">
-                <p class="lead">A little bit of everything...</p>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-sm-4">
-                <img src="head_shot.png" class="center img_" width="70%" height="auto" alt="Photo of Sammy">
-            </div>
-            <div class="col-sm-8">
-                <p class="lead">
-                    As someone who advocates optimized engineering solutions, I continue on my journey to find the most
-                    eloquent and beautiful
-                    solutions to the worlds most challening problems. I have always taken an interest in the way humans
-                    interact
-                    with technology, and more specifically, the way it shapes our
-                    <b>experiences</b>. I chose to study Systems Design Engineering because of my fascination with the
-                    way one
-                    user's experience of a product or service can shape their understanding of the world, and more
-                    specifically,
-                    the unique impact of that understanding.
-                </p>
-                <p class="lead">
-                    Through my exposure to, and interest in software, as well as my personal persuit of web development
-                    I found a keen interest
-                    in the connection between a user's experience and the interface that is presented to that user.
-                </p>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-sm-4 text-left">
-                <p class="lead">A little more...</p>
-            </div>
-            <div class="col-sm-8 experience-right-header text-right">
-                <h4>II. Definition</h4>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-sm-8">
-                <p class="lead">
-                    How would you define Sammy? My interests vary from guitar to snowboarding, and travel, I believe
-                    that a person's experience
-                    shapes who they are. As an active, bilingual individual, I emphasize the importance of physcial
-                    activity
-                    as well as music and functionality in my work. I also advocate accessibility of technology. whether
-                    cross-cultural,
-                    demographic, or physical, I believe that technology should reach all people.
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <img src="playing_guitar.png" class="img_" width="100%" height="auto" alt="Playing Guitar">
-            </div>
-        </div>
-    </div>
-    <!--CLOSE ABOUT BUTTON-->
-    <div id="close_about_bottom" class="collapse container">
-        <div class="row">
-            <div class="col-sm-12">
-                <button id="close_about_btn_bottom" type="button"
-                    class="btn btn-outline-light btn-lg btn-block">collapse . . .</button>
-            </div>
-        </div>
-        <br>
-    </div>
-    <!--THIS IS THE END OF THE WHO'S SAMMY SECTION OF THE WEBPAGE ACTIVATE BY THE [WHO'S SAMMY] BUTTON-->
 
     <!--THIS IS THE FOOTER SECTION OPF THE WEBPAGE, NOTE THAT THE FOOTER IS STICKY-->
-
-    <footer class="footer">
-        <div class="container">
-            <p class="text-right lead">Website created by Sammy Robens-Paradise</p>
-            <p class="text-right lead">Email: srobensp@edu.uwaterloo.ca</p>
-            <p class="text-right lead">Phone: 778-887-9189</p>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3 text-center">
-                    <a href="https://www.facebook.com/samston.rp" target="_blank" class="fa fa-facebook"></a>
-                </div>
-                <div class="col-sm-3 text-center">
-                    <a href="https://www.instagram.com/samston_/" target="_blank" class="fa fa-instagram"></a>
-                </div>
-                <div class="col-sm-3 text-center">
-                    <a href="https://www.linkedin.com/in/sammy-robens-paradise/" target="_blank"
-                        class="fa fa-linkedin"></a>
-                </div>
-                <div class="col-sm-3 text-center">
-                    <a href="https://github.com/SammyRobensParadise/SammyRobensParadise.github.io" target="_blank"
-                        class="fa fa-github"></a>
-                </div>
-
-            </div>
-            <br>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 text-center">
-                        <p class="lead">
-                            <a href="wireframes.html" target="_blank">Learn about the iterative development of this
-                                website</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <br>
-    </footer>
     <!--THIS IS THE END OF THE SECTION OF A WEBPAGE, NOTE THAT THE FOOTER IS STICKY-->
+    <div class="bottom-padding"></div>
+</body>
 
 </html>
