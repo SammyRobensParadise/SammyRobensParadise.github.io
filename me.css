@@ -9,9 +9,14 @@ html,body
     padding: 0px;
     overflow-x: hidden; 
 }
-.lead,
+body{
+    background-color: #0d0d0d;
+}
 .navbar-brand {
     color: #333 !important;
+}
+.lead{
+    color: #fff;
 }
 a{
 
@@ -65,7 +70,7 @@ a{
     margin-right: auto;
     width: 100%;
 }
-.section-link-out{
+.section-about{
    margin-top: -1rem;
     background-color: #0d0d0d;
 }

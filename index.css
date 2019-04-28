@@ -13,9 +13,8 @@ html,body
 a{
 
 }
-.lead,
 .navbar-brand {
-    color: #ffff !important;
+    color: #333 !important;
 }
 
 .landing-image{
@@ -33,6 +32,13 @@ a{
     position: absolute;
     top: 5rem;
     background: -webkit-linear-gradient(#333, rgb(192, 190, 190));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.landing-text-sub{
+    position: absolute;
+    top: 10rem;
+    background: -webkit-linear-gradient(rgb(192, 190, 190),rgb(212, 210, 210) );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
