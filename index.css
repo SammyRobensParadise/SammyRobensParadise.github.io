@@ -1,9 +1,18 @@
 /*CSS CREATED BY SAMMY ROBENS-PARADISE
     CURRENT AS OF: 2018-06-29
 */
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 
+a{
 
-
+}
 .lead,
 .navbar-brand {
     color: #ffff !important;
@@ -28,7 +37,6 @@
     -webkit-text-fill-color: transparent;
 }
 .nav-link {
-    color: #ffff;
 }
 
 .nav-link:hover {
@@ -97,218 +105,14 @@ h3 {
     color: #ffff !important;
     color: white;
 }
-
-.projects-left-header {
-    background-color: #404040;
-    padding: 0;
-    height: auto;
-    color: #ffff;
-    color: white;
-    -webkit-transition: background-color 1s;
-    /* For Safari 3.1 to 6.0 */
-    transition: background-color 1s;
+.bottom-padding{
+    height: 3rem;
+    background-color: #0d0d0d;
 }
-
-.projects-left-header:hover {
-    background-color: #000000;
+footer{
+    background-color: #0d0d0d;
+    padding-bottom: -5rem;
 }
-
-.row {
-    padding: 4px;
-}
-
-.projects-right-header {
-    background-color: #404040;
-    padding: 0;
-    height: auto;
-    color: #ffff;
-    color: white;
-    -webkit-transition: background-color 1s;
-    /* For Safari 3.1 to 6.0 */
-    transition: background-color 1s;
-}
-
-.projects-right-header:hover {
-    background-color: #000000;
-}
-
-.experience-section-title {
-    background-color: #adadad;
-    padding: 0;
-    height: auto;
-    color: #ffff;
-    color: white;
-    -webkit-transition: background-color 1s;
-    /* For Safari 3.1 to 6.0 */
-    transition: background-color 1s;
-    box-shadow: 0px 5px #ffff;
-}
-
-.experience-section-title:hover {
-    background-color: #404040;
-}
-
-.experience-left-header {
-    background-color: #404040;
-    padding: 0;
-    height: auto;
-    color: #ffff;
-    color: white;
-    -webkit-transition: background-color 1s;
-    /* For Safari 3.1 to 6.0 */
-    transition: background-color 1s;
-}
-
-.experience-left-header:hover {
-    background-color: #000000;
-}
-
-.experience-right-header {
-    background-color: #404040;
-    padding: 0;
-    height: auto;
-    color: #ffff;
-    color: white;
-    -webkit-transition: background-color 1s;
-    /* For Safari 3.1 to 6.0 */
-    transition: background-color 1s;
-}
-
-.experience-right-header:hover {
-    background-color: #000000;
-}
-
-.education-section-title {
-    background-color: #adadad;
-    padding: 0;
-    height: auto;
-    color: #ffff;
-    color: white;
-    -webkit-transition: background-color 1s;
-    /* For Safari 3.1 to 6.0 */
-    transition: background-color 1s;
-    box-shadow: 0px 5px #ffff;
-}
-
-.education-section-title:hover {
-    background-color: #404040;
-}
-
-.education-left-header {
-    background-color: #404040;
-    padding: 0;
-    height: auto;
-    color: #ffff;
-    color: white;
-    -webkit-transition: background-color 1s;
-    /* For Safari 3.1 to 6.0 */
-    transition: background-color 1s;
-}
-
-.education-left-header:hover {
-    background-color: #000000;
-}
-
-.education-right-header {
-    background-color: #404040;
-    padding: 0;
-    height: auto;
-    color: #ffff;
-    color: white;
-    -webkit-transition: background-color 1s;
-    /* For Safari 3.1 to 6.0 */
-    transition: background-color 1s;
-}
-
-.education-right-header:hover {
-    background-color: #000000;
-}
-
-.sammy-section-title {
-    background-color: #adadad;
-    padding: 0;
-    height: auto;
-    color: #ffff;
-    color: white;
-    -webkit-transition: background-color 1s;
-    /* For Safari 3.1 to 6.0 */
-    transition: background-color 1s;
-    box-shadow: 0px 5px #ffff;
-}
-
-.sammy-section-title:hover {
-    background-color: #404040;
-}
-
-.sammy-left-header {
-    background-color: #404040;
-    padding: 0;
-    height: auto;
-    color: #ffff;
-    color: white;
-    -webkit-transition: background-color 1s;
-    /* For Safari 3.1 to 6.0 */
-    transition: background-color 1s;
-}
-
-.sammy-left-header:hover {
-    background-color: #000000;
-}
-
-.sammy-right-header {
-    background-color: #404040;
-    padding: 0;
-    height: auto;
-    color: #ffff;
-    color: white;
-    -webkit-transition: background-color 1s;
-    /* For Safari 3.1 to 6.0 */
-    transition: background-color 1s;
-}
-
-.img_ {
-
-    opacity: 0.6;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.fa {
-    color: #ffff;
-}
-
-.blockquote {
-    color: #ffff;
-    color: white;
-}
-.loader {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-    z-index: 9999;
-    background-color: #ffff;
-    background-color: white;
-    -webkit-transition: background-color 6s;
-    transition: background-color 6s;
-}
-.loader:hover{
-    background-color: #adadad;
-}
-.loaderIcon{
-    border: 20px solid #f3f3f3;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    -webkit-animation: spin 1.5s linear infinite; /* Safari */
-    animation: spin 1.5s linear infinite;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;   
-  }
   
   /* Safari */
   @-webkit-keyframes spin {
