@@ -21,7 +21,7 @@ a{
     background-image: url("src/assets/website-coverimage2.png");
     height: 30rem;
     background-size: cover;
-    width: 120%;
+    width: auto;
     background-repeat: no-repeat;
     margin-left: -4rem;
     margin-right: -4rem;
