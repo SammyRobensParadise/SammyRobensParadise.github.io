@@ -21,7 +21,7 @@ a{
     background-image: url("src/assets/website-coverimage2.png");
     height: 30rem;
     background-size: cover;
-    width: 120%;
+    width: auto;
     background-repeat: no-repeat;
     margin-left: -4rem;
     margin-right: -4rem;
@@ -34,6 +34,13 @@ a{
     background: -webkit-linear-gradient(#333, rgb(192, 190, 190));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-right: 1rem;
+    padding: 2rem;
+}
+@media screen and (max-width: 380px){
+    .landing-text{
+        top: 0rem;
+    }
 }
 .landing-text-sub{
     position: absolute;
