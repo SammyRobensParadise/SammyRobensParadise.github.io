@@ -109,12 +109,22 @@ h3 {
 .bottom-padding{
     height: 3rem;
     background-color: #0d0d0d;
+    margin-top: -0.5rem;
 }
 footer{
     background-color: #0d0d0d;
     padding-bottom: -5rem;
 }
-  
+@media screen and (max-width: 870px){
+    .landing-text-sub{
+        top: 18rem;
+    }
+  }
+  @media screen and (max-width: 580px){
+    .landing-text-sub{
+        display: none;
+    }
+  }
   /* Safari */
   @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }

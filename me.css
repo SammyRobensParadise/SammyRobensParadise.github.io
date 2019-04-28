@@ -114,6 +114,7 @@ h3 {
 .bottom-padding{
     height: 3rem;
     background-color: #0d0d0d;
+    margin-top: -0.5rem;
 }
 footer{
     background-color: #0d0d0d;
