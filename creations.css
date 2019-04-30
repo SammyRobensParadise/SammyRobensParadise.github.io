@@ -7,32 +7,39 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden !important; 
 }
 .lead,
 .navbar-brand {
     color: #333 !important;
 }
-a{
-
+.col-sm-12{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
 }
-
+.row{
+    margin-right: 0 !important;
+}
+h1{
+    text-align: center;
+}
 .landing-image{
     background-image: url("src/assets/website-coverimage2.png");
     height: 30rem;
     background-size: cover;
-    width: auto;
+    width: 100%;
     background-repeat: no-repeat;
-    margin-left: -4rem;
-    margin-right: -4rem;
+   /* margin-left: -4rem;
+    margin-right: -4rem; */
     z-index: 22;
+     
      
 }
 .landing-text{
-    position: absolute;
     top: 5rem;
     background: -webkit-linear-gradient(#333, rgb(192, 190, 190));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-right: 1rem;
     padding: 2rem;
@@ -43,13 +50,10 @@ a{
     }
 }
 .landing-text-sub{
-    position: absolute;
     top: 10rem;
     background: -webkit-linear-gradient(rgb(192, 190, 190),rgb(212, 210, 210) );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-.nav-link {
 }
 
 .nav-link:hover {
@@ -72,10 +76,7 @@ a{
     margin-right: auto;
     width: 100%;
 }
-.section-link-out{
-   margin-top: -1rem;
-    background-color: #0d0d0d;
-}
+
 .container{
     background-color: #0d0d0d;
 }
@@ -87,7 +88,9 @@ a{
     margin-bottom: 2rem;
 }
 .Images{
+margin-top: -1rem;
 background-color: #0d0d0d;
+width: 100%;
 }
 .ul {
     list-style-type: disc;
