@@ -18,26 +18,33 @@ body{
 .lead{
     color: #fff;
 }
-a{
-
+.col-sm-12{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
 }
-
+.row{
+    margin-right: 0 !important;
+}
+h1{
+    text-align: center;
+}
 .landing-image{
     background-image: url("src/assets/website-coverimage2.png");
     height: 30rem;
     background-size: cover;
-    width: auto;
+    width: 100%;
     background-repeat: no-repeat;
-    margin-left: -4rem;
-    margin-right: -4rem;
+   /* margin-left: -4rem;
+    margin-right: -4rem; */
     z-index: 22;
      
 }
 .landing-text{
-    position: absolute;
+
     top: 5rem;
     background: -webkit-linear-gradient(#333, rgb(192, 190, 190));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-right: 1rem;
     padding: 2rem;
@@ -48,10 +55,11 @@ a{
     }
 }
 .landing-text-sub{
-    position: absolute;
+
     top: 10rem;
     background: -webkit-linear-gradient(rgb(192, 190, 190),rgb(212, 210, 210) );
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .nav-link {
@@ -80,6 +88,7 @@ a{
 .section-about{
    margin-top: -1rem;
     background-color: #0d0d0d;
+    width: 100%;
 }
 .container{
     background-color: #0d0d0d;
@@ -91,28 +100,12 @@ a{
     background-color: #f4f8fc;
     margin-bottom: 2rem;
 }
-.Images{
-background-color: #0d0d0d;
-}
+
 .ul {
     list-style-type: disc;
 }
 
-.projects-section-title {
-    background-color: #adadad;
-    padding: 0;
-    height: auto;
-    color: #ffff;
-    color: white;
-    -webkit-transition: background-color 1s;
-    /* For Safari 3.1 to 6.0 */
-    transition: background-color 1s;
-    box-shadow: 0px 5px #ffff;
-}
 
-.projects-section-title:hover {
-    background-color: #404040;
-}
 
 h3 {
     color: #ffff !important;
@@ -127,14 +120,3 @@ footer{
     background-color: #0d0d0d;
     padding-bottom: -5rem;
 }
-  
-  /* Safari */
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
