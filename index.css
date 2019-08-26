@@ -34,6 +34,39 @@ h1{
     
      
 }
+.landing-page-content{
+    text-align: center;
+    margin-top: 8rem;
+}
+.find-out-what-working-on{
+    text-decoration: underline;
+    text-decoration-color: #32228a;
+    margin-bottom: 4rem;
+}
+.button-des{
+    background-color: #32228a;
+    border: none;
+    color: white;
+    width:20rem;
+    height: 3rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.button-des:hover{
+    background-color: #7164b9;
+}
+#href-a-to-sammy{
+    color:#fff !important;
+    text-decoration: none !important; /* no underline */
+  }
+#href-a-to-resume-dwld{
+    color:#fff !important;
+    text-decoration: none !important; /* no underline */
+}
 .col-sm-12{
     padding-right: 0 !important;
     padding-left: 0 !important;
@@ -100,9 +133,7 @@ stringname:hover{
 
     width: 100%;
 }
-.container{
 
-}
 .card-body{
     background-color: #f4f8fc;
 }
@@ -117,8 +148,8 @@ stringname:hover{
 }
 
 
-
-h3 {
+.section-p{
+    text-align: center;
 }
 .bottom-padding{
     height: 3rem;
@@ -127,6 +158,28 @@ h3 {
 footer{
     padding-bottom: -5rem;
 }
+
+/*projects sections css*/
+.local-content{
+    margin-block-start: 6rem;
+}
+.bc-ferries-section{
+    margin-top: 1rem;
+}
+.projects-section-bc-ferries{
+    width: 100%;
+     background-image: url(./src/assets/bc_ferries_preview.svg);
+     height: 35rem;
+     background-size: cover;
+     width: 100%;
+     background-repeat: no-repeat;
+     transition: background-color 0.3s ease;
+}
+.projects-section-bc-ferries:hover{
+    background-color: rgb(233, 232, 232);
+    cursor:pointer;
+}
+
   @media screen and (max-width: 870px){
     .landing-text-sub{
         top: 18rem;

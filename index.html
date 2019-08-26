@@ -39,10 +39,9 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
         </script>
     <!-- Internal JavaScript main.js file-->
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
     <script src="./node_modules/animejs/lib/anime.min.js"></script>
     <script src="./node_modules/animejs/lib/anime.js"></script>
-
 </head>
 
 <body>
@@ -131,23 +130,53 @@
                 <div class="row">
                     <div class="col-sm-6"></div>
                     <div class="col-sm-6">
-                        <div class="text-align-center">
-                        <p>Find out what I've been working on!</p>
-                            <button>Projects</button>
+                        <div class="landing-page-content">
+                            <p class="find-out-what-working-on">Find out what I've been working on!</p>
+                            <button class="button-des" id="projects-button">Projects</button>
+                            <button class="button-des" id="portfolio-button"><a id="href-a-to-sammy" href="https://sammy.world"
+                                    target="_blank">Portfolio</a></button>
+                            <button class="button-des" id="work-button">Work</button>
+                            <button class="button-des" id="cv-button"><a id="href-a-to-resume-dwld"
+                                    href="./src/assets/resumeV16.pdf" target="_blank">Resume/CV</a></button>
                         </div>
-                        
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    </div>
-    <div class="section-link-out">
-        <div class="container">
+            </div>
+            </div>
+            <div class="local-content">
+                <div class="localbackground-img">
 
-        </div>
-    </div>
-    <div class="bottom-padding"></div>
-</body>
-
-</html>
+                        <div class=row>
+                            <div class="col-sm-12 projects-section-bc-ferries">
+                                <div class="bc-ferries-section" onmouseover="handlemouseover()">
+                                    <h2 class="section-p">BC Ferries Case Study 2019</h2>
+                                    <p class="section-p">A case study and redesign of the BC Ferries digital experience from user interviews to cloud functions!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=row>
+                                <div class="col-sm-12 projects-section-portfolio">
+                                    <div class="portfolio-spring-2019">
+                                        <h2 class="section-p">Portfolio - Spring 2019</h2>
+                                        <p class="section-p">Check out my Spring 2019 portfolio built from the ground up using react.js and nifty design concepts!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class=row>
+                                <div class="col-sm-12 work-section-1">
+    
+                                </div>
+                            </div>
+                </div>
+            
+            </div>
+            <div class="section-link-out">
+                <div class="container">
+            
+                </div>
+            </div>
+            <div class="bottom-padding"></div>
+            </body>
+            
+            </html>
