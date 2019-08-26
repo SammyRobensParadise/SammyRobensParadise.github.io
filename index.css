@@ -12,7 +12,11 @@ html,body
     font-family: 'Montserrat', sans-serif !important;
     columns: #000000;
 }
-
+.navigation-padding{
+    fill: none;
+    height: 4rem;
+    width: 100%;
+}
 h1{
     text-align: center;
     color: #000000 !important;
@@ -30,10 +34,9 @@ h1{
     margin-right: -4rem; */
     z-index: 22;
     background-image: url(./src/assets/sammybiking.svg);
-    padding-bottom: 2rem;
-    
-     
+    padding-bottom: 2rem;    
 }
+
 .landing-page-content{
     text-align: center;
     margin-top: 8rem;
@@ -150,6 +153,9 @@ stringname:hover{
 
 .section-p{
     text-align: center;
+    mix-blend-mode: difference;
+    color: rgb(163, 163, 163);
+
 }
 .bottom-padding{
     height: 3rem;
@@ -160,16 +166,33 @@ footer{
 }
 
 /*projects sections css*/
+.projects-header{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #32228a;
+}
+.projects-header:hover{
+    text-decoration-color: #7164b9;
+}
 .local-content{
     margin-block-start: 6rem;
 }
 .bc-ferries-section{
-    margin-top: 1rem;
+    margin-top: 3rem;
+}
+.portfolio-spring-2019{
+    margin-top: 3rem;
+}
+.eb-web-fall-2018{
+    margin-top: 3rem;
+}
+.school-rel-2017-2019{
+    margin-top: 3rem;
 }
 .projects-section-bc-ferries{
     width: 100%;
      background-image: url(./src/assets/bc_ferries_preview.svg);
-     height: 35rem;
+     height: 34rem;
      background-size: cover;
      width: 100%;
      background-repeat: no-repeat;
@@ -179,7 +202,53 @@ footer{
     background-color: rgb(233, 232, 232);
     cursor:pointer;
 }
+.projects-section-portfolio:hover{
+    background-color: rgb(233, 232, 232);
+    cursor:pointer;
+}
+.no-show-sections{
+    display: none;
+}
+.projects-section-portfolio{
+    width: 100%;
+     background-image: url(./src/assets/landing_page.svg);
+     height: 34rem;
+     background-size: cover;
+     background-repeat: no-repeat;
+     transition: background-color 0.3s ease;
+}
+.projects-section-eb-web{
+    width: 100%;
+    background-image: url(./src/assets/eb-landing-page.png);
+    height: 34rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-color 0.3s ease; 
+    background-color: #000000;
+    opacity: 0.86;
+    transition: opacity 0.3s ease;
+}
+.projects-section-eb-web:hover{
+    background-color: rgb(233, 232, 232);
+    cursor:pointer;
+    opacity: 1;
 
+}
+.projects-section-school-rel{
+    width: 100%;
+    background-image: url(./src/assets/eb-landing-page.png);
+    height: 34rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-color 0.3s ease; 
+    background-color: #000000;
+    opacity: 0.86;
+    transition: background-color 0.3s ease;
+}
+.projects-section-school-rel:hover{
+    background-color: rgb(233, 232, 232);
+    cursor:pointer;
+}
   @media screen and (max-width: 870px){
     .landing-text-sub{
         top: 18rem;
