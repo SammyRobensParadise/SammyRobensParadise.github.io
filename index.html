@@ -26,34 +26,26 @@
     <link rel="shortcut icon" href="./favicon.ico" />
     <!-- Intern al main Stylesheet-->
     <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="bootstrap-social.css" />
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-
+        </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+        </script>
     <!-- Internal JavaScript main.js file-->
     <script src="index.js"></script>
+    <script src="./node_modules/animejs/lib/anime.min.js"></script>
+    <script src="./node_modules/animejs/lib/anime.js"></script>
+
 </head>
-<!--BEGINNING OF THE BODY OF THE HTML DOCUMENT-->
 
 <body>
-    <!--SPLASH SCREEN-->
-
     <!--THIS IS THE TOP STICKY NAVIGATION BAR-->
     <nav class="navbar navbar-expand-md navbar-fixed-top navbar-default ">
         <a class="navbar-brand active" href="index.html">
@@ -70,7 +62,8 @@
                     <a class="nav-link" id="navbar_projects" href="https://sammy.world" target="_blank">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="navbar_dribbble" href="https://dribbble.com/sammyrp" target="_blank">Dribbble</a>
+                    <a class="nav-link" id="navbar_dribbble" href="https://dribbble.com/sammyrp"
+                        target="_blank">Dribbble</a>
                 </li>
                 </li>
                 <li class="nav-item">
@@ -78,8 +71,7 @@
                         id="navbar_resume">Resume</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./creations.html"
-                        id="navbar_resume">Creations</a>
+                    <a class="nav-link" href="./creations.html" id="navbar_resume">Creations</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./me.html" id="navbar_whos_sammy">Who's Sammy</a>
@@ -130,58 +122,29 @@
     <!--THE FOLLOWING SECTION IS THE LANDING PAGE-->
     <div class="row">
         <div class="col-sm-12">
-            <h1 class="justify-content-center landing-text display-2">Sammy Robens-Paradise</h1>
-            <h1 class="justify-content-center landing-text-sub display-4">Systems Design Engineering</h1>
+            <h1 class="justify-content-center landing-text anim-typewriter display-3">A creative west coast kid.</h1>
+            <h1 class="justify-content-center landing-text-sub display-4">
+            <stringname>S</stringname><stringname>a</stringname><stringname>m</stringname><stringname>m</stringname><stringname>y</stringname>
+            <stringname>R</stringname><stringname>o</stringname><stringname>b</stringname><stringname>e</stringname><stringname>n</stringname><stringname>s</stringname><stringname>-</stringname><stringname>P</stringname><stringname>a</stringname><stringname>r</stringname><stringname>a</stringname><stringname>d</stringname><stringname>i</stringname><stringname>s</stringname><stringname>e</stringname>
+            </h1>
             <div class="landing-image">
+                <div class="row">
+                    <div class="col-sm-6"></div>
+                    <div class="col-sm-6">
+                        <div class="text-align-center">
+                        <p>Find out what I've been working on!</p>
+                            <button>Projects</button>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     </div>
     <div class="section-link-out">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-6 d-flex justify-content-center">
-                    <div class="card" style="width: 100%;">
-                        <a href="https://sammy.world" target="_blank"><img class="card-img-top"
-                                src="./src/assets/meta-card-portfolio@2x.png" alt="Card image cap"></a>
-                        <div class="card-body">
-                            <p class="card-text">Explore my portfolio, <b>Design & Develop with Me</b> featuring custom
-                                design, projects, work and more... <code>beta version 0.1</code></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 d-flex justify-content-center">
-                    <div class="card" style="width: 100%;">
-                        <a href="./src/assets/resumeV16.pdf" download="Sammy Robens-Paradise Resume"><img
-                                class="card-img-top" src="./src/assets/ResumeImage.png" alt="Card image cap"></a>
-                        <div class="card-body">
-                            <p class="card-text align-items-center">Get straight to it and check out my <b>Résumé</b>...
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 d-flex justify-content-center">
-                    <div class="card" style="width: 100%;">
-                        <a href="./creations.html"><img class="card-img-top" src="./src/assets/Artworkcardcover.png"
-                                alt="Card image cap"></a>
-                        <div class="card-body">
-                            <p class="card-text">Showcase of some little designs and custom vectors <b>created by
-                                    me...</b></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 d-flex justify-content-center">
-                    <div class="card" style="width: 100%;">
-                        <a href="./me.html"><img class="card-img-top"
-                                src="./src/assets/aboutsammy.png" alt="Card image cap"></a>
-                        <div class="card-body">
-                            <p class="card-text align-items-center">A little history about <b>me</b>...</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
     <div class="bottom-padding"></div>

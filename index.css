@@ -1,6 +1,7 @@
 /*CSS CREATED BY SAMMY ROBENS-PARADISE
     CURRENT AS OF: 2018-06-29
 */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 html,body
 {
     width: 100%;
@@ -8,24 +9,29 @@ html,body
     margin: 0px;
     padding: 0px !important;
     overflow-x: hidden !important; 
+    font-family: 'Montserrat', sans-serif !important;
+    columns: #000000;
 }
 
 h1{
     text-align: center;
+    color: #000000 !important;
 }
 .navbar-brand {
     color: #333 !important;
 }
 
 .landing-image{
-    background-image: url("src/assets/website-coverimage2.png");
-    height: 30rem;
-    background-size: cover;
-    width: 100%;
+    height: 32rem;
+    background-size: contain;
+    width: 100;
     background-repeat: no-repeat;
    /* margin-left: -4rem;
     margin-right: -4rem; */
     z-index: 22;
+    background-image: url(./src/assets/sammybiking.svg);
+    padding-bottom: 2rem;
+    
      
 }
 .col-sm-12{
@@ -37,20 +43,38 @@ h1{
 }
 .landing-text{
     
-    top: 5rem;
-    background: -webkit-linear-gradient(#333, rgb(192, 190, 190));
+    top: 0rem;
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto;
+    border-right: 2px solid rgba(0, 0, 0, 0.75);
+    position: relative;
+    width: 13em;
+
+}
+stringname:hover{
+    color: grey;
+    cursor: none;
 }
 .landing-text-sub{
         top: 10rem;
-    background: -webkit-linear-gradient(rgb(192, 190, 190),rgb(212, 210, 210) );
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
-
+.anim-typewriter{
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 13em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(0, 0, 0, 0,0.75);}
+    to{border-right-color: #fff;}
+  }
 .nav-link:hover {
     color: #32228a;
     cursor: pointer;
@@ -73,11 +97,11 @@ h1{
 }
 .section-link-out{
    margin-top: -1rem;
-    background-color: #0d0d0d;
+
     width: 100%;
 }
 .container{
-    background-color: #0d0d0d;
+
 }
 .card-body{
     background-color: #f4f8fc;
@@ -95,16 +119,12 @@ h1{
 
 
 h3 {
-    color: #ffff !important;
-    color: white;
 }
 .bottom-padding{
     height: 3rem;
-    background-color: #0d0d0d;
     margin-top: -0.5rem;
 }
 footer{
-    background-color: #0d0d0d;
     padding-bottom: -5rem;
 }
   @media screen and (max-width: 870px){
