@@ -2,55 +2,61 @@
     CURRENT AS OF: 2018-06-29
 */
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-html,body
-{
+
+html,
+body {
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px !important;
-    overflow-x: hidden !important; 
+    overflow-x: hidden !important;
     font-family: 'Montserrat', sans-serif !important;
     columns: #000000;
 }
-.navigation-padding{
+
+.navigation-padding {
     fill: none;
     height: 4rem;
     width: 100%;
 }
-h1{
+
+h1 {
     text-align: center;
     color: #000000 !important;
 }
+
 .navbar-brand {
     color: #333 !important;
 }
 
-.landing-image{
+.landing-image {
     height: 32rem;
     background-size: contain;
     width: 100;
     background-repeat: no-repeat;
-   /* margin-left: -4rem;
+    /* margin-left: -4rem;
     margin-right: -4rem; */
     z-index: 22;
     background-image: url(./src/assets/sammybiking.svg);
-    padding-bottom: 2rem;    
+    padding-bottom: 2rem;
 }
 
-.landing-page-content{
+.landing-page-content {
     text-align: center;
     margin-top: 8rem;
 }
-.find-out-what-working-on{
+
+.find-out-what-working-on {
     text-decoration: underline;
     text-decoration-color: #32228a;
     margin-bottom: 4rem;
 }
-.button-des{
+
+.button-des {
     background-color: #32228a;
     border: none;
     color: white;
-    width:20rem;
+    width: 20rem;
     height: 3rem;
     text-align: center;
     text-decoration: none;
@@ -59,26 +65,34 @@ h1{
     border-radius: 8px;
     cursor: pointer;
 }
-.button-des:hover{
+
+.button-des:hover {
     background-color: #7164b9;
 }
-#href-a-to-sammy{
-    color:#fff !important;
-    text-decoration: none !important; /* no underline */
-  }
-#href-a-to-resume-dwld{
-    color:#fff !important;
-    text-decoration: none !important; /* no underline */
+
+#href-a-to-sammy {
+    color: #fff !important;
+    text-decoration: none !important;
+    /* no underline */
 }
-.col-sm-12{
+
+#href-a-to-resume-dwld {
+    color: #fff !important;
+    text-decoration: none !important;
+    /* no underline */
+}
+
+.col-sm-12 {
     padding-right: 0 !important;
     padding-left: 0 !important;
 }
-.row{
+
+.row {
     margin-right: 0 !important;
 }
-.landing-text{
-    
+
+.landing-text {
+
     top: 0rem;
     -webkit-background-clip: text;
     background-clip: text;
@@ -90,27 +104,43 @@ h1{
     width: 13em;
 
 }
-stringname:hover{
+
+stringname:hover {
     color: grey;
     cursor: none;
 }
-.landing-text-sub{
-        top: 10rem;
+
+.landing-text-sub {
+    top: 10rem;
     background-clip: text;
     -webkit-background-clip: text;
 }
-.anim-typewriter{
+
+.anim-typewriter {
     animation: typewriter 4s steps(44) 1s 1 normal both,
-               blinkTextCursor 500ms steps(44) infinite normal;
-  }
-  @keyframes typewriter{
-    from{width: 0;}
-    to{width: 13em;}
-  }
-  @keyframes blinkTextCursor{
-    from{border-right-color: rgba(0, 0, 0, 0,0.75);}
-    to{border-right-color: #fff;}
-  }
+        blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 13em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(0, 0, 0, 0, 0.75);
+    }
+
+    to {
+        border-right-color: #fff;
+    }
+}
+
 .nav-link:hover {
     color: #32228a;
     cursor: pointer;
@@ -121,9 +151,11 @@ stringname:hover{
     opacity: 0.7;
     box-shadow: 0px 0.3px #ffff;
 }
-.navbar-toggler{
+
+.navbar-toggler {
     background-color: grey !important;
 }
+
 .center {
     text-align: center;
     display: block;
@@ -131,16 +163,18 @@ stringname:hover{
     margin-right: auto;
     width: 100%;
 }
-.section-link-out{
-   margin-top: -1rem;
+
+.section-link-out {
+    margin-top: -1rem;
 
     width: 100%;
 }
 
-.card-body{
+.card-body {
     background-color: #f4f8fc;
 }
-.card{
+
+.card {
     background-color: #f4f8fc;
     margin-bottom: 2rem;
 }
@@ -151,111 +185,152 @@ stringname:hover{
 }
 
 
-.section-p{
+.section-p {
     text-align: center;
     mix-blend-mode: difference;
     color: rgb(163, 163, 163);
 
 }
-.bottom-padding{
+
+.bottom-padding {
     height: 3rem;
     margin-top: -0.5rem;
 }
-footer{
+
+footer {
     padding-bottom: -5rem;
 }
 
 /*projects sections css*/
-.projects-header{
+.projects-header {
     text-align: center;
     text-decoration: underline;
     text-decoration-color: #32228a;
 }
-.projects-header:hover{
+.work-header{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #32228a;
+    margin-top: 4rem;
+}
+
+.projects-header:hover {
     text-decoration-color: #7164b9;
 }
-.local-content{
+
+.local-content {
     margin-block-start: 6rem;
 }
-.bc-ferries-section{
+
+.bc-ferries-section {
     margin-top: 3rem;
 }
-.portfolio-spring-2019{
+
+.portfolio-spring-2019 {
     margin-top: 3rem;
 }
-.eb-web-fall-2018{
+
+.eb-web-fall-2018 {
     margin-top: 3rem;
 }
-.school-rel-2017-2019{
+
+.school-rel-2017-2019 {
     margin-top: 3rem;
 }
-.projects-section-bc-ferries{
+.ffatg-section{
+    margin-top: 3rem;
+}
+.projects-section-bc-ferries {
     width: 100%;
-     background-image: url(./src/assets/bc_ferries_preview.svg);
-     height: 34rem;
-     background-size: cover;
-     width: 100%;
-     background-repeat: no-repeat;
-     transition: background-color 0.3s ease;
+    background-image: url(./src/assets/bc_ferries_preview.svg);
+    height: 34rem;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    transition: background-color 0.3s ease;
 }
-.projects-section-bc-ferries:hover{
+
+.projects-section-bc-ferries:hover {
     background-color: rgb(233, 232, 232);
-    cursor:pointer;
+    cursor: pointer;
 }
-.projects-section-portfolio:hover{
+
+.projects-section-portfolio:hover {
     background-color: rgb(233, 232, 232);
-    cursor:pointer;
+    cursor: pointer;
 }
-.no-show-sections{
+
+.no-show-sections {
     display: none;
 }
-.projects-section-portfolio{
+
+.projects-section-portfolio {
     width: 100%;
-     background-image: url(./src/assets/landing_page.svg);
-     height: 34rem;
-     background-size: cover;
-     background-repeat: no-repeat;
-     transition: background-color 0.3s ease;
+    background-image: url(./src/assets/landing_page.svg);
+    height: 34rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-color 0.3s ease;
 }
-.projects-section-eb-web{
+
+.projects-section-eb-web {
     width: 100%;
     background-image: url(./src/assets/eb-landing-page.png);
     height: 34rem;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease;
     background-color: #000000;
     opacity: 0.86;
     transition: opacity 0.3s ease;
 }
-.projects-section-eb-web:hover{
+
+.projects-section-eb-web:hover {
     background-color: rgb(233, 232, 232);
-    cursor:pointer;
+    cursor: pointer;
     opacity: 1;
 
 }
-.projects-section-school-rel{
+
+.projects-section-school-rel {
     width: 100%;
-    background-image: url(./src/assets/eb-landing-page.png);
+    background-image: url(./src/assets/arduino_screaming.svg);
     height: 34rem;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: background-color 0.3s ease; 
-    background-color: #000000;
-    opacity: 0.86;
+    background-position-y: 10rem;
     transition: background-color 0.3s ease;
 }
-.projects-section-school-rel:hover{
+
+.projects-section-school-rel:hover {
     background-color: rgb(233, 232, 232);
-    cursor:pointer;
+    cursor: pointer;
 }
-  @media screen and (max-width: 870px){
-    .landing-text-sub{
+.work-section-ffatg{
+    width: 100%;
+    background-image: url(./src/assets/ffatgbanner.png);
+    height: 34rem;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    transition: background-color 0.3s ease;
+}
+.work-section-ffatg:hover {
+    background-color: rgb(233, 232, 232);
+    cursor: pointer;
+    mix-blend-mode: darken;
+    opacity: 0.5;
+}
+@media screen and (max-width: 870px) {
+    .landing-text-sub {
         top: 18rem;
     }
-  }
-  @media screen and (max-width: 580px){
-    .landing-text-sub{
+}
+
+@media screen and (max-width: 580px) {
+    .landing-text-sub {
         display: none;
     }
-  }
+}
+.cp{
+    margin-top: 2rem;
+}
