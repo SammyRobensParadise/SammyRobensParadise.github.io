@@ -308,17 +308,15 @@ footer {
 }
 .work-section-ffatg{
     width: 100%;
-    background-image: url(./src/assets/ffatgbanner.png);
+    background-image: url(./src/assets/ffatg-large.png);
     height: 34rem;
-    background-position: 50% 50%;
+    background-position: 55% 70%;
     background-repeat: no-repeat;
     transition: background-color 0.3s ease;
 }
 .work-section-ffatg:hover {
     background-color: rgb(233, 232, 232);
     cursor: pointer;
-    mix-blend-mode: darken;
-    opacity: 0.5;
 }
 @media screen and (max-width: 870px) {
     .landing-text-sub {
