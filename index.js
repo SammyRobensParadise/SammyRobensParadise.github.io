@@ -19,7 +19,6 @@ function scrollToEl(e, cb) {
 function isFunction(functionToCheck) {
     return functionToCheck && {}.toString.call(functionToCheck) === '[object Function]';
 }
-
 window.addEventListener("load", setGlobalVars);
 //webHandler Class
 class WebHandler {
@@ -37,11 +36,9 @@ class WebHandler {
 function setGlobalVars() {
     window.Handler = new WebHandler(true);
     window.bc_ferries_viewer  = new  ViewHandler(bc_ferries, "bc-ferries-anim-class")
-    window.addEventListener("onscroll", window.bc_ferries_viewer.isScrolledIntoView);
-    window.addEventListener("onscroll",window.bc_ferries_viewer.addViewClass);
+    console.log("setGlobalVar");
 }
 
-//ActiveViewingClass
 var bc_ferries = document.getElementsByClassName("projects-section-bc-ferries");
 class ViewHandler {
     constructor(element_param, class_param) {
