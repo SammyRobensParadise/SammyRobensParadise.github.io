@@ -188,7 +188,7 @@ stringname:hover {
 .section-p {
     text-align: center;
     mix-blend-mode: difference;
-    color: rgb(163, 163, 163);
+    color: rgb(141, 141, 141);
 
 }
 
@@ -207,7 +207,8 @@ footer {
     text-decoration: underline;
     text-decoration-color: #32228a;
 }
-.work-header{
+
+.work-header {
     text-align: center;
     text-decoration: underline;
     text-decoration-color: #32228a;
@@ -215,6 +216,10 @@ footer {
 }
 
 .projects-header:hover {
+    text-decoration-color: #7164b9;
+}
+
+.work-header:hover {
     text-decoration-color: #7164b9;
 }
 
@@ -237,7 +242,15 @@ footer {
 .school-rel-2017-2019 {
     margin-top: 3rem;
 }
-.ffatg-section{
+
+.ffatg-section {
+    margin-top: 3rem;
+}
+
+.hootsuite-section {
+    margin-top: 3rem;
+}
+.eccc-section{
     margin-top: 3rem;
 }
 .projects-section-bc-ferries {
@@ -306,7 +319,8 @@ footer {
     background-color: rgb(233, 232, 232);
     cursor: pointer;
 }
-.work-section-ffatg{
+
+.work-section-ffatg {
     width: 100%;
     background-image: url(./src/assets/ffatg-large.png);
     height: 34rem;
@@ -314,7 +328,34 @@ footer {
     background-repeat: no-repeat;
     transition: background-color 0.3s ease;
 }
+
 .work-section-ffatg:hover {
+    background-color: rgb(233, 232, 232);
+    cursor: pointer;
+}
+
+.work-section-hootsuite {
+    width: 100%;
+    background-image: url(./src/assets/hootsuite-horizontal-black-registered.png);
+    height: 34rem;
+    background-position: 55% 70%;
+    background-repeat: no-repeat;
+    transition: background-color 0.3s ease;
+}
+
+.work-section-hootsuite:hover {
+    background-color: rgb(233, 232, 232);
+    cursor: pointer;
+}
+.work-section-eccc{
+    width: 100%;
+    background-image: url(./src/assets/eccc_logorref_3.svg);
+    height: 34rem;
+    background-position: 55% 70%;
+    background-repeat: no-repeat;
+    transition: background-color 0.3s ease;
+}
+.work-section-eccc:hover{
     background-color: rgb(233, 232, 232);
     cursor: pointer;
 }
@@ -329,6 +370,7 @@ footer {
         display: none;
     }
 }
-.cp{
+
+.cp {
     margin-top: 2rem;
 }
