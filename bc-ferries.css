@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+html,
+body {
+    margin: 0px;
+    padding: 0px !important;
+    overflow-x: hidden !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+body{
+    overflow-y: hidden;
+}
+
 .bc-ferries-h2 {
     margin-top: 4rem;
     margin-bottom: 2rem;
