@@ -68,4 +68,6 @@ class ViewHandler {
 window.addEventListener('scroll', function(){
     var activeEl = window.bc_ferries_viewer;
     this.console.log(activeEl.isElementInViewport(activeEl.elem));
+    if(activeEl.isElementInViewport(activeEl.elem)){
+    }
 })
