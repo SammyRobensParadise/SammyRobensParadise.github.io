@@ -33,3 +33,16 @@
     height: 30rem;
     width: 100%;
 }
+.gen-timeline{
+    margin-top: 8rem;
+    height: 20rem;
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+    /* margin-left: -4rem;
+    margin-right: -4rem; */
+    z-index: 22;
+    background-image: url(./src/assets/motion_timeline_bc_ferries.gif);
+    padding-bottom: 2rem;
+    transform: scale(1.6);
+}
