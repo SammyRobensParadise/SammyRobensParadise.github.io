@@ -8,10 +8,23 @@
     padding: 1rem 1rem 1rem 1rem;
     border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
     box-shadow: 0px 5px 10px rgb(201, 201, 201);
-    transition: margin-top 0.3s ease-in-out;
+    transition: margin-top 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
 }
 
 .text-container:hover {
     margin-top: -0.1rem;
+    box-shadow: 0px 5px 16px #32228a;
+}
+
+.landing-image-bc-ferries {
+    height: 26rem;
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+    /* margin-left: -4rem;
+    margin-right: -4rem; */
+    z-index: 22;
+    background-image: url(./src/assets/ferrydes.svg);
+    padding-bottom: 2rem;
 }
