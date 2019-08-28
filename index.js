@@ -8,6 +8,12 @@
 //the function takes an optional param called cb
 // if cb is a callback function then it is returned by the function in calling
 // if using without a callback, then pass null to be safe
+function setGlobalVars() {
+    window.Handler = new WebHandler(true);
+    window.bc_ferries_viewer = new ViewHandler("bc-ferries-anim-class", "bc-ferries-sec")
+    console.log("setGlobalVar");
+}
+
 function scrollToEl(e, cb) {
     let el = document.getElementById(e);
     el.scrollIntoView({ behavior: 'smooth' })
@@ -33,33 +39,33 @@ class WebHandler {
         return this.dataTime;
     }
 }
-function setGlobalVars() {
-    window.Handler = new WebHandler(true);
-    window.bc_ferries_viewer  = new  ViewHandler(bc_ferries, "bc-ferries-anim-class")
-    console.log("setGlobalVar");
-}
 
-var bc_ferries = document.getElementsByClassName("projects-section-bc-ferries");
 class ViewHandler {
-    constructor(element_param, class_param) {
-        this.el = element_param;
-        this.anim_cls = class_param
+    constructor(add_class_param, id_param) {
+        this.add_class = add_class_param;
+        this.el_id = id_param;
+        console.log(this.add_class, this.el_id);
+        this.elem = document.getElementById(id_param);
+        console.log(this.add_class, this.el_id, this.elem);
     }
-    isScrolledIntoView() {
-        var rect = this.el.getBoundingClientRect();
-        var elemTop = rect.top;
-        var elemBottom = rect.bottom;
-
-        // Only completely visible elements return true:
-        var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
-        // Partially visible elements return true:
-        //isVisible = elemTop < window.innerHeight && elemBottom >= 0;
-        console.log("viewing");
-        return isVisible;
-    }
-    addViewClass(){
-        if(this.isScrolledIntoView()){
-            bc_ferries.classList.add(this.anim_cls);
+    isElementInViewport(el) {
+        console.log("checking...");
+        //special bonus for those using jQuery
+        if (typeof jQuery === "function" && el instanceof jQuery) {
+            el = el[0];
         }
+
+        var rect = el.getBoundingClientRect();
+
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+        );
     }
 }
+window.addEventListener('scroll', function(){
+    var activeEl = window.bc_ferries_viewer;
+    this.console.log(activeEl.isElementInViewport(activeEl.elem));
+})

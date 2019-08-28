@@ -5,12 +5,14 @@
 
 html,
 body {
-    width: 100%;
     margin: 0px;
     padding: 0px !important;
     overflow-x: hidden !important;
     font-family: 'Montserrat', sans-serif !important;
-    columns: #000000;
+}
+
+body {
+    overflow-y: hidden;
 }
 
 .navigation-padding {
@@ -249,9 +251,11 @@ footer {
 .hootsuite-section {
     margin-top: 3rem;
 }
-.eccc-section{
+
+.eccc-section {
     margin-top: 3rem;
 }
+
 .projects-section-bc-ferries {
     width: 100%;
     background-image: url(./src/assets/bc_ferries_preview.svg);
@@ -346,7 +350,8 @@ footer {
     background-color: rgb(233, 232, 232);
     cursor: pointer;
 }
-.work-section-eccc{
+
+.work-section-eccc {
     width: 100%;
     background-image: url(./src/assets/eccc_logorref_3.svg);
     height: 34rem;
@@ -354,10 +359,12 @@ footer {
     background-repeat: no-repeat;
     transition: background-color 0.3s ease;
 }
-.work-section-eccc:hover{
+
+.work-section-eccc:hover {
     background-color: rgb(233, 232, 232);
     cursor: pointer;
 }
+
 @media screen and (max-width: 870px) {
     .landing-text-sub {
         top: 18rem;
