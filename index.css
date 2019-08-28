@@ -189,7 +189,7 @@ stringname:hover {
 .section-p {
     text-align: center;
     mix-blend-mode: difference;
-    color: rgb(141, 141, 141);
+    color: #afafaf;
 
 }
 
@@ -257,21 +257,34 @@ footer {
 }
 
 .projects-section-bc-ferries {
+    padding-top: 1rem;
     width: 100%;
     background-image: url(./src/assets/bc_ferries_preview.svg);
     height: 34rem;
     background-size: cover;
     width: 100%;
     background-repeat: no-repeat;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 0px 5px 10px rgb(201, 201, 201);
+    top: 0;
+    transition: top 0.3s ease, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    position: relative;
+
 }
 
 .projects-section-bc-ferries:hover {
+    top: -1rem;
+    box-shadow: 0px 5px 16px #32228a;
     background-color: rgb(233, 232, 232);
     cursor: pointer;
 }
 
 .projects-section-portfolio:hover {
+    top: -1rem;
+    box-shadow: 0px 5px 16px #32228a;
     background-color: rgb(233, 232, 232);
     cursor: pointer;
 }
@@ -285,8 +298,17 @@ footer {
     background-image: url(./src/assets/landing_page.svg);
     height: 34rem;
     background-size: cover;
+    width: 100%;
     background-repeat: no-repeat;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 0px 5px 10px rgb(201, 201, 201);
+    padding-top: 1rem;
+    top: 0;
+    transition: top 0.3s ease, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    position: relative;
 }
 
 .projects-section-eb-web {
@@ -294,14 +316,23 @@ footer {
     background-image: url(./src/assets/eb-landing-page.png);
     height: 34rem;
     background-size: cover;
+    width: 100%;
     background-repeat: no-repeat;
-    transition: background-color 0.3s ease;
-    background-color: #000000;
-    opacity: 0.86;
-    transition: opacity 0.3s ease;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 0px 5px 10px rgb(201, 201, 201);
+    padding-top: 0.001rem;
+    top: 0;
+    opacity: 0.8;
+    transition: top 0.3s ease, box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    position: relative;
 }
 
 .projects-section-eb-web:hover {
+    top: -1rem;
+    box-shadow: 0px 5px 16px #32228a;
     background-color: rgb(233, 232, 232);
     cursor: pointer;
     opacity: 1;
@@ -313,12 +344,22 @@ footer {
     background-image: url(./src/assets/arduino_screaming.svg);
     height: 34rem;
     background-size: cover;
+    width: 100%;
     background-repeat: no-repeat;
-    background-position-y: 10rem;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 0px 5px 10px rgb(201, 201, 201);
+    padding-top: 1rem;
+    top: 0;
+    transition: top 0.3s ease, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    position: relative;
 }
 
 .projects-section-school-rel:hover {
+    top: -1rem;
+    box-shadow: 0px 5px 16px #32228a;
     background-color: rgb(233, 232, 232);
     cursor: pointer;
 }
@@ -329,10 +370,19 @@ footer {
     height: 34rem;
     background-position: 55% 70%;
     background-repeat: no-repeat;
-    transition: background-color 0.3s ease;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 0px 5px 10px rgb(201, 201, 201);
+    padding-top: 1rem;
+    top: 0;
+    transition: top 0.3s ease, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    position: relative;
 }
 
 .work-section-ffatg:hover {
+    top: -1rem;
+    box-shadow: 0px 5px 16px #32228a;
     background-color: rgb(233, 232, 232);
     cursor: pointer;
 }
@@ -343,10 +393,20 @@ footer {
     height: 34rem;
     background-position: 55% 70%;
     background-repeat: no-repeat;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 0px 5px 10px rgb(201, 201, 201);
+    padding-top: 1rem;
+    top: 0;
+    transition: top 0.3s ease, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    position: relative;
 }
 
 .work-section-hootsuite:hover {
+    top: -1rem;
+    box-shadow: 0px 5px 16px #32228a;
     background-color: rgb(233, 232, 232);
     cursor: pointer;
 }
@@ -357,10 +417,19 @@ footer {
     height: 34rem;
     background-position: 55% 70%;
     background-repeat: no-repeat;
-    transition: background-color 0.3s ease;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 0px 5px 10px rgb(201, 201, 201);
+    padding-top: 1rem;
+    top: 0;
+    transition: top 0.3s ease, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    position: relative;
 }
 
 .work-section-eccc:hover {
+    top: -1rem;
+    box-shadow: 0px 5px 16px #32228a;
     background-color: rgb(233, 232, 232);
     cursor: pointer;
 }
