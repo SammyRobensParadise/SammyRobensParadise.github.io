@@ -28,3 +28,8 @@
     background-image: url(./src/assets/ferrydes.svg);
     padding-bottom: 2rem;
 }
+.canvas-el-class{
+    margin-top: 4rem;
+    height: 30rem;
+    width: 100%;
+}
