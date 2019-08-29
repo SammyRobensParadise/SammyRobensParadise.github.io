@@ -7,14 +7,15 @@
 window.addEventListener("load", setGlobalVars);
 
 function setGlobalVars() {
-    window.Handler = new WebHandler(true);
+    window.data_handler = new WebHandler(true, "github");
     window.bc_ferries_viewer = new ViewHandler("bc-ferries-anim-class", "bc-ferries-container", "bc-ferries-sec");
     window.portfolio_viewer = new ViewHandler("portfolio-anim-class", "portfolio-container", "portfolio-sec");
     window.eb_viewer = new ViewHandler("eb-web-anim-class", "eb-web-container", "eb-web-sec");
     window.school_viewer = new ViewHandler("school-anim-class", "school-container", "school-sec")
     window.hootsuite_viewer = new ViewHandler("hootsuite-anim-class", "hootsuite-container", "hootsuite-sec");
     window.ffsatg_viewer = new ViewHandler("ffsatg-anim-class", "ffsatg-container", "ffsatg-sec");
-    window.eccc_viewer = new ViewHandler("eccc-anim-class","eccc-container","eccc-sec");
+    window.eccc_viewer = new ViewHandler("eccc-anim-class", "eccc-container", "eccc-sec");
+    window.data_handler._getDataFromGithub("github");
 }
 //scroll to elemt-smooth
 //the function takes an optional param called cb
@@ -34,15 +35,46 @@ function isFunction(functionToCheck) {
 
 //webHandler Class
 class WebHandler {
-    constructor(loadStatus) {
+    constructor(loadStatus, api) {
         this.dataTime = new Date();
         this.isLoaded = loadStatus;
+        this.activeAPI = api;
+
     }
     _getLoad() {
         return this.isLoaded;
     }
     _getDateRef() {
         return this.dataTime;
+    }
+    _getDataFromGithub(api) {
+        if (api === this.activeAPI) {
+            try{
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var gitRef = JSON.parse(this.responseText);
+                 var date = gitRef.commit.author.date;
+                 date = date.substring(0,10)
+                 var a = document.getElementById("last-updated")
+                 a.innerHTML = date;
+                }else{
+                    let err = "404 Error: Unable to Reach Github's server"
+                    var b = document.getElementById("last-updated")
+                    b.innerHTML = err;
+                }
+
+            };
+            xmlhttp.open("GET", "https://api.github.com/repos/SammyRobensParadise/SammyRobensParadise.github.io/commits/master", true);
+            xmlhttp.send();
+        }
+        catch(error){
+        }
+        } else {
+
+            let err = "404: API failed to connect to Github";
+            return err;
+        }
     }
 }
 
@@ -114,7 +146,7 @@ function scrollInWork() {
         console.log("insviwe")
         sixthEl.target_elem.style.animation = slide_in_right_2;
     }
-    if(seventhEl.isElementInViewport(seventhEl.elem)){
+    if (seventhEl.isElementInViewport(seventhEl.elem)) {
         seventhEl.target_elem.style.animation = slide_in_left_2;
     }
 }
