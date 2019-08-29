@@ -49,27 +49,27 @@ class WebHandler {
     }
     _getDataFromGithub(api) {
         if (api === this.activeAPI) {
-            try{
-            var xmlhttp = new XMLHttpRequest();
-            xmlhttp.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    var gitRef = JSON.parse(this.responseText);
-                 var date = gitRef.commit.author.date;
-                 date = date.substring(0,10)
-                 var a = document.getElementById("last-updated")
-                 a.innerHTML = date;
-                }else{
-                    let err = "404 Error: Unable to Reach Github's server"
-                    var b = document.getElementById("last-updated")
-                    b.innerHTML = err;
-                }
+            try {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var gitRef = JSON.parse(this.responseText);
+                        var date = gitRef.commit.author.date;
+                        date = date.substring(0, 10)
+                        var a = document.getElementById("last-updated")
+                        a.innerHTML = date;
+                    } else {
+                        let err = "404 Error: Unable to Reach Github's server"
+                        var b = document.getElementById("last-updated")
+                        b.innerHTML = err;
+                    }
 
-            };
-            xmlhttp.open("GET", "https://api.github.com/repos/SammyRobensParadise/SammyRobensParadise.github.io/commits/master", true);
-            xmlhttp.send();
-        }
-        catch(error){
-        }
+                };
+                xmlhttp.open("GET", "https://api.github.com/repos/SammyRobensParadise/SammyRobensParadise.github.io/commits/master", true);
+                xmlhttp.send();
+            }
+            catch (error) {
+            }
         } else {
 
             let err = "404: API failed to connect to Github";
@@ -94,9 +94,13 @@ class ViewHandler {
         if (typeof jQuery === "function" && el instanceof jQuery) {
             el = el[0];
         }
-
-        var rect = el.getBoundingClientRect();
-
+        try {
+            if (el.getBoundingClientRect() === null) throw err;
+            var rect = el.getBoundingClientRect();
+        }
+        catch (err) {
+            return false;
+        }
         return (
             rect.top >= 0 &&
             rect.left >= 0 &&
