@@ -12,6 +12,9 @@ function setGlobalVars() {
     window.portfolio_viewer = new ViewHandler("portfolio-anim-class", "portfolio-container", "portfolio-sec");
     window.eb_viewer = new ViewHandler("eb-web-anim-class", "eb-web-container", "eb-web-sec");
     window.school_viewer = new ViewHandler("school-anim-class", "school-container", "school-sec")
+    window.hootsuite_viewer = new ViewHandler("hootsuite-anim-class", "hootsuite-container", "hootsuite-sec");
+    window.ffsatg_viewer = new ViewHandler("ffsatg-anim-class", "ffsatg-container", "ffsatg-sec");
+    window.eccc_viewer = new ViewHandler("eccc-anim-class","eccc-container","eccc-sec");
 }
 //scroll to elemt-smooth
 //the function takes an optional param called cb
@@ -72,6 +75,7 @@ class ViewHandler {
 }
 window.addEventListener('scroll', function () {
     scollInProj();
+    scrollInWork();
 
 })
 
@@ -95,5 +99,22 @@ function scollInProj() {
     }
     if (fourthEl.isElementInViewport(fourthEl.elem)) {
         fourthEl.target_elem.style.animation = slide_in_right;
+    }
+}
+function scrollInWork() {
+    var fifthEl = window.hootsuite_viewer;
+    var sixthEl = window.ffsatg_viewer;
+    var seventhEl = window.eccc_viewer;
+    var slide_in_left_2 = 'slide-in-left 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.05s 1 normal forwards';
+    var slide_in_right_2 = 'slide-in-right 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.05s 1 normal forwards';
+    if (fifthEl.isElementInViewport(fifthEl.elem)) {
+        fifthEl.target_elem.style.animation = slide_in_left_2;
+    }
+    if (sixthEl.isElementInViewport(sixthEl.elem)) {
+        console.log("insviwe")
+        sixthEl.target_elem.style.animation = slide_in_right_2;
+    }
+    if(seventhEl.isElementInViewport(seventhEl.elem)){
+        seventhEl.target_elem.style.animation = slide_in_left_2;
     }
 }

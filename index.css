@@ -406,6 +406,8 @@ footer {
 }
 
 .work-section-ffatg {
+    margin-left: 50rem;
+    opacity: 0;
     width: 100%;
     background-image: url(./src/assets/ffatg-large.png);
     height: 34rem;
@@ -429,6 +431,8 @@ footer {
 }
 
 .work-section-hootsuite {
+    margin-left: -50rem;
+    opacity: 0;
     width: 100%;
     background-image: url(./src/assets/hootsuite-horizontal-black-registered.png);
     height: 34rem;
@@ -453,6 +457,8 @@ footer {
 }
 
 .work-section-eccc {
+    margin-left: -50rem;
+    opacity: 0;
     width: 100%;
     background-image: url(./src/assets/eccc_logorref_3.svg);
     height: 34rem;
