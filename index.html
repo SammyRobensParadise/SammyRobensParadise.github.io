@@ -38,7 +38,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
         </script>
     <!-- Internal JavaScript main.js file-->
-    
+
 </head>
 
 <body>
@@ -150,11 +150,11 @@
                             <p class="find-out-what-working-on">Find out what I've been working on!</p>
                             <button class="button-des" id="projects-button"
                                 onclick="scrollToEl('projects',null)">Projects</button>
-                                <a id="href-a-to-sammy"
-                                href="https://sammy.world" target="_blank"><button class="button-des" id="portfolio-button">Portfolio</button></a>
+                            <a id="href-a-to-sammy" href="https://sammy.world" target="_blank"><button
+                                    class="button-des" id="portfolio-button">Portfolio</button></a>
                             <button class="button-des" id="work-button" onclick="scrollToEl('work',null)">Work</button>
-                            <a id="href-a-to-resume-dwld"
-                                    href="./src/assets/resumeV16.pdf" target="_blank"><button class="button-des" id="cv-button">Resume/CV</button></a>
+                            <a id="href-a-to-resume-dwld" href="./src/assets/resumeV16.pdf" target="_blank"><button
+                                    class="button-des" id="cv-button">Resume/CV</button></a>
                         </div>
                     </div>
                 </div>
@@ -194,8 +194,8 @@
                 </div>
             </div>
             <div class=row>
-                <div class="container">
-                    <div class="col-sm-12 projects-section-eb-web">
+                <div class="container" id="eb-web-container">
+                    <div class="col-sm-12 projects-section-eb-web" id="eb-web-sec">
                         <div class="eb-web-fall-2018">
                             <h2 class="section-p">EB Web Design - Fall 2018</h2>
                             <p class="section-p">A react.js web app designed for an actress based out of vancouver
@@ -207,8 +207,8 @@
                 </div>
             </div>
             <div class=row>
-                <div class="container">
-                    <div class="col-sm-12 projects-section-school-rel">
+                <div class="container" id="school-container">
+                    <div class="col-sm-12 projects-section-school-rel" id="school-sec">
                         <div class="school-rel-2017-2019">
                             <h2 class="section-p">School Projects - First Year</h2>
                             <p class="section-p">A collection of my first year projects from Systems Design Engieering,
@@ -272,6 +272,7 @@
     </div>
     </div>
     <div class="bottom-padding"></div>
+    <script src="index.js"></script>
     <script>
         window.bc_ferries_viewer = new ViewHandler("bc-ferries-anim-class", "bc-ferries-sec");
         function onVisibilityChange() {
@@ -292,7 +293,7 @@
         });
 
     </script>
-    <script src="index.js"></script>
+
 </body>
 
 </html>

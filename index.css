@@ -257,6 +257,7 @@ footer {
 }
 
 .projects-section-bc-ferries {
+    opacity: 0;
     margin-left: -50rem;
     padding-top: 1rem;
     width: 100%;
@@ -279,21 +280,38 @@ footer {
 @keyframes slide-in-left {
     from {
         margin-left: -50rem;
+        opacity: 0;
     }
 
     to {
         margin-left: 0rem;
+        opacity: 1;
     }
 }
+@keyframes slide-in-left-eb {
+    from {
+        margin-left: -50rem;
+        opacity: 0;
+    }
+
+    to {
+        margin-left: 0rem;
+        opacity: 0.8;
+    }
+}
+
 @keyframes slide-in-right {
     from {
         margin-left: 50rem;
+        opacity: 0;
     }
 
     to {
         margin-left: 0rem;
+        opacity: 1;
     }
 }
+
 .projects-section-bc-ferries:hover {
     top: -1rem;
     box-shadow: 0px 5px 16px #32228a;
@@ -313,6 +331,7 @@ footer {
 }
 
 .projects-section-portfolio {
+    opacity: 0;
     margin-left: 50rem;
     width: 100%;
     background-image: url(./src/assets/landing_page.svg);
@@ -332,6 +351,8 @@ footer {
 }
 
 .projects-section-eb-web {
+    opacity: 0;
+    margin-left: -50rem;
     width: 100%;
     background-image: url(./src/assets/eb-landing-page.png);
     height: 34rem;
@@ -345,7 +366,6 @@ footer {
     box-shadow: 0px 5px 10px rgb(201, 201, 201);
     padding-top: 0.001rem;
     top: 0;
-    opacity: 0.8;
     transition: top 0.3s ease, box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out;
     position: relative;
 }
@@ -360,6 +380,8 @@ footer {
 }
 
 .projects-section-school-rel {
+    margin-left: 50rem;
+    opacity: 0;
     width: 100%;
     background-image: url(./src/assets/arduino_screaming.svg);
     height: 34rem;
@@ -374,7 +396,6 @@ footer {
     padding-top: 1rem;
     top: 0;
     transition: top 0.3s ease, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
-    position: relative;
 }
 
 .projects-section-school-rel:hover {

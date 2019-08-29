@@ -4,18 +4,19 @@
 //srobensp@edu.uwaterloo.ca  //
 
 
-//scroll to elemt-smooth
-//the function takes an optional param called cb
-// if cb is a callback function then it is returned by the function in calling
-// if using without a callback, then pass null to be safe
+window.addEventListener("load", setGlobalVars);
 
 function setGlobalVars() {
     window.Handler = new WebHandler(true);
     window.bc_ferries_viewer = new ViewHandler("bc-ferries-anim-class", "bc-ferries-container", "bc-ferries-sec");
     window.portfolio_viewer = new ViewHandler("portfolio-anim-class", "portfolio-container", "portfolio-sec");
-    console.log("setGlobalVar");
+    window.eb_viewer = new ViewHandler("eb-web-anim-class", "eb-web-container", "eb-web-sec");
+    window.school_viewer = new ViewHandler("school-anim-class", "school-container", "school-sec")
 }
-
+//scroll to elemt-smooth
+//the function takes an optional param called cb
+// if cb is a callback function then it is returned by the function in calling
+// if using without a callback, then pass null to be safe
 function scrollToEl(e, cb) {
     let el = document.getElementById(e);
     el.scrollIntoView({ behavior: 'smooth' })
@@ -23,11 +24,11 @@ function scrollToEl(e, cb) {
         return cb();
     }
 }
-// check if var is a function
+// check if variable is a function
 function isFunction(functionToCheck) {
     return functionToCheck && {}.toString.call(functionToCheck) === '[object Function]';
 }
-window.addEventListener("load", setGlobalVars);
+
 //webHandler Class
 class WebHandler {
     constructor(loadStatus) {
@@ -46,9 +47,9 @@ class ViewHandler {
     constructor(add_class_param, id_param, id_target) {
         this.add_class = add_class_param;
         this.el_id = id_param;
-      //  console.log(this.add_class, this.el_id);
+        //  console.log(this.add_class, this.el_id);
         this.elem = document.getElementById(id_param);
-      //  console.log(this.add_class, this.el_id, this.elem);
+        //  console.log(this.add_class, this.el_id, this.elem);
         this.target = id_target;
         this.target_elem = document.getElementById(id_target)
     }
@@ -70,10 +71,17 @@ class ViewHandler {
     }
 }
 window.addEventListener('scroll', function () {
+    scollInProj();
+
+})
+
+function scollInProj() {
     var activeEl = window.bc_ferries_viewer;
     var secondEl = window.portfolio_viewer;
-    var slide_in_left = 'slide-in-left 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s 1 normal forwards';
-    var slide_in_right = 'slide-in-right 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s 1 normal forwards';
+    var thirdEl = window.eb_viewer;
+    var fourthEl = window.school_viewer;
+    var slide_in_left = 'slide-in-left 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.05s 1 normal forwards';
+    var slide_in_right = 'slide-in-right 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.05s 1 normal forwards';
     if (activeEl.isElementInViewport(activeEl.elem)) {
         // activeEl.target_elem.classList.add(activeEl.add_class);
         activeEl.target_elem.style.animation = slide_in_left;
@@ -81,5 +89,11 @@ window.addEventListener('scroll', function () {
     if (secondEl.isElementInViewport(secondEl.elem)) {
         secondEl.target_elem.style.animation = slide_in_right;
     }
-    
-})
+    if (thirdEl.isElementInViewport(thirdEl.elem)) {
+        //exception for emily bandel section becuause it is using an opacity shift to 0.8 instead of 1.0 so the @keyframe is unique
+        thirdEl.target_elem.style.animation = 'slide-in-left-eb 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.05s 1 normal forwards';
+    }
+    if (fourthEl.isElementInViewport(fourthEl.elem)) {
+        fourthEl.target_elem.style.animation = slide_in_right;
+    }
+}
