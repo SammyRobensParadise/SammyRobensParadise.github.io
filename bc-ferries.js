@@ -11,8 +11,8 @@ function setBCFerriesVars() {
     window.timelineManager = new ViewHandler('timeline-outer-anim', 'timeline-id', 'timeline-inner-id')
     window.data_handler = new WebHandler(true, "github");
     window.data_handler._getDataFromGithub("github");
-    console.log(window.timelineManager);
-    init();
+   init();
+    
 }
 window.addEventListener("scroll", function () {
     scrollTimeline();
@@ -24,9 +24,10 @@ function scrollTimeline() {
 }
 function srollAnimationHandler(e) {
     var percentage_val;
-    var ideal_height = 420;
+    var ideal_height = 400;
     var timeline_2 = document.getElementById('timeline-2');
     var timeline_3 = document.getElementById('timeline-3');
+    var timeline_4 = document.getElementById('timeline-4');
     if (window.timelineManager.isElementInViewport(e) && (e.getBoundingClientRect().top) <= ideal_height) {
         percentage_val = Math.abs(e.getBoundingClientRect().top - ideal_height);
         percentage_val = ((100 * percentage_val) / (ideal_height - 1));
@@ -39,13 +40,16 @@ function srollAnimationHandler(e) {
             if (percentage_val >= 8 && percentage_val <= 60) {
                 timeline_3.style.top = percentage_val + "%";
             }
+            if (percentage_val >= 8 && percentage_val <= 93) {
+                timeline_4.style.top = percentage_val + "%";
+            }
         }
     }
 }
 
 //enfore smooth scrolling
 function init() {
-    new SmoothScroll(document, 100, 2)
+    new SmoothScroll(document, 8, 1)
 }
 
 function SmoothScroll(target, speed, smooth) {
@@ -90,7 +94,6 @@ function SmoothScroll(target, speed, smooth) {
         moving = true
 
         var delta = (pos - target.scrollTop) / smooth
-
         target.scrollTop += delta
 
         if (Math.abs(delta) > 0.5)

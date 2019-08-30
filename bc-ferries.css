@@ -83,6 +83,9 @@ body{
 #timeline-3{
     position: absolute;
 }
+#timeline-4{
+    position: absolute;
+}
 .timeline{
     width: 3rem;
     background-color: #32228a;
