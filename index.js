@@ -162,7 +162,6 @@ function scrollInWork() {
         fifthEl.target_elem.style.animation = slide_in_left_2;
     }
     if (sixthEl.isElementInViewport(sixthEl.elem)) {
-        console.log("insviwe")
         sixthEl.target_elem.style.animation = slide_in_right_2;
     }
     if (seventhEl.isElementInViewport(seventhEl.elem)) {
