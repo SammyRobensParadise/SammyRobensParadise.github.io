@@ -11,8 +11,6 @@ function setBCFerriesVars() {
     window.timelineManager = new ViewHandler('timeline-outer-anim', 'timeline-id', 'timeline-inner-id')
     window.data_handler = new WebHandler(true, "github");
     window.data_handler._getDataFromGithub("github");
-   init();
-    
 }
 window.addEventListener("scroll", function () {
     scrollTimeline();
