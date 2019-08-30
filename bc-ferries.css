@@ -7,6 +7,7 @@ body {
     padding: 0px !important;
     overflow-x: hidden !important;
     font-family: 'Montserrat', sans-serif !important;
+    scroll-behavior: smooth !important;
 }
 body{
     overflow-y: hidden;
@@ -63,12 +64,29 @@ body{
 }
 .timeline-outer{
     height: 40rem;
-    background-color: red;
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
-.timeline{
-    height: 0%;
+.timeline-init{
     width: 4rem;
-    background-color: black;
+    height: 4rem;
+    background-color: #dadada;
+    margin-left: -0.5rem;
+    border-radius: 2rem 2rem 2rem 2rem;
+}
+#timeline-1{
+    position: absolute;
+}
+#timeline-2{
+    position: absolute;
+}
+#timeline-3{
+    position: absolute;
+}
+.timeline{
+    width: 3rem;
+    background-color: #32228a;
+    border-radius: 2rem 2rem 2rem 2rem;
+    margin-left: 4rem;
+    position: relative;
 }
