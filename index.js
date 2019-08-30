@@ -88,6 +88,9 @@ class ViewHandler {
         this.target = id_target;
         this.target_elem = document.getElementById(id_target)
     }
+    _getID(){
+        return this.el_id;
+    }
     isElementInViewport(el) {
         //console.log("checking...");
         //special bonus for those using jQuery
@@ -122,6 +125,12 @@ function scollInProj() {
     var fourthEl = window.school_viewer;
     var slide_in_left = 'slide-in-left 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.05s 1 normal forwards';
     var slide_in_right = 'slide-in-right 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.05s 1 normal forwards';
+    try {
+        if ((activeEl || secondEl || thirdEl || fourthEl).isElementInViewport() === undefined) throw err;
+    }
+    catch (err) {
+        return false;
+    }
     if (activeEl.isElementInViewport(activeEl.elem)) {
         // activeEl.target_elem.classList.add(activeEl.add_class);
         activeEl.target_elem.style.animation = slide_in_left;
@@ -143,6 +152,12 @@ function scrollInWork() {
     var seventhEl = window.eccc_viewer;
     var slide_in_left_2 = 'slide-in-left 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.05s 1 normal forwards';
     var slide_in_right_2 = 'slide-in-right 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.05s 1 normal forwards';
+    try {
+        if ((fifthEl || sixthEl || seventhEl).isElementInViewport() === undefined) throw err;
+    }
+    catch (err) {
+        return false;
+    }
     if (fifthEl.isElementInViewport(fifthEl.elem)) {
         fifthEl.target_elem.style.animation = slide_in_left_2;
     }

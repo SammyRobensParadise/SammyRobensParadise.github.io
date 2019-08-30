@@ -41,6 +41,7 @@ body{
     z-index: 22;
     background-image: url(./src/assets/ferrydes.svg);
     padding-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .canvas-el-class{
     margin-top: 4rem;
@@ -59,4 +60,15 @@ body{
     background-image: url(./src/assets/motion_timeline_bc_ferries.gif);
     padding-bottom: 2rem;
     transform: scale(1.6);
+}
+.timeline-outer{
+    height: 40rem;
+    background-color: red;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.timeline{
+    height: 0%;
+    width: 4rem;
+    background-color: black;
 }
