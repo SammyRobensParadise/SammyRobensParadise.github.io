@@ -17,7 +17,14 @@ window.addEventListener("scroll", function () {
 })
 
 function scrollTimeline() {
+    try{
+        if(window.timelineManager._getID() === (null||undefined)) throw err;
     var timeline = document.getElementById(window.timelineManager._getID());
+    }
+    catch(err){
+        console.log("\x1b[33m","Warning: Window.timelineManager is not yet defined");
+        return false;
+    }
     srollAnimationHandler(timeline);
 }
 function srollAnimationHandler(e) {
