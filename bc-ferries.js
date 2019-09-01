@@ -36,6 +36,14 @@ function scrollTimeline() {
 function srollAnimationHandler(e) {
     var percentage_val;
     var ideal_height = 400;
+    var timeline  ={
+        elem: document.getElementById('timeline-id'),
+        animClass: "anim-class-t",
+        hasBeenTriggered: false,
+        animation_1: "timeline-s-1 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.0s 1 normal forwards",
+        animation_2: "timeline-s-2 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.0s 1 normal forwards",
+        animation_3: "timeline-s-3 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.0s 1 normal forwards",
+    }
     var timeline_2 = {
         elem: document.getElementById('timeline-2'),
         animClass: "anim-class-t-2",
@@ -69,17 +77,20 @@ function srollAnimationHandler(e) {
                 timeline_2.elem.style.animation = timeline_2.animation;
                 timeline_3.elem.style.animation = timeline_2.animation;
                 timeline_4.elem.style.animation = timeline_2.animation;
+                timeline.elem.style.animation = timeline.animation_1;
                 console.log(timeline_2.hasBeenTriggered);
 
                 setTimeout(function () {
                     timeline_3.hasBeenTriggered = true;
                     timeline_3.elem.style.animation = timeline_3.animation;
                     timeline_4.elem.style.animation = timeline_3.animation;
+                    timeline.elem.style.animation = timeline.animation_2;
 
                 }, 600);
                 setTimeout(function () {
                     timeline_4.hasBeenTriggered = true;
                     timeline_4.elem.style.animation = timeline_4.animation;
+                    timeline.elem.style.animation = timeline.animation_3;
                 }, 1200)
                 return true;
             } else {

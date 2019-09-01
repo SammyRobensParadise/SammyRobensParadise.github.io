@@ -105,6 +105,7 @@ body {
         top: 10rem;
     }
 }
+
 @keyframes timeline-3-anim {
     from {
         top: 10rem;
@@ -114,6 +115,7 @@ body {
         top: 20rem;
     }
 }
+
 @keyframes timeline-4-anim {
     from {
         top: 20rem;
@@ -122,6 +124,18 @@ body {
     to {
         top: 30rem;
     }
+}
+@keyframes timeline-s-1{
+    from{ padding-bottom: 4rem;}
+    to{padding-bottom: 12rem;}
+}
+@keyframes timeline-s-2{
+    from{ padding-bottom: 12rem;}
+    to{padding-bottom: 22rem;}
+}
+@keyframes timeline-s-3{
+    from{ padding-bottom: 22rem;}
+    to{padding-bottom: 32rem;}
 }
 .timeline {
     width: 3rem;
