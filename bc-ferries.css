@@ -9,7 +9,8 @@ body {
     font-family: 'Montserrat', sans-serif !important;
     scroll-behavior: smooth !important;
 }
-body{
+
+body {
     overflow-y: hidden;
 }
 
@@ -44,12 +45,14 @@ body{
     padding-bottom: 2rem;
     margin-bottom: 1rem;
 }
-.canvas-el-class{
+
+.canvas-el-class {
     margin-top: 4rem;
     height: 30rem;
     width: 100%;
 }
-.gen-timeline{
+
+.gen-timeline {
     margin-top: 8rem;
     height: 20rem;
     background-size: contain;
@@ -62,31 +65,65 @@ body{
     padding-bottom: 2rem;
     transform: scale(1.6);
 }
-.timeline-outer{
+
+.timeline-outer {
     height: 40rem;
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
-.timeline-init{
+
+.timeline-init {
     width: 4rem;
     height: 4rem;
     background-color: #dadada;
     margin-left: -0.5rem;
     border-radius: 2rem 2rem 2rem 2rem;
 }
-#timeline-1{
+
+#timeline-1 {
     position: absolute;
 }
-#timeline-2{
+
+#timeline-2 {
     position: absolute;
 }
-#timeline-3{
+
+#timeline-3 {
     position: absolute;
 }
-#timeline-4{
+
+#timeline-4 {
     position: absolute;
 }
-.timeline{
+
+@keyframes timeline-2-anim {
+    from {
+        top: 0rem;
+    }
+
+    to {
+        top: 10rem;
+    }
+}
+@keyframes timeline-3-anim {
+    from {
+        top: 10rem;
+    }
+
+    to {
+        top: 20rem;
+    }
+}
+@keyframes timeline-4-anim {
+    from {
+        top: 20rem;
+    }
+
+    to {
+        top: 30rem;
+    }
+}
+.timeline {
     width: 3rem;
     background-color: #32228a;
     border-radius: 2rem 2rem 2rem 2rem;
