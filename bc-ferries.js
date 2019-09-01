@@ -140,3 +140,10 @@ function srollAnimationHandler(e) {
         return { timeline_2, timeline_3, timeline_4, timeline, description_1, description_2, description_3, description_4 };
     }
 }
+function scrollToEl(e, cb) {
+    let el = document.getElementById(e);
+    el.scrollIntoView({ behavior: 'smooth', block: 'center'})
+    if (isFunction(cb)) {
+        return cb();
+    }
+}

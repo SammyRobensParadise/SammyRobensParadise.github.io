@@ -128,7 +128,7 @@
                     <div class="col-sm-6">
                     </div>
                     <div class="col-sm-6">
-                        <div class="text-container">
+                        <div class="text-container hov"  onclick="scrollToEl('timeline-out',null)">
                             <h2 class="bc-ferries-h2">
                                 Why The Case Study?
                             </h2>
@@ -156,7 +156,7 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="container">
-                <div class="timeline-outer">
+                <div class="timeline-outer" id="timeline-out">
                     <div class="timeline" id="timeline-id">
                         <div class="timeline-init" id="timeline-1">
                             <p class="sec-t">1</p>
@@ -170,16 +170,16 @@
                         <div class="timeline-init" id="timeline-4">
                             <p class="sec-t">4</p>
                         </div>
-                        <div class="timeline-s-des" id="timeline-description-1">
+                        <div class="timeline-s-des hov" id="timeline-description-1" onclick="scrollToEl('user-interviews',null)">
                             <p class="des-t">User interviews and brainstorming</p>
                         </div>
-                        <div class="timeline-s-des" id="timeline-description-2">
+                        <div class="timeline-s-des hov" id="timeline-description-2" onclick="scrollToEl('mockups-and-protos',null)">
                             <p class="des-t">Mockups and prototypes</p>
                         </div>
-                        <div class="timeline-s-des" id="timeline-description-3">
+                        <div class="timeline-s-des hov" id="timeline-description-3" onclick="scrollToEl('design-and-deploy',null)">
                             <p class="des-t">Design and development</p>
                         </div>
-                        <div class="timeline-s-des" id="timeline-description-4">
+                        <div class="timeline-s-des hov" id="timeline-description-4" onclick="scrollToEl('release',null)">
                             <p class="des-t">Deployement and feedback</p>
                         </div>
                         <div class="timeline-s-des-b1" id="timeline-description-1-b"></div>
@@ -202,7 +202,7 @@
                 <h2 class="bc-ferries-h2">
                     User Interviews: the Problem Space
                 </h2>
-                <p class="why-the-case-study-para">
+                <p class="why-the-case-study-para" id="user-interviews">
                     Before I even start designing and first conduct user interviews and walkthroughs.
                 </p>
                 <p> What type of user interviews? I spend a total of 6 hours on ferries conducting user interviews. I
@@ -220,7 +220,7 @@
                 <h2 class="bc-ferries-h2">
                     Mockups and Prototypes
                 </h2>
-                <p class="why-the-case-study-para">
+                <p class="why-the-case-study-para" id="mockups-and-protos">
                     Once the problem space is defined, we can begin designing and prototyping solutions
                 </p>
                 <p>
@@ -246,7 +246,7 @@
                 <h2 class="bc-ferries-h2">
                     Design and Development
                 </h2>
-                <p class="why-the-case-study-para">
+                <p class="why-the-case-study-para" id="design-and-deploy">
                     With a stellar design, development and iterative testing can begin.
                 </p>
                 <p>
@@ -268,7 +268,7 @@
                 <h2 class="bc-ferries-h2">
                     Deployement and Feedback
                 </h2>
-                <p class="why-the-case-study-para">
+                <p class="why-the-case-study-para" id="release">
                     With a beta version passing tests, the project can be deployed!
                 </p>
                 <p>
