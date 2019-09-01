@@ -25,12 +25,14 @@ body {
     padding: 1rem 1rem 1rem 1rem;
     border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
     box-shadow: 0px 5px 10px rgb(201, 201, 201);
-    transition: margin-top 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: top 0.3s ease, box-shadow 0.3s ease-in-out;
+    position: relative;
+    top: 0rem;
 
 }
 
 .text-container:hover {
-    margin-top: -0.1rem;
+    top: -0.2rem;
     box-shadow: 0px 5px 16px #32228a;
 }
 
@@ -270,4 +272,28 @@ body {
 }
 .left-side{
     margin-left: 1rem;
+}
+.user-interviews-img{
+    height: 26rem;
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+    /* margin-left: -4rem;
+    margin-right: -4rem; */
+    z-index: 22;
+    background-image: url(./src/assets/timelineuserinterviews.svg);
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+.design-img{
+    height: 26rem;
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+    /* margin-left: -4rem;
+    margin-right: -4rem; */
+    z-index: 22;
+    background-image: url(./src/assets/timelinemockupsdesign.svg);
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
 }
