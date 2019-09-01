@@ -36,39 +36,11 @@ function scrollTimeline() {
 function srollAnimationHandler(e) {
     var percentage_val;
     var ideal_height = 400;
-    var timeline  ={
-        elem: document.getElementById('timeline-id'),
-        animClass: "anim-class-t",
-        hasBeenTriggered: false,
-        animation_1: "timeline-s-1 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.0s 1 normal forwards",
-        animation_2: "timeline-s-2 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.0s 1 normal forwards",
-        animation_3: "timeline-s-3 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.0s 1 normal forwards",
-    }
-    var timeline_2 = {
-        elem: document.getElementById('timeline-2'),
-        animClass: "anim-class-t-2",
-        hasBeenTriggered: false,
-        animation: "timeline-2-anim 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.0s 1 normal forwards"
-    };
-    var timeline_3 = {
-        elem: document.getElementById('timeline-3'),
-        animClass: "anim-class-t-3",
-        hasBeenTriggered: false,
-        animation: "timeline-3-anim 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.0s 1 normal forwards"
-    };
-    var timeline_4 = {
-        elem: document.getElementById('timeline-4'),
-        animClass: "anim-class-t-4",
-        hasBeenTriggered: false,
-        animation: "timeline-4-anim 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.0s 1 normal forwards"
-    };
+    var { timeline_2, timeline_3, timeline_4, timeline } = setVars();
     if (window.timelineManager.isElementInViewport(e) && (e.getBoundingClientRect().top) <= ideal_height) {
         percentage_val = Math.abs(e.getBoundingClientRect().top - ideal_height);
         percentage_val = ((100 * percentage_val) / (ideal_height - 1));
-        console.log(percentage_val);
-        console.log(timeline_2.hasBeenTriggered, "before")
         if (timeline_2.hasBeenTriggered || timeline_3.hasBeenTriggered || timeline_4.hasBeenTriggered) {
-            console.log(timeline_2.hasBeenTriggered, "inIff")
             return false;
         } else
             if (percentage_val >= 8) {
@@ -78,7 +50,6 @@ function srollAnimationHandler(e) {
                 timeline_3.elem.style.animation = timeline_2.animation;
                 timeline_4.elem.style.animation = timeline_2.animation;
                 timeline.elem.style.animation = timeline.animation_1;
-                console.log(timeline_2.hasBeenTriggered);
 
                 setTimeout(function () {
                     timeline_3.hasBeenTriggered = true;
@@ -96,5 +67,35 @@ function srollAnimationHandler(e) {
             } else {
                 return false;
             }
+    }
+
+    function setVars() {
+        var timeline = {
+            elem: document.getElementById('timeline-id'),
+            animClass: "anim-class-t",
+            hasBeenTriggered: false,
+            animation_1: "timeline-s-1 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.0s 1 normal forwards",
+            animation_2: "timeline-s-2 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.0s 1 normal forwards",
+            animation_3: "timeline-s-3 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.0s 1 normal forwards",
+        };
+        var timeline_2 = {
+            elem: document.getElementById('timeline-2'),
+            animClass: "anim-class-t-2",
+            hasBeenTriggered: false,
+            animation: "timeline-2-anim 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.0s 1 normal forwards"
+        };
+        var timeline_3 = {
+            elem: document.getElementById('timeline-3'),
+            animClass: "anim-class-t-3",
+            hasBeenTriggered: false,
+            animation: "timeline-3-anim 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.0s 1 normal forwards"
+        };
+        var timeline_4 = {
+            elem: document.getElementById('timeline-4'),
+            animClass: "anim-class-t-4",
+            hasBeenTriggered: false,
+            animation: "timeline-4-anim 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.0s 1 normal forwards"
+        };
+        return { timeline_2, timeline_3, timeline_4, timeline };
     }
 }
