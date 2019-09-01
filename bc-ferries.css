@@ -71,6 +71,7 @@ body {
     height: 40rem;
     margin-top: 4rem;
     margin-bottom: 4rem;
+    margin-left: 6rem;
 }
 
 .timeline-init {
@@ -252,4 +253,15 @@ body {
     to {
         margin-top: 32rem;
     }
+}
+.des-t{
+    text-align: center;
+    margin-top: 1rem;
+}
+.sec-t{
+    text-align: center;
+    margin-top: 1rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.6rem;
 }
