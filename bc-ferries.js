@@ -36,7 +36,7 @@ function scrollTimeline() {
 function srollAnimationHandler(e) {
     var percentage_val;
     var ideal_height = 400;
-    var { timeline_2, timeline_3, timeline_4, timeline } = setVars();
+    var { timeline_2, timeline_3, timeline_4, timeline, description_1, description_2, description_3, description_4 } = setVars();
     if (window.timelineManager.isElementInViewport(e) && (e.getBoundingClientRect().top) <= ideal_height) {
         percentage_val = Math.abs(e.getBoundingClientRect().top - ideal_height);
         percentage_val = ((100 * percentage_val) / (ideal_height - 1));
@@ -50,18 +50,31 @@ function srollAnimationHandler(e) {
                 timeline_3.elem.style.animation = timeline_2.animation;
                 timeline_4.elem.style.animation = timeline_2.animation;
                 timeline.elem.style.animation = timeline.animation_1;
+                description_2.elem.style.animation = description_2.animation;
+                description_3.elem.style.animation = description_2.animation;
+                description_4.elem.style.animation = description_2.animation;
+                description_2.elem_path.style.animation = description_2.path_animation;
+                description_3.elem_path.style.animation = description_2.path_animation;
+                description_4.elem_path.style.animation = description_2.path_animation;
+
 
                 setTimeout(function () {
                     timeline_3.hasBeenTriggered = true;
                     timeline_3.elem.style.animation = timeline_3.animation;
                     timeline_4.elem.style.animation = timeline_3.animation;
                     timeline.elem.style.animation = timeline.animation_2;
+                    description_3.elem.style.animation = description_3.animation;
+                    description_4.elem.style.animation = description_3.animation;
+                    description_3.elem_path.style.animation = description_3.path_animation;
+                    description_4.elem_path.style.animation = description_3.path_animation;
 
                 }, 600);
                 setTimeout(function () {
                     timeline_4.hasBeenTriggered = true;
                     timeline_4.elem.style.animation = timeline_4.animation;
                     timeline.elem.style.animation = timeline.animation_3;
+                    description_4.elem.style.animation = description_4.animation;
+                    description_4.elem_path.style.animation = description_4.path_animation;
                 }, 1200)
                 return true;
             } else {
@@ -96,6 +109,34 @@ function srollAnimationHandler(e) {
             hasBeenTriggered: false,
             animation: "timeline-4-anim 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.0s 1 normal forwards"
         };
-        return { timeline_2, timeline_3, timeline_4, timeline };
+        var description_1 = {
+            elem: document.getElementById('timeline-description-1'),
+            elem_path: document.getElementById('timeline-description-1-b'),
+            hasBeenTriggered: false,
+            animation: "timeline-1-d-anim 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.0s 1 normal forwards",
+            path_animation: "timeline-1-d-p-anim 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.0s 1 normal forwards",
+        };
+        var description_2 = {
+            elem: document.getElementById('timeline-description-2'),
+            elem_path: document.getElementById('timeline-description-2-b'),
+            hasBeenTriggered: false,
+            animation: "timeline-2-d-anim 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.0s 1 normal forwards",
+            path_animation: "timeline-2-d-p-anim 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.0s 1 normal forwards",
+        };
+        var description_3 = {
+            elem: document.getElementById('timeline-description-3'),
+            elem_path: document.getElementById('timeline-description-3-b'),
+            hasBeenTriggered: false,
+            animation: "timeline-3-d-anim 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.0s 1 normal forwards",
+            path_animation: "timeline-3-d-p-anim 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.0s 1 normal forwards",
+        };
+        var description_4 = {
+            elem: document.getElementById('timeline-description-4'),
+            elem_path: document.getElementById('timeline-description-4-b'),
+            hasBeenTriggered: false,
+            animation: "timeline-4-d-anim 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.0s 1 normal forwards",
+            path_animation: "timeline-4-d-p-anim 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.0s 1 normal forwards",
+        };
+        return { timeline_2, timeline_3, timeline_4, timeline, description_1, description_2, description_3, description_4 };
     }
 }
