@@ -22,7 +22,7 @@ function scrollTimeline() {
     var timeline = document.getElementById(window.timelineManager._getID());
     }
     catch(err){
-        console.log("\x1b[33m","Warning: Window.timelineManager is not yet defined");
+        console.log("Warning: Window.timelineManager is not yet defined, error handled");
         return false;
     }
     srollAnimationHandler(timeline);
@@ -30,9 +30,18 @@ function scrollTimeline() {
 function srollAnimationHandler(e) {
     var percentage_val;
     var ideal_height = 400;
-    var timeline_2 = document.getElementById('timeline-2');
-    var timeline_3 = document.getElementById('timeline-3');
-    var timeline_4 = document.getElementById('timeline-4');
+    var timeline_2 = {
+        elem: document.getElementById('timeline-2'),
+        animClass: "anim-class-t-1"
+    };
+    var timeline_3 = {
+        elem: document.getElementById('timeline-3'),
+        animClass: "anim-class-t-2"
+    };
+    var timeline_4 = {
+        elem: document.getElementById('timeline-4'),
+        animClass: "anim-class-t-3"
+    };
     if (window.timelineManager.isElementInViewport(e) && (e.getBoundingClientRect().top) <= ideal_height) {
         percentage_val = Math.abs(e.getBoundingClientRect().top - ideal_height);
         percentage_val = ((100 * percentage_val) / (ideal_height - 1));
