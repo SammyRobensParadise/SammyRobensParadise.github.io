@@ -120,7 +120,7 @@
         <div class="col-sm-12">
             <h1 class="display-3">Engineering Projects, Year 1</h1>
             <h1 class="display-4">Exploring everything from app design to digital circuits and microcontrollers</h1>
-            <div class="">
+            <div class="yeet">
 
                 <div class="row">
                     <div class="col-sm-6">
@@ -143,9 +143,80 @@
                                 safe will open!
                             </p>
                             <div class="button-space">
-                                <a id="href-a-to-sammy"><button
-                                        class="button-des" id="portfolio-button">Find out how it works</button></a>
+                                <button class="button-des" id="screaming-button"
+                                    onclick="scrollToEl('how-it-works',null)">Find out how it works</button>
                             </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="text-container left-side" id="how-it-works">
+                            <h2 class="bc-ferries-h2">
+                                How it works
+                            </h2>
+                            <p class="why-the-safe-para">
+                                The screaming safe uses a number of hardware and software components. The main
+                                components are the, Arduino UNO microcontroller, the sound sensor and the laser cut box.
+                                A full parts list can be found in the <a
+                                    href="https://github.com/SammyRobensParadise/arduino-screaming/blob/master/README.md"
+                                    target="_blank">README file</a>.
+                            </p>
+                            <p>
+                                The safe contains an arduino board that is programmed to detect a signal sent from the
+                                sound sensor whenever a sound above a specifc threshold is detected by the speaker.
+                                when a sound is detected a software interrupt <code>void sound()</code> is triggered. in
+                                the interrupt the code checks if the current time corresponds to the internal timer
+                                scaled to 30 seconds
+                                using the <code>ISR(TIMER2_OVF_vect)</code> interrupt. If the time matches, it will
+                                update the unlocked state. if all states are <code>true</code> then the safe will unlock
+                                by activating a servo motor.
+                                For more details about how the code works check out the <a
+                                    href="https://github.com/SammyRobensParadise/arduino-screaming/blob/master/README.md"
+                                    target="_blank">README file</a>.
+                            </p>
+                            <div class="button-space">
+                                <a href="https://github.com/SammyRobensParadise/arduino-screaming" target="_blank">
+                                    <button class="button-des" id="screaming-button">Check out the source code</button>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="user-trigger-img "></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <iframe class="arduino-screaming-embed" src="arduino_screaming.html">It Looks like your browser
+                            does not support the <code>iframe tag :(</code></iframe>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="text-container">
+                            <h2 class="bc-ferries-h2">
+                                Photo Gallery
+                            </h2>
+                            <p class="why-the-safe-para">
+                                Check out the photo gallery of the completed project!
+                            </p>
+                            <div class="button-space">
+                                <a href="https://www.flickr.com/photos/184079531@N08/albums/72157710664499506" target="_blank">
+                                    <button class="button-des" id="screaming-button">Explore Photos</button>
+                                </a>
+                                </div>
+                            <p>
+                                The facts:
+                                <ul>
+                                    <li>289 lines of code</li>
+                                    <li>3 interrupts</li>
+                                    <li>21 hours of work</li>
+                                    <li>31 commits</li>
+                                </ul>
+                            </p>
+
 
                         </div>
                     </div>

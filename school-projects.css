@@ -69,3 +69,20 @@ body {
 .button-des:hover {
     background-color: #7164b9;
 }
+.left-side{
+    margin-left: 2rem;
+}
+.arduino-screaming-embed{
+    height: 19rem;
+    background-size: contain;
+    width: 95%;
+    background-repeat: no-repeat;
+    /* margin-left: -4rem;
+    margin-right: -4rem; */
+    z-index: 22;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+}
