@@ -101,3 +101,15 @@ body {
 .spacer{
     height: 6rem;
 }
+.user-trigger-img-gangl{
+    height: 26rem;
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+    /* margin-left: -4rem;
+    margin-right: -4rem; */
+    z-index: 22;
+    background-image: url(./src/assets/gangl.svg);
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+}
