@@ -114,14 +114,56 @@ body {
     margin-bottom: 1rem;
 }
 .user-mountains{
-    height: 1366px;
-    background-size: contain;
+    text-align:  center;
+    height: 768px;
+    background-size: cover;
     width: 100%;
     background-repeat: no-repeat;
     /* margin-left: -4rem;
     margin-right: -4rem; */
     z-index: 22;
     background-image: url(./src/assets/montainsback.svg);
+    padding-bottom: 2rem;
+}
+.user-mountains-trees{
+    height: 768px;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    /* margin-left: -4rem;
+    margin-right: -4rem; */
+    z-index: 22;
+    background-image: url(./src/assets/trees.svg);
+    padding-bottom: 2rem;
+}
+.user-mountains-rocks{
+    height: 768px;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    /* margin-left: -4rem;
+    margin-right: -4rem; */
+    z-index: 22;
+    background-image: url(./src/assets/rocks.svg);
+    padding-bottom: 2rem;
+}
+.bold-text-mountains{
+    top: 25rem;
+    position: relative;
+    color: #fff;
+}
+.second-section{
+    background-color: #E6E6E6;
+}
+.personal-image{
+    height: 26rem;
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+    /* margin-left: -4rem;
+    margin-right: -4rem; */
+    z-index: 22;
+    background-image: url(./src/assets/sammypic.svg);
     padding-bottom: 2rem;
     margin-bottom: 1rem;
 }
