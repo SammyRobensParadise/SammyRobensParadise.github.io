@@ -502,3 +502,19 @@ footer {
 .cp {
     margin-top: 2rem;
 }
+.mobile-support-coming{
+    position: fixed;
+    padding-top: 1rem;
+    bottom: 0rem;
+    height: 10rem;
+    width: 100%;
+    background-color: #e4e4e4;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+@media screen and (max-width:480px){
+    .mobile-support-coming{
+        height: 12rem;
+    }
+}

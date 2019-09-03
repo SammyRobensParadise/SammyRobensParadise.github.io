@@ -168,3 +168,7 @@ function scrollInWork() {
         seventhEl.target_elem.style.animation = slide_in_left_2;
     }
 }
+function hideModal(e){
+    var warningEl = document.getElementById(e);
+    warningEl.style.display = 'none';
+}
