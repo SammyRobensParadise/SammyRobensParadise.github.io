@@ -1,121 +1,115 @@
-/*CSS CREATED BY SAMMY ROBENS-PARADISE
-    CURRENT AS OF: 2018-06-29
-*/
-html,body
-{
-    width: 100%;
-    height: 100%;
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+html,
+body {
     margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+    padding: 0px !important;
+    overflow-x: hidden !important;
+    font-family: 'Montserrat', sans-serif !important;
+    scroll-behavior: smooth !important;
 }
-body{
-    background-color: #0d0d0d;
+
+body {
+    overflow-y: hidden;
 }
-.navbar-brand {
-    color: #333 !important;
+
+.text-container {
+    background-color: #fff;
+    margin-top: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    box-shadow: 0px 5px 10px rgb(201, 201, 201);
+    transition: top 0.3s ease, box-shadow 0.3s ease-in-out;
+    position: relative;
+    top: 0rem;
+
 }
-.lead{
-}
-.col-sm-12{
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-}
-.row{
-    margin-right: 0 !important;
-}
-h1{
-    text-align: center;
-}
-.landing-image{
-    background-image: url("src/assets/website-coverimage2.png");
-    height: 30rem;
-    background-size: cover;
+
+.user-trigger-img {
+    height: 26rem;
+    background-size: contain;
     width: 100%;
     background-repeat: no-repeat;
-   /* margin-left: -4rem;
+    /* margin-left: -4rem;
     margin-right: -4rem; */
     z-index: 22;
-     
-}
-.landing-text{
-
-    top: 5rem;
-    background: -webkit-linear-gradient(#333, rgb(192, 190, 190));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-right: 1rem;
-    padding: 2rem;
-}
-@media screen and (max-width: 400px){
-    .landing-text{
-        top: 0rem;
-    }
-}
-.landing-text-sub{
-
-    top: 10rem;
-    background: -webkit-linear-gradient(rgb(192, 190, 190),rgb(212, 210, 210) );
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.nav-link {
+    background-image: url(./src/assets/isometric\ design\ safe.svg);
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
-.nav-link:hover {
-    color: #32228a;
+.text-container:hover {
+    top: -0.2rem;
+    box-shadow: 0px 5px 16px #32228a;
+}
+
+.hov:hover {
     cursor: pointer;
 }
 
-.navbar.navbar-default {
-    background-color: #ffffff;
-    opacity: 0.7;
-    box-shadow: 0px 0.3px #ffff;
-}
-.navbar-toggler{
-    background-color: grey !important;
-}
-.center {
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
-.section-about{
-   margin-top: -1rem;
-    background-color: #0d0d0d;
-    width: 100%;
-}
-.container{
-    background-color: #0d0d0d;
-}
-.card-body{
-    background-color: #f4f8fc;
-}
-.card{
-    background-color: #f4f8fc;
-    margin-bottom: 2rem;
-}
-
-.ul {
-    list-style-type: disc;
-}
-
-
-
-h3 {
-    color: #ffff !important;
+.button-des {
+    background-color: #32228a;
+    border: none;
     color: white;
-}
-.bottom-padding{
+    width: 20rem;
     height: 3rem;
-    background-color: #0d0d0d;
-    margin-top: -0.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 8px;
+    cursor: pointer;
 }
-footer{
-    background-color: #0d0d0d;
-    padding-bottom: -5rem;
+
+.button-space {
+    text-align: center;
+}
+
+.button-des:hover {
+    background-color: #7164b9;
+}
+.left-side{
+    margin-left: 2rem;
+}
+.arduino-screaming-embed{
+    height: 19rem;
+    background-size: contain;
+    width: 95%;
+    background-repeat: no-repeat;
+    /* margin-left: -4rem;
+    margin-right: -4rem; */
+    z-index: 22;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+}
+.user-trigger-img-top{
+    height: 26rem;
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+    /* margin-left: -4rem;
+    margin-right: -4rem; */
+    z-index: 22;
+    background-image: url(./src/assets/topdown.svg);
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+.spacer{
+    height: 6rem;
+}
+.user-trigger-img-gangl{
+    height: 26rem;
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+    /* margin-left: -4rem;
+    margin-right: -4rem; */
+    z-index: 22;
+    background-image: url(./src/assets/gangl.svg);
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
 }
