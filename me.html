@@ -25,7 +25,7 @@
     <link rel="shortcut icon" href="./favicon.ico" />
     <!-- Intern al main Stylesheet-->
     <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="school-projects.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="me.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -119,7 +119,7 @@
     <div class="row">
         <div class="col-sm-12">
             <h1 class="display-3">Sammy Robens-Paradise</h1>
-            <h1 class="display-4">Systems Design, UX design, UI design and other nonsense</h1>
+            <h1 class="display-4">Systems Design, UX design, UI design and other nifty ideas</h1>
             <div class="yeet">
 
                 <div class="row">
@@ -129,64 +129,30 @@
                     <div class="col-sm-6">
                         <div class="text-container">
                             <h2 class="bc-ferries-h2">
-                                Arduino Screaming Safe
+                                I study Systems Design Engineering
                             </h2>
                             <p class="why-the-safe-para">
-                                The arduino screaming safe is, yes, safe that will only open if you scream the correct
-                                combination.
+                                In other words, I study the way humans interact with technology.
                             </p>
-                            <p> <a href="https://github.com/SammyRobensParadise/arduino-screaming">Arduino Screaming</a>
-                                is a final project for <a href="https://uwflow.com/course/syde192" target="_blank">SYDE
-                                    192</a>.
-                                To open the safe you must "scream" at the safe at the correct times (in seconds)
-                                coresponding to the combination that you set. if the the screaming time is correct, the
-                                safe will open!
-                            </p>
+                            <p>
+                                Every day we interact with douzens of different systems, from the traffic system on your
+                                commute, to your email inbox - All of these systems play a role in our every day lives.
+                                At a macro level, I study the way that all of these vastly complex systems interact with
+                                their environment, whether that is humans, animals or other systems.
+                                Systems engineering combines all aspects of modern engineering to construct, visualize
+                                and improve the way we experience the world, and beyond. 🚀
+                            </p><a href="https://uwaterloo.ca/systems-design-engineering/about-systems-design-engineering/what-systems-design-engineering" target="_blank">Learn about Systems...</a></p>
                             <div class="button-space">
                                 <button class="button-des" id="screaming-button"
-                                    onclick="scrollToEl('how-it-works',null)">Find out how it works</button>
+                                    onclick="scrollToEl('next-sec',null)">Learn more</button>
                             </div>
 
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6">
-                        <div class="text-container left-side" id="how-it-works">
-                            <h2 class="bc-ferries-h2">
-                                How Arduino Screaming Works
-                            </h2>
-                            <p class="why-the-safe-para">
-                                The screaming safe uses a number of hardware and software components. The main
-                                components are the, Arduino UNO microcontroller, the sound sensor and the laser cut box.
-                                A full parts list can be found in the <a
-                                    href="https://github.com/SammyRobensParadise/arduino-screaming/blob/master/README.md"
-                                    target="_blank">README file</a>.
-                            </p>
-                            <p>
-                                The safe contains an arduino board that is programmed to detect a signal sent from the
-                                sound sensor whenever a sound above a specifc threshold is detected by the speaker.
-                                when a sound is detected a software interrupt <code>void sound()</code> is triggered. in
-                                the interrupt the code checks if the current time corresponds to the internal timer
-                                scaled to 30 seconds
-                                using the <code>ISR(TIMER2_OVF_vect)</code> interrupt. If the time matches, it will
-                                update the unlocked state. if all states are <code>true</code> then the safe will unlock
-                                by activating a servo motor.
-                                For more details about how the code works check out the <a
-                                    href="https://github.com/SammyRobensParadise/arduino-screaming/blob/master/README.md"
-                                    target="_blank">README file</a>.
-                            </p>
-                            <div class="button-space">
-                                <a href="https://github.com/SammyRobensParadise/arduino-screaming" target="_blank">
-                                    <button class="button-des" id="screaming-button">Check out the source code</button>
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="user-trigger-img-top"></div>
+                    <div class="col-sm-12" id="next-sec">
+                        <div class="user-mountains"></div>
                     </div>
                 </div>
                 <div class="spacer"></div>
@@ -198,7 +164,7 @@
                     <div class="col-sm-6">
                         <div class="text-container">
                             <h2 class="bc-ferries-h2">
-                               Safe, Photo Gallery
+                                Safe, Photo Gallery
                             </h2>
                             <p class="why-the-safe-para">
                                 Check out the photo gallery of the completed project!
@@ -231,12 +197,20 @@
                                 Gangl, Design Case Study
                             </h2>
                             <p class="why-the-safe-para">
-                                in 2017, 90% of students reported that they were stressed and overworked during their post-secondary education. the Gangl App, is a platform designed and prototyped to combat stress caused by workload in undergraduate students.
+                                in 2017, 90% of students reported that they were stressed and overworked during their
+                                post-secondary education. the Gangl App, is a platform designed and prototyped to combat
+                                stress caused by workload in undergraduate students.
                             </p>
                             <p>
-                                The app was designed and prototyped using marvel design studio. the project followed the iterative design process to the book. it begain with the definition of a problem statement, identificaiton of key stakeholders and users and intensive reseach.
-                                A QFD and various other design tools were used to quantify specific aspects of the design. finally the project was iterativly designed from low fidelity, through high fidelity prototypes. It was presented as a final high fidelity prototype at the end of the term.
-                                Interested in learning more? <a href="./src/assets/Gangl_161_Final_Report.pdf" target="_blank">View the full report</a>.
+                                The app was designed and prototyped using marvel design studio. the project followed the
+                                iterative design process to the book. it begain with the definition of a problem
+                                statement, identificaiton of key stakeholders and users and intensive reseach.
+                                A QFD and various other design tools were used to quantify specific aspects of the
+                                design. finally the project was iterativly designed from low fidelity, through high
+                                fidelity prototypes. It was presented as a final high fidelity prototype at the end of
+                                the term.
+                                Interested in learning more? <a href="./src/assets/Gangl_161_Final_Report.pdf"
+                                    target="_blank">View the full report</a>.
                             </p>
                             <div class="button-space">
                                 <a href="https://www.youtube.com/watch?v=QaixSsK434s" target="_blank">
