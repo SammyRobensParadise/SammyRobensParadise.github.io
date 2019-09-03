@@ -1,0 +1,28 @@
+{
+  "name": "sammyrp",
+  "version": "1.0.0",
+  "description": "scripts for building and cleaning",
+  "main": "index.js",
+  "dependencies": {
+    "animejs": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test",
+    "git": "git add . && git commit -m",
+    "postgit":  "git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SammyRobensParadise/SammyRobensParadise.github.io.git"
+  },
+  "keywords": [
+    "scripts"
+  ],
+  "author": "Sammy Robens-Paradise",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SammyRobensParadise/SammyRobensParadise.github.io/issues"
+  },
+  "homepage": "https://github.com/SammyRobensParadise/SammyRobensParadise.github.io#readme"
+}

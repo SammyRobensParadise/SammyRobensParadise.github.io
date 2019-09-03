@@ -1,6 +1,5 @@
 <!--index.HTML DOCUMENT ___________________________-->
 <!--CREATED INDEPENDANTLY BY: SAMMY ROBENS-PARADISE-->
-<!--CURRENT AS OF: 2018-06-29______________________-->
 
 <!DOCTYPE html>
 <html>
@@ -8,7 +7,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sammy Robens-Paradise</title>
+    <title>Home | Sammy Robens-Paradise</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -26,36 +25,25 @@
     <link rel="shortcut icon" href="./favicon.ico" />
     <!-- Intern al main Stylesheet-->
     <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="bootstrap-social.css" />
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-
+        </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+        </script>
     <!-- Internal JavaScript main.js file-->
-    <script src="index.js"></script>
+
 </head>
-<!--BEGINNING OF THE BODY OF THE HTML DOCUMENT-->
 
 <body>
-    <!--SPLASH SCREEN-->
-
     <!--THIS IS THE TOP STICKY NAVIGATION BAR-->
-    <nav class="navbar navbar-expand-md navbar-fixed-top navbar-default ">
+    <nav class="navbar navbar-expand-md navbar-fixed-top navbar-default fixed-top navigation-tag">
         <a class="navbar-brand active" href="index.html">
             Home
         </a>
@@ -70,16 +58,13 @@
                     <a class="nav-link" id="navbar_projects" href="https://sammy.world" target="_blank">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="navbar_dribbble" href="https://dribbble.com/sammyrp" target="_blank">Dribbble</a>
+                    <a class="nav-link" id="navbar_dribbble" href="https://dribbble.com/sammyrp"
+                        target="_blank">Dribbble</a>
                 </li>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./src/assets/resumeV16.pdf" download="Sammy Robens-Paradise Resume"
                         id="navbar_resume">Resume</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./creations.html"
-                        id="navbar_resume">Creations</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./me.html" id="navbar_whos_sammy">Who's Sammy</a>
@@ -128,63 +113,219 @@
     <!--END OF MODAL SECTION-->
 
     <!--THE FOLLOWING SECTION IS THE LANDING PAGE-->
+    <div class="navigation-padding"></div>
     <div class="row">
         <div class="col-sm-12">
-            <h1 class="justify-content-center landing-text display-2">Sammy Robens-Paradise</h1>
-            <h1 class="justify-content-center landing-text-sub display-4">Systems Design Engineering</h1>
+            <h1 class="justify-content-center landing-text anim-typewriter display-3">A creative west coast kid.</h1>
+            <h1 class="justify-content-center landing-text-sub display-4">
+                <stringname>S</stringname>
+                <stringname>a</stringname>
+                <stringname>m</stringname>
+                <stringname>m</stringname>
+                <stringname>y</stringname>
+                <stringname>R</stringname>
+                <stringname>o</stringname>
+                <stringname>b</stringname>
+                <stringname>e</stringname>
+                <stringname>n</stringname>
+                <stringname>s</stringname>
+                <stringname>-</stringname>
+                <stringname>P</stringname>
+                <stringname>a</stringname>
+                <stringname>r</stringname>
+                <stringname>a</stringname>
+                <stringname>d</stringname>
+                <stringname>i</stringname>
+                <stringname>s</stringname>
+                <stringname>e</stringname>
+            </h1>
             <div class="landing-image">
+                <div class="row">
+                    <div class="col-sm-6"></div>
+                    <div class="col-sm-6">
+                        <div class="landing-page-content">
+                            <p class="find-out-what-working-on">Find out what I've been working on!</p>
+                            <button class="button-des" id="projects-button"
+                                onclick="scrollToEl('projects',null)">Projects</button>
+                            <a id="href-a-to-sammy" href="https://sammy.world" target="_blank"><button
+                                    class="button-des" id="portfolio-button">Portfolio</button></a>
+                            <button class="button-des" id="work-button" onclick="scrollToEl('work',null)">Work</button>
+                            <a id="href-a-to-resume-dwld" href="./src/assets/resumeV16.pdf" target="_blank"><button
+                                    class="button-des" id="cv-button">Resume/CV</button></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="local-content" id="local-content-contain">
+        <div class="localbackground-img">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="projects-header display-4" id="projects">Projects</h1>
+                </div>
+            </div>
+            <div class=row>
+                <div class="container" id="bc-ferries-container">
+                    <a href="bc-ferries-redesign.html">
+                        <div class="col-sm-12 projects-section-bc-ferries" id="bc-ferries-sec">
+
+                            <div class="bc-ferries-section">
+                                <h2 class="section-p">BC Ferries Case Study - Fall 2019</h2>
+                                <p class="section-p">A case study and redesign of the BC Ferries digital experience from
+                                    user
+                                    interviews to cloud functions!</p>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class=row>
+                <div class="container" id="portfolio-container">
+                    <a href="portfolio.html">
+                        <div class="col-sm-12 projects-section-portfolio" id="portfolio-sec">
+                            <div class="portfolio-spring-2019">
+                                <h2 class="section-p">Portfolio - Spring 2019</h2>
+                                <p class="section-p">Check out my Spring 2019 portfolio built from the ground up using
+                                    react.js
+                                    and
+                                    nifty design concepts!</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class=row>
+                <div class="container" id="eb-web-container">
+                    <a href="https://emilybandel.github.io/webpage-application/" target="_blank">
+                        <div class="col-sm-12 projects-section-eb-web" id="eb-web-sec">
+                            <div class="eb-web-fall-2018">
+                                <h2 class="section-p">EB Web Design - Fall 2018</h2>
+                                <p class="section-p">A react.js web app designed for an actress based out of vancouver
+                                    featuring
+                                    her
+                                    fall 2018 reel and bio!</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class=row>
+                <div class="container" id="school-container">
+                    <a href="school-projects.html">
+                        <div class="col-sm-12 projects-section-school-rel" id="school-sec">
+                            <div class="school-rel-2017-2019">
+                                <h2 class="section-p">School Projects - First Year</h2>
+                                <p class="section-p">A collection of my first year projects from Systems Design
+                                    Engieering,
+                                    at
+                                    UWaterloo!</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="work-header display-4" id="work">Work</h1>
+                </div>
+            </div>
+            <div class=row>
+                <div class="container" id="hootsuite-container">
+                    <a href="https://hootsuite.com">
+                        <div class="col-sm-12 work-section-hootsuite" id="hootsuite-sec">
+                            <div class="hootsuite-section">
+                                <h2 class="section-p">Hootsuite - Fall 2019</h2>
+                                <p class="section-p">Incomming Software Developer at Hootsuite, Plan and Create Team,
+                                    beginning
+                                    September 2019!</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class=row>
+                <div class="container" id="ffsatg-container">
+                    <a href="./finger-food-atg-projects.html">
+                        <div class="col-sm-12 work-section-ffatg" id="ffsatg-sec">
+                            <div class="ffatg-section">
+                                <h2 class="section-p">Finger Food Advanced Technology Group - 2018/2019</h2>
+                                <p class="section-p">A look at my projects and contributions during my time as QA Lead
+                                    at
+                                    Finger
+                                    Food!</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class=row>
+                <div class="container" id="eccc-container">
+                    <a href="https://www.canada.ca/en/environment-climate-change/corporate/mandate.html">
+                        <div class="col-sm-12 work-section-eccc" id="eccc-sec">
+                            <div class="eccc-section">
+                                <h2 class="section-p">Environment and Climate Change Canada - Winter 2018</h2>
+                                <p class="section-p">Worked on the software infrastructure behind
+                                    Canada's Climate battle!</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="section-link-out">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 d-flex justify-content-center">
-                    <div class="card" style="width: 100%;">
-                        <a href="https://sammy.world" target="_blank"><img class="card-img-top"
-                                src="./src/assets/meta-card-portfolio@2x.png" alt="Card image cap"></a>
-                        <div class="card-body">
-                            <p class="card-text">Explore my portfolio, <b>Design & Develop with Me</b> featuring custom
-                                design, projects, work and more... <code>beta version 0.1</code></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 d-flex justify-content-center">
-                    <div class="card" style="width: 100%;">
-                        <a href="./src/assets/resumeV16.pdf" download="Sammy Robens-Paradise Resume"><img
-                                class="card-img-top" src="./src/assets/ResumeImage.png" alt="Card image cap"></a>
-                        <div class="card-body">
-                            <p class="card-text align-items-center">Get straight to it and check out my <b>Résumé</b>...
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 d-flex justify-content-center">
-                    <div class="card" style="width: 100%;">
-                        <a href="./creations.html"><img class="card-img-top" src="./src/assets/Artworkcardcover.png"
-                                alt="Card image cap"></a>
-                        <div class="card-body">
-                            <p class="card-text">Showcase of some little designs and custom vectors <b>created by
-                                    me...</b></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 d-flex justify-content-center">
-                    <div class="card" style="width: 100%;">
-                        <a href="./me.html"><img class="card-img-top"
-                                src="./src/assets/aboutsammy.png" alt="Card image cap"></a>
-                        <div class="card-body">
-                            <p class="card-text align-items-center">A little history about <b>me</b>...</p>
-                        </div>
-                    </div>
+                <div class="col-sm-12">
+                    <p class="section-p cp"> <b>©</b> Sammy Robens-Paradise 2019 | <a
+                            href="mailto:srobensparradise@gmail.com">srobensparadise@gmail.com</a></p>
+                    <p class="section-p cp">Last updated: <lastupdated id="last-updated"></lastupdated>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
+    <div class="mobile-support-coming" id="mobile-coming">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="center-text">
+                    <p>Hi there! I've just pushed a UI overhaul ☁️, and I hope you enjoy it! Not to worry, mobile scaling
+                        is on it's way. In the meantime, check out what's new!</p>
+                        <div class="button-space modal-button">
+                                <button class="button-des" id="close-dialog"
+                                    onclick="hideModal('mobile-coming')">Ok, got it thanks!</button>
+                            </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
     <div class="bottom-padding"></div>
+    <script src="index.js"></script>
+    <script>
+        window.bc_ferries_viewer = new ViewHandler("bc-ferries-anim-class", "bc-ferries-sec");
+        function onVisibilityChange() {
+            var old_visible;
+            return function () {
+                var visible = window.bc_ferries_viewer.isElementInViewport(window.bc_ferries_viewer.el_id);
+                if (visible != old_visible) {
+                    old_visible = visible;
+                    if (typeof callback == 'function') {
+                        callback();
+                    }
+                }
+            }
+        }
+
+        var handler = onVisibilityChange(function () {
+            return false;
+        });
+
+    </script>
+
 </body>
 
 </html>

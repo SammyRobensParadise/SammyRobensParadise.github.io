@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Who's Sammy | Sammy Robens-Paradise</title>
+    <title>School Projects | Sammy Robens-Paradise</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -25,7 +25,7 @@
     <link rel="shortcut icon" href="./favicon.ico" />
     <!-- Intern al main Stylesheet-->
     <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="me.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="school-projects.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -40,7 +40,7 @@
         </script>
     <!-- Internal JavaScript main.js file-->
     <script src="index.js"></script>
-    <script src="me.js"></script>
+    <script src="portfolio.js"></script>
 </head>
 
 <body>
@@ -118,8 +118,8 @@
     <div class="navigation-padding"></div>
     <div class="row">
         <div class="col-sm-12">
-            <h1 class="display-3">Sammy Robens-Paradise</h1>
-            <h1 class="display-4">Systems Design, UX design, UI design and other nifty ideas</h1>
+            <h1 class="display-3">Engineering Projects, Year 1</h1>
+            <h1 class="display-4">Exploring everything from app design to digital circuits and microcontrollers</h1>
             <div class="yeet">
 
                 <div class="row">
@@ -129,63 +129,124 @@
                     <div class="col-sm-6">
                         <div class="text-container">
                             <h2 class="bc-ferries-h2">
-                                I study Systems Design Engineering
+                                Arduino Screaming Safe
                             </h2>
                             <p class="why-the-safe-para">
-                                In other words, I study the way humans interact with technology.
+                                The arduino screaming safe is, yes, safe that will only open if you scream the correct
+                                combination.
                             </p>
-                            <p>
-                                Every day we interact with douzens of different systems, from the traffic system on your
-                                commute, to your email inbox - All of these systems play a role in our every day lives.
-                                At a macro level, I study the way that all of these vastly complex systems interact with
-                                their environment, whether that is humans, animals or other systems.
-                                Systems engineering combines all aspects of modern engineering to construct, visualize
-                                and improve the way we experience the world, and beyond. 🚀
-                            </p><a
-                                href="https://uwaterloo.ca/systems-design-engineering/about-systems-design-engineering/what-systems-design-engineering"
-                                target="_blank">Learn about Systems...</a></p>
+                            <p> <a href="https://github.com/SammyRobensParadise/arduino-screaming">Arduino Screaming</a>
+                                is a final project for <a href="https://uwflow.com/course/syde192" target="_blank">SYDE
+                                    192</a>.
+                                To open the safe you must "scream" at the safe at the correct times (in seconds)
+                                coresponding to the combination that you set. if the the screaming time is correct, the
+                                safe will open!
+                            </p>
                             <div class="button-space">
                                 <button class="button-des" id="screaming-button"
-                                    onclick="scrollToEl('next-sec',null)">Learn more about me</button>
+                                    onclick="scrollToEl('how-it-works',null)">Find out how it works</button>
                             </div>
 
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-12" id="next-sec">
-                        <div class="user-mountains">
-                            <div class="user-mountains-trees">
-                                <div class="user-mountains-rocks">
-                                    <h2 class="display-4 bold-text-mountains">From Vancouver BC, ventrue everywhere</h2>
-                                </div>
+                    <div class="col-sm-6">
+                        <div class="text-container left-side" id="how-it-works">
+                            <h2 class="bc-ferries-h2">
+                                How Arduino Screaming Works
+                            </h2>
+                            <p class="why-the-safe-para">
+                                The screaming safe uses a number of hardware and software components. The main
+                                components are the, Arduino UNO microcontroller, the sound sensor and the laser cut box.
+                                A full parts list can be found in the <a
+                                    href="https://github.com/SammyRobensParadise/arduino-screaming/blob/master/README.md"
+                                    target="_blank">README file</a>.
+                            </p>
+                            <p>
+                                The safe contains an arduino board that is programmed to detect a signal sent from the
+                                sound sensor whenever a sound above a specifc threshold is detected by the speaker.
+                                when a sound is detected a software interrupt <code>void sound()</code> is triggered. in
+                                the interrupt the code checks if the current time corresponds to the internal timer
+                                scaled to 30 seconds
+                                using the <code>ISR(TIMER2_OVF_vect)</code> interrupt. If the time matches, it will
+                                update the unlocked state. if all states are <code>true</code> then the safe will unlock
+                                by activating a servo motor.
+                                For more details about how the code works check out the <a
+                                    href="https://github.com/SammyRobensParadise/arduino-screaming/blob/master/README.md"
+                                    target="_blank">README file</a>.
+                            </p>
+                            <div class="button-space">
+                                <a href="https://github.com/SammyRobensParadise/arduino-screaming" target="_blank">
+                                    <button class="button-des" id="screaming-button">Check out the source code</button>
+                                </a>
                             </div>
+
                         </div>
+
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="user-trigger-img-top"></div>
                     </div>
                 </div>
-                <div class="row second-section">
+                <div class="spacer"></div>
+                <div class="row">
                     <div class="col-sm-6">
-                        <div class="personal-image"></div>
+                        <iframe class="arduino-screaming-embed" src="arduino_screaming.html">It Looks like your browser
+                            does not support the <code>iframe tag :(</code></iframe>
                     </div>
                     <div class="col-sm-6">
                         <div class="text-container">
                             <h2 class="bc-ferries-h2">
-                                Technology is our most powerful tool.
+                               Safe, Photo Gallery
                             </h2>
                             <p class="why-the-safe-para">
-                                We have a responsability to use it to improve the lives of all people, and the
-                                environment.
+                                Check out the photo gallery of the completed project!
                             </p>
-                            <p>As someone who advocates optimized engineering solutions, I continue on my journey to
-                                find the most eloquent and beautiful solutions to the worlds most challening problems. I
-                                have always taken an interest in the way humans interact with technology, and more
-                                specifically, the way it shapes our experiences.</p>
                             <div class="button-space">
-                                <a href="https://www.linkedin.com/in/sammy-robens-paradise/" target="_blank">
-                                    <button class="button-des" id="screaming-button">Linkedin</button>
+                                <a href="https://www.flickr.com/photos/184079531@N08/albums/72157710664499506"
+                                    target="_blank">
+                                    <button class="button-des" id="screaming-button">Explore Photos</button>
+                                </a>
+                            </div>
+                            <p>
+                                The facts:
+                                <ul>
+                                    <li>289 lines of code</li>
+                                    <li>3 interrupts</li>
+                                    <li>28 hours of work</li>
+                                    <li>31 commits</li>
+                                </ul>
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="text-container left-side" id="how-it-works">
+                            <h2 class="bc-ferries-h2">
+                                Gangl, Design Case Study
+                            </h2>
+                            <p class="why-the-safe-para">
+                                in 2017, 90% of students reported that they were stressed and overworked during their post-secondary education. the Gangl App, is a platform designed and prototyped to combat stress caused by workload in undergraduate students.
+                            </p>
+                            <p>
+                                The app was designed and prototyped using marvel design studio. the project followed the iterative design process to the book. it begain with the definition of a problem statement, identificaiton of key stakeholders and users and intensive reseach.
+                                A QFD and various other design tools were used to quantify specific aspects of the design. finally the project was iterativly designed from low fidelity, through high fidelity prototypes. It was presented as a final high fidelity prototype at the end of the term.
+                                Interested in learning more? <a href="./src/assets/Gangl_161_Final_Report.pdf" target="_blank">View the full report</a>.
+                            </p>
+                            <div class="button-space">
+                                <a href="https://www.youtube.com/watch?v=QaixSsK434s" target="_blank">
+                                    <button class="button-des" id="screaming-button">Check out the video</button>
                                 </a>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="user-trigger-img-gangl"></div>
                     </div>
                 </div>
             </div>
@@ -204,7 +265,7 @@
         </div>
     </div>
     <div class="bottom-padding"></div>
-    <script src="me.js"></script>
+    <script src="portfolio.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
 </body>
 

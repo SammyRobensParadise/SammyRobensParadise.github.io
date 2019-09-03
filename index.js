@@ -2,292 +2,173 @@
 //Functions written by:      //
 //Samuel Robens-Paradise     //
 //srobensp@edu.uwaterloo.ca  //
-//Latest Update: 2018-06-29  //
-//version 0.1.0              //
-//***************************//
-//beginning of index.js file//
-/*
-$(function () {
 
-    //Enable ToolTip feature
-    $(document).ready(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-    });
-    //open and scroll to resume section
-    $('#resume').click(function () {
-        $.fn.closeResume();
-        toggleResumeText(this);
-        scrollTo('#div_resume');
-    });
-    //close the resume section
-    $('#close_resume').click(function () {
-        $.fn.closeResume();
-        toggleResumeText('#resume');
-    });
-    //open go exploring options and toggle 'go exploring button' text
-    $('#goExploring').click(function () {
-        $('#div_goExploring').slideToggle(1000);
-        if ($('.about').css('visibility') == 'visible') {
-            $.fn.closeText();
+
+window.addEventListener("load", setGlobalVars);
+
+function setGlobalVars() {
+    window.data_handler = new WebHandler(true, "github");
+    window.bc_ferries_viewer = new ViewHandler("bc-ferries-anim-class", "bc-ferries-container", "bc-ferries-sec");
+    window.portfolio_viewer = new ViewHandler("portfolio-anim-class", "portfolio-container", "portfolio-sec");
+    window.eb_viewer = new ViewHandler("eb-web-anim-class", "eb-web-container", "eb-web-sec");
+    window.school_viewer = new ViewHandler("school-anim-class", "school-container", "school-sec")
+    window.hootsuite_viewer = new ViewHandler("hootsuite-anim-class", "hootsuite-container", "hootsuite-sec");
+    window.ffsatg_viewer = new ViewHandler("ffsatg-anim-class", "ffsatg-container", "ffsatg-sec");
+    window.eccc_viewer = new ViewHandler("eccc-anim-class", "eccc-container", "eccc-sec");
+    window.data_handler._getDataFromGithub("github");
+}
+//scroll to elemt-smooth
+//the function takes an optional param called cb
+// if cb is a callback function then it is returned by the function in calling
+// if using without a callback, then pass null to be safe
+function scrollToEl(e, cb) {
+    let el = document.getElementById(e);
+    el.scrollIntoView({ behavior: 'smooth' })
+    if (isFunction(cb)) {
+        return cb();
+    }
+}
+// check if variable is a function
+function isFunction(functionToCheck) {
+    return functionToCheck && {}.toString.call(functionToCheck) === '[object Function]';
+}
+
+//webHandler Class
+class WebHandler {
+    constructor(loadStatus, api) {
+        this.dataTime = new Date();
+        this.isLoaded = loadStatus;
+        this.activeAPI = api;
+
+    }
+    _getLoad() {
+        return this.isLoaded;
+    }
+    _getDateRef() {
+        return this.dataTime;
+    }
+    _getDataFromGithub(api) {
+        if (api === this.activeAPI) {
+            try {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var gitRef = JSON.parse(this.responseText);
+                        var date = gitRef.commit.author.date;
+                        date = date.substring(0, 10)
+                        var a = document.getElementById("last-updated")
+                        a.innerHTML = date;
+                    } else {
+                        let err = "404 Error: Unable to Reach Github's server"
+                        var b = document.getElementById("last-updated")
+                        b.innerHTML = err;
+                    }
+
+                };
+                xmlhttp.open("GET", "https://api.github.com/repos/SammyRobensParadise/SammyRobensParadise.github.io/commits/master", true);
+                xmlhttp.send();
+            }
+            catch (error) {
+            }
+        } else {
+
+            let err = "404: API failed to connect to Github";
+            return err;
         }
-        toggleExploreText(this);
-    });
-    //checks to see if about section is visible and if it is, closes it when
-    //'go exploring button' is clicked
-    $('#goExploring').click(function () {
-        scrollToExploring('#div_goExploring');
-        if ($('.about').css('visibility') == 'visible') {
-            hideClose();
-            hideCloseBottom();
+    }
+}
+
+class ViewHandler {
+    constructor(add_class_param, id_param, id_target) {
+        this.add_class = add_class_param;
+        this.el_id = id_param;
+        //  console.log(this.add_class, this.el_id);
+        this.elem = document.getElementById(id_param);
+        //  console.log(this.add_class, this.el_id, this.elem);
+        this.target = id_target;
+        this.target_elem = document.getElementById(id_target)
+    }
+    _getID(){
+        return this.el_id;
+    }
+    isElementInViewport(el) {
+        //console.log("checking...");
+        //special bonus for those using jQuery
+        if (typeof jQuery === "function" && el instanceof jQuery) {
+            el = el[0];
         }
-    });
-    //opens projects section when 'learn more about pynn' is clicked
-    $('#moreAboutPynn').click(function () {
-        $('#navbar_projects').click();
-    });
-    //opens projects section when 'learn more about gangl' is clicked
-    $('#moreAboutGangl').click(function () {
-        $('#navbar_projects').click();
-    });
-    //when navbar projects is clicked opens projects section
-    $('#navbar_projects').click(function () {
-        closeNavbar(function () {
-            //check to see if projects is not already visible
-            if (!(isVisible('.about'))) {
-                $('#div_goExploring').slideToggle(1000);
-                toggleExploreText('#goExploring');
-                $('#projects_btn').click();
-            } else {
-                $('#projects_btn').click();
-            }
-        });
-    });
-    //when navbar education is clicked opens education section
-    $('#navbar_education').click(function () {
-        closeNavbar(function () {
-            //check to see if education is not already visible
-            if (!(isVisible('.about'))) {
-                $('#div_goExploring').slideToggle(1000);
-                toggleExploreText('#goExploring');
-                $('#education_btn').click();
-            } else {
-                $('#education_btn').click();
-            }
-        });
-    });
-    //when navbar experience is clicked opens experience section
-    $('#navbar_experience').click(function () {
-        closeNavbar(function () {
-            //check to see if experience is not already visible
-            if (!(isVisible('.about'))) {
-                $('#div_goExploring').slideToggle(1000);
-                toggleExploreText('#goExploring');
-                $('#experience_btn').click();
-            } else {
-                $('#experience_btn').click();
-            }
-        });
-    });
-    //when navbar whos sammy is clicked opens the experience section
-    $('#navbar_whos_sammy').click(function () {
-        closeNavbar(function () {
-            //check to see if whos sammy is not already visible
-            if (!(isVisible('.about'))) {
-                $('#div_goExploring').slideToggle(1000);
-                toggleExploreText('#goExploring');
-                $('#whos_sammy_btn').click();
-            } else {
-                $('#whos_sammy_btn').click();
-            }
-        });
-    });
-    //when navbar resume is clicked, opens navbar section and toggles resume button text
-    $('#navbar_resume').click(function () {
-        $.fn.closeResume();
-        toggleResumeText('#resume');
-        scrollTo('#div_resume');
-        closeNavbar();
-    });
-    //closes navbar when github link is clicked
-    $('#navbar_github_link').click(function () {
-        closeNavbar();
-    });
-    //these buttons are what is clicked at the bottom of the resume div
-    $('#moreAboutSammy').click(function () {
-        $('#navbar_whos_sammy').click();
-    });
-    $('#aboutProjects').click(function () {
-        $('#navbar_projects').click();
-    });
-    $('#resumeGoExploring').click(function () {
-        $('#goExploring').click();
-    })
-    //****BUTTONS FOR SELECTIVE DIVS************
-    //  projects button
-    //order: projects, experience, education, whos sammy
-    $('#projects_btn').click(function () {
-        showClose();
-        $.fn.arrangeProjects(function () {
-            $.fn.toggleText(function () {
-                scrollTo('#scrollToElement');
-            });
-        });
-    });
-    //  experience button   
-    //order: experience, projects, education, whos sammmy 
-    $('#experience_btn').click(function () {
-        showClose();
-        $.fn.arrangeExperience(function () {
-            $.fn.toggleText(function () {
-                scrollTo('#scrollToElement');
-            });
-        });
-    });
-    //  education button
-    //order: education, projects, experience, whos sammy
-    $('#education_btn').click(function () {
-        showClose();
-        $.fn.arrangeEducation(function () {
-            $.fn.toggleText(function () {
-                scrollTo('#scrollToElement');
-            });
-        });
-    });
-    //  whos sammy button
-    //order: whos sammy, projects, experience, education
-    $('#whos_sammy_btn').click(function () {
-        showClose();
-        $.fn.arrangeWhosSammy(function () {
-            $.fn.toggleText(function () {
-                scrollTo('#scrollToElement');
-            });
-        });
-    });
-    $('#close_about_btn').click(function () {
-        hideClose();
-        hideCloseBottom();
-    });
-    $('#close_about_btn_bottom').click(function () {
-        hideClose();
-        hideCloseBottom();
-    });
-    //end of main    
-});
-//
-//_____________________________________________________________________________
-//
-//FUNCTION DEFINITIONS
-//_____________________________________________________________________________
-//
-//toggle text function for div's listed
-$.fn.toggleText = function (callbackScroll) {
-    $('#div_projects').fadeIn(1000);
-    $('#div_experience').fadeIn(1000);
-    $('#div_education').fadeIn(1000);
-    $('#div_whos_sammy').fadeIn(1000);
-    callbackScroll();
+        try {
+            if (el.getBoundingClientRect() === null) throw err;
+            var rect = el.getBoundingClientRect();
+        }
+        catch (err) {
+            return false;
+        }
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+        );
+    }
 }
-//close text function for divs listed
-$.fn.closeText = function () {
-    $('#div_projects').hide(500);
-    $('#div_experience').hide(500);
-    $('#div_education').hide(500);
-    $('#div_whos_sammy').hide(500);
-}
-//close resume div function definition
-$.fn.closeResume = function () {
-    $('#div_resume').slideToggle(1000);
-}
-//arrage divs for projects first function
-$.fn.arrangeProjects = function (callback) {
-    $('#div_experience').insertAfter('#div_projects');
-    $('#div_education').insertAfter('#div_experience');
-    $('#div_whos_sammy').insertAfter('#div_education');
-    callback();
-}
-//arrange divs for experience first function
-$.fn.arrangeExperience = function (callback) {
-    $('#div_projects').insertAfter('#div_experience');
-    $('#div_education').insertAfter('#div_experience');
-    $('#div_whos_sammy').insertAfter('#div_experience');
-    callback();
-}
-//arrange divs for education first function
-$.fn.arrangeEducation = function (callback) {
-    $('#div_projects').insertAfter('#div_education');
-    $('#div_experience').insertAfter('#div_projects');
-    $('#div_whos_sammy').insertAfter('#div_experience');
-    callback();
-}
-//arrange divs for whos sammy first function
-$.fn.arrangeWhosSammy = function (callback) {
-    $('#div_projects').insertAfter('#div_whos_sammy');
-    $('#div_experience').insertAfter('#div_projects');
-    $('#div_education').insertAfter('#div_experience');
-    callback();
-}
-//scroll to specific div function
-function scrollTo(divId) {
-    $('html,body').animate({
-        scrollTop: $(divId).offset().top
-    }, 1000)
-}
-//scroll to go exploring div
-function scrollToExploring(divId) {
-    $('html,body').animate({
-        scrollTop: $(divId).offset().top
-    }, 2000)
-}
-//show close button
-function showClose() {
-    $('#close_about').show(500);
-    $('#close_about_bottom').show(500);
-}
-//hide close top button for about divs
-function hideClose() {
-    $.fn.closeText();
-    $('#close_about').fadeOut(500);
-    $('#close_about_bottom').fadeOut(500);
+window.addEventListener('scroll', function () {
+    scollInProj();
+    scrollInWork();
 
-}
-//hide close bottom button for divs
-function hideCloseBottom() {
-    $.fn.closeText();
-    $('#close_about').fadeOut(500);
-    $('#close_about_bottom').fadeOut(500);
-}
-//toggle function Explore button text
-function toggleExploreText(divId) {
-    $(divId).text(function (i, v) {
-        return v === "You're Exploring . . ." ? 'Go Exploring . . .' : "You're Exploring . . ."
-    })
-}
-//toggle function Resume button text
-function toggleResumeText(divId) {
-    $(divId).text(function (i, v) {
-        return v === 'Close Résumé' ? 'Résumé . . .' : 'Close Résumé'
-    })
-}
+})
 
-function closeNavbar(callback) {
-    $('#navbarToggler').click();
-    callback();
+function scollInProj() {
+    var activeEl = window.bc_ferries_viewer;
+    var secondEl = window.portfolio_viewer;
+    var thirdEl = window.eb_viewer;
+    var fourthEl = window.school_viewer;
+    var slide_in_left = 'slide-in-left 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.05s 1 normal forwards';
+    var slide_in_right = 'slide-in-right 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.05s 1 normal forwards';
+    try {
+        if ((activeEl || secondEl || thirdEl || fourthEl).isElementInViewport() === undefined) throw err;
+    }
+    catch (err) {
+        return false;
+    }
+    if (activeEl.isElementInViewport(activeEl.elem)) {
+        // activeEl.target_elem.classList.add(activeEl.add_class);
+        activeEl.target_elem.style.animation = slide_in_left;
+    }
+    if (secondEl.isElementInViewport(secondEl.elem)) {
+        secondEl.target_elem.style.animation = slide_in_right;
+    }
+    if (thirdEl.isElementInViewport(thirdEl.elem)) {
+        //exception for emily bandel section becuause it is using an opacity shift to 0.8 instead of 1.0 so the @keyframe is unique
+        thirdEl.target_elem.style.animation = 'slide-in-left-eb 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.05s 1 normal forwards';
+    }
+    if (fourthEl.isElementInViewport(fourthEl.elem)) {
+        fourthEl.target_elem.style.animation = slide_in_right;
+    }
 }
-// check if visible
-function isVisible(element) {
-    var element = $(element);
-    return (element.css('display') !== 'none' && element.css('visibility') !== 'hidden' && element.css('opacity') !== 0);
+function scrollInWork() {
+    var fifthEl = window.hootsuite_viewer;
+    var sixthEl = window.ffsatg_viewer;
+    var seventhEl = window.eccc_viewer;
+    var slide_in_left_2 = 'slide-in-left 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.05s 1 normal forwards';
+    var slide_in_right_2 = 'slide-in-right 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.05s 1 normal forwards';
+    try {
+        if ((fifthEl || sixthEl || seventhEl).isElementInViewport() === undefined) throw err;
+    }
+    catch (err) {
+        return false;
+    }
+    if (fifthEl.isElementInViewport(fifthEl.elem)) {
+        fifthEl.target_elem.style.animation = slide_in_left_2;
+    }
+    if (sixthEl.isElementInViewport(sixthEl.elem)) {
+        sixthEl.target_elem.style.animation = slide_in_right_2;
+    }
+    if (seventhEl.isElementInViewport(seventhEl.elem)) {
+        seventhEl.target_elem.style.animation = slide_in_left_2;
+    }
 }
-//set Booleans
-function splash(param) {
-    var time = param;
-    setTimeout(function () {
-        $('#splashscreen').slideUp(1200);
-    }, time);
+function hideModal(e){
+    var warningEl = document.getElementById(e);
+    warningEl.style.display = 'none';
 }
-//checks to see if divs with .about class are NOT VISIBLE
-
-//INACTIVE FUNCTIONS------------------------------------------------------------
-//
-//-------------------------------------------------------------------------------
-*/
