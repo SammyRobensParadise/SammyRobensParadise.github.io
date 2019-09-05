@@ -152,11 +152,15 @@ function scollInProj() {
             fourthEl.target_elem.style.animation = slide_in_right;
         }
     } else if (window.innerWidth <= widthBool) {
+        setVarsWithMobile();
+
+    }
+
+    function setVarsWithMobile() {
         activeEl.target_elem.style.animation = slide_in_left;
         secondEl.target_elem.style.animation = slide_in_right;
         thirdEl.target_elem.style.animation = 'slide-in-left-eb 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.05s 1 normal forwards';
         fourthEl.target_elem.style.animation = slide_in_right;
-
     }
 }
 function scrollInWork() {
@@ -183,6 +187,10 @@ function scrollInWork() {
             seventhEl.target_elem.style.animation = slide_in_left_2;
         }
     } else if (window.innerWidth <= widthBool) {
+        setVarsWithMobileWork();
+    }
+
+    function setVarsWithMobileWork() {
         fifthEl.target_elem.style.animation = slide_in_left_2;
         sixthEl.target_elem.style.animation = slide_in_right_2;
         seventhEl.target_elem.style.animation = slide_in_left_2;
