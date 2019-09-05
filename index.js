@@ -59,7 +59,7 @@ class WebHandler {
                         var a = document.getElementById("last-updated")
                         a.innerHTML = date;
                     } else {
-                        let err = "404 Error: Unable to Reach Github's server"
+                        let err = "403 Error: Unable to Reach Github's server"
                         var b = document.getElementById("last-updated")
                         b.innerHTML = err;
                     }
@@ -72,7 +72,7 @@ class WebHandler {
             }
         } else {
 
-            let err = "404: API failed to connect to Github";
+            let err = "403: API failed to connect to Github";
             return err;
         }
     }
