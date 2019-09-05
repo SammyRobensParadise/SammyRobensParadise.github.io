@@ -88,11 +88,12 @@ class ViewHandler {
         this.target = id_target;
         this.target_elem = document.getElementById(id_target)
     }
-    _getID(){
+    _getID() {
         return this.el_id;
     }
     isElementInViewport(el) {
-        //console.log("checking...");
+        // console.log("checking...");
+
         //special bonus for those using jQuery
         if (typeof jQuery === "function" && el instanceof jQuery) {
             el = el[0];
@@ -119,31 +120,43 @@ window.addEventListener('scroll', function () {
 })
 
 function scollInProj() {
+
     var activeEl = window.bc_ferries_viewer;
     var secondEl = window.portfolio_viewer;
     var thirdEl = window.eb_viewer;
     var fourthEl = window.school_viewer;
     var slide_in_left = 'slide-in-left 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.05s 1 normal forwards';
     var slide_in_right = 'slide-in-right 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.05s 1 normal forwards';
+    const widthBool = 570;
     try {
+        console.log("in try");
         if ((activeEl || secondEl || thirdEl || fourthEl).isElementInViewport() === undefined) throw err;
     }
     catch (err) {
         return false;
     }
-    if (activeEl.isElementInViewport(activeEl.elem)) {
-        // activeEl.target_elem.classList.add(activeEl.add_class);
+    if (window.innerWidth > widthBool) {
+        if (activeEl.isElementInViewport(activeEl.elem)) {
+            console.log("activeElin VP");
+            // activeEl.target_elem.classList.add(activeEl.add_class);
+            activeEl.target_elem.style.animation = slide_in_left;
+        }
+        if (secondEl.isElementInViewport(secondEl.elem)) {
+            secondEl.target_elem.style.animation = slide_in_right;
+        }
+        if (thirdEl.isElementInViewport(thirdEl.elem)) {
+            //exception for emily bandel section becuause it is using an opacity shift to 0.8 instead of 1.0 so the @keyframe is unique
+            thirdEl.target_elem.style.animation = 'slide-in-left-eb 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.05s 1 normal forwards';
+        }
+        if (fourthEl.isElementInViewport(fourthEl.elem)) {
+            fourthEl.target_elem.style.animation = slide_in_right;
+        }
+    } else if (window.innerWidth <= widthBool) {
         activeEl.target_elem.style.animation = slide_in_left;
-    }
-    if (secondEl.isElementInViewport(secondEl.elem)) {
         secondEl.target_elem.style.animation = slide_in_right;
-    }
-    if (thirdEl.isElementInViewport(thirdEl.elem)) {
-        //exception for emily bandel section becuause it is using an opacity shift to 0.8 instead of 1.0 so the @keyframe is unique
         thirdEl.target_elem.style.animation = 'slide-in-left-eb 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.05s 1 normal forwards';
-    }
-    if (fourthEl.isElementInViewport(fourthEl.elem)) {
         fourthEl.target_elem.style.animation = slide_in_right;
+
     }
 }
 function scrollInWork() {
@@ -152,23 +165,30 @@ function scrollInWork() {
     var seventhEl = window.eccc_viewer;
     var slide_in_left_2 = 'slide-in-left 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.05s 1 normal forwards';
     var slide_in_right_2 = 'slide-in-right 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.05s 1 normal forwards';
+    const widthBool = 570;
     try {
         if ((fifthEl || sixthEl || seventhEl).isElementInViewport() === undefined) throw err;
     }
     catch (err) {
         return false;
     }
-    if (fifthEl.isElementInViewport(fifthEl.elem)) {
+    if (window.innerWidth > widthBool) {
+        if (fifthEl.isElementInViewport(fifthEl.elem)) {
+            fifthEl.target_elem.style.animation = slide_in_left_2;
+        }
+        if (sixthEl.isElementInViewport(sixthEl.elem)) {
+            sixthEl.target_elem.style.animation = slide_in_right_2;
+        }
+        if (seventhEl.isElementInViewport(seventhEl.elem)) {
+            seventhEl.target_elem.style.animation = slide_in_left_2;
+        }
+    } else if (window.innerWidth <= widthBool) {
         fifthEl.target_elem.style.animation = slide_in_left_2;
-    }
-    if (sixthEl.isElementInViewport(sixthEl.elem)) {
         sixthEl.target_elem.style.animation = slide_in_right_2;
-    }
-    if (seventhEl.isElementInViewport(seventhEl.elem)) {
         seventhEl.target_elem.style.animation = slide_in_left_2;
     }
 }
-function hideModal(e){
+function hideModal(e) {
     var warningEl = document.getElementById(e);
     warningEl.style.display = 'none';
 }

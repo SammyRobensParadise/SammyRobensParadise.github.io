@@ -80,10 +80,18 @@ h1 {
     .landing-image{
         text-align: center;
     }
+    .col-md-6{
+        padding-right: 0px !important;
+    }
 }
 @media screen and (max-width: 667px){
     .spacer{
         height: 12rem;
+    }
+}
+@media screen and (max-width: 568px){
+    .container{
+        margin-left: 15px !important;
     }
 }
 .button-des {
