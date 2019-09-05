@@ -35,7 +35,7 @@ h1 {
 .landing-image {
     height: 32rem;
     background-size: contain;
-    width: 100;
+    width: 100%;
     background-repeat: no-repeat;
     /* margin-left: -4rem;
     margin-right: -4rem; */
@@ -43,7 +43,16 @@ h1 {
     background-image: url(./src/assets/sammybiking.svg);
     padding-bottom: 2rem;
 }
-
+@media screen and (max-width: 1100px){
+    .landing-image{
+        height: 24rem;
+    }
+}
+@media screen and (max-width: 880px){
+    .landing-image{
+        height: 18rem;
+    }
+}
 .landing-page-content {
     text-align: center;
     margin-top: 8rem;
@@ -54,7 +63,37 @@ h1 {
     text-decoration-color: #32228a;
     margin-bottom: 4rem;
 }
-
+@media screen and (max-width: 780px){
+    .find-out-what-working-on{
+        margin-top: 6rem;
+        margin-bottom: 4rem;
+        background-color: #fff;
+        mix-blend-mode: difference;
+    }
+    .spacer{
+        height: 4rem;
+        width: 100%;
+    }
+    .center-content{
+        text-align: center;
+    }
+    .landing-image{
+        text-align: center;
+    }
+    .col-md-6{
+        padding-right: 0px !important;
+    }
+}
+@media screen and (max-width: 667px){
+    .spacer{
+        height: 12rem;
+    }
+}
+@media screen and (max-width: 568px){
+    .container{
+        margin-left: 15px !important;
+    }
+}
 .button-des {
     background-color: #32228a;
     border: none;
@@ -516,5 +555,23 @@ footer {
 @media screen and (max-width:480px){
     .mobile-support-coming{
         height: 12rem;
+    }
+}
+@media screen and (max-width:1000px){
+    .display-4{
+        font-size: 2rem !important;
+    }
+    .display-3{
+        font-size: 3.5rem !important;
+    }
+}
+@media screen and (max-width: 750px){
+    .display-3{
+        font-size: 2rem !important;
+}
+}
+@media screen and (max-width:450px){
+    .display-3{
+        font-size: 1.5rem !important;
     }
 }
