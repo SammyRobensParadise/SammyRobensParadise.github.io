@@ -83,9 +83,7 @@ class ViewHandler {
     constructor(add_class_param, id_param, id_target) {
         this.add_class = add_class_param;
         this.el_id = id_param;
-        //  console.log(this.add_class, this.el_id);
         this.elem = document.getElementById(id_param);
-        //  console.log(this.add_class, this.el_id, this.elem);
         this.target = id_target;
         this.target_elem = document.getElementById(id_target)
     }
@@ -93,9 +91,8 @@ class ViewHandler {
         return this.el_id;
     }
     isElementInViewport(el) {
-        // console.log("checking...");
 
-        //special bonus for those using jQuery
+        //if jQuery
         if (typeof jQuery === "function" && el instanceof jQuery) {
             el = el[0];
         }
@@ -130,7 +127,6 @@ function scollInProj() {
     var slide_in_right = 'slide-in-right 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.05s 1 normal forwards';
     const widthBool = 570;
     try {
-        console.log("in try");
         if ((activeEl || secondEl || thirdEl || fourthEl).isElementInViewport() === undefined) throw err;
     }
     catch (err) {
@@ -138,7 +134,6 @@ function scollInProj() {
     }
     if (window.innerWidth > widthBool) {
         if (activeEl.isElementInViewport(activeEl.elem)) {
-            console.log("activeElin VP");
             // activeEl.target_elem.classList.add(activeEl.add_class);
             activeEl.target_elem.style.animation = slide_in_left;
         }
