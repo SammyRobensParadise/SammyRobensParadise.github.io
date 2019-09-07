@@ -200,3 +200,18 @@ function hideModal(e) {
     var warningEl = document.getElementById(e);
     warningEl.style.display = 'none';
 }
+function mobileTextSwap() {
+    var projectsText = {
+        bcFerries: {
+            title: "BC Ferries",
+            subText: "A case study.",
+            titleRef: document.getElementById('bc-ferries-title'),
+            textRef: document.getElementById('bc-ferries-subtext')
+        },
+        portfolio: {
+            title: "",
+            subText: "",
+            ref: document.getElementById()
+        }
+    }
+}
