@@ -228,7 +228,9 @@ stringname:hover {
 
 .section-p {
     text-align: center;
-    mix-blend-mode: difference;
+    mix-blend-mode: difference  !important;
+    -webkit-mix-blend-mode: difference;
+    -moz-mix-blend-mode: difference;
     color: #afafaf;
 
 }
