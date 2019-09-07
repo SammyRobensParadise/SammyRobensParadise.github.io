@@ -67,8 +67,7 @@ h1 {
     .find-out-what-working-on{
         margin-top: 6rem;
         margin-bottom: 4rem;
-        background-color: #fff;
-        mix-blend-mode: difference;
+        opacity: 0;
     }
     .spacer{
         height: 4rem;

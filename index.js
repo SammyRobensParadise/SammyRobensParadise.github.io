@@ -7,6 +7,7 @@
 window.addEventListener("load", setGlobalVars);
 
 function setGlobalVars() {
+    mobileTextSwap();
     window.data_handler = new WebHandler(true, "github");
     window.bc_ferries_viewer = new ViewHandler("bc-ferries-anim-class", "bc-ferries-container", "bc-ferries-sec");
     window.portfolio_viewer = new ViewHandler("portfolio-anim-class", "portfolio-container", "portfolio-sec");
@@ -152,20 +153,25 @@ function scollInProj() {
             fourthEl.target_elem.style.animation = slide_in_right;
         }
     } else if (window.innerWidth <= widthBool) {
+        setVarsWithMobile();
+
+    }
+
+    function setVarsWithMobile() {
         activeEl.target_elem.style.animation = slide_in_left;
         secondEl.target_elem.style.animation = slide_in_right;
         thirdEl.target_elem.style.animation = 'slide-in-left-eb 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.05s 1 normal forwards';
         fourthEl.target_elem.style.animation = slide_in_right;
-
     }
 }
+const localwidthBool = 570;
 function scrollInWork() {
     var fifthEl = window.hootsuite_viewer;
     var sixthEl = window.ffsatg_viewer;
     var seventhEl = window.eccc_viewer;
     var slide_in_left_2 = 'slide-in-left 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.05s 1 normal forwards';
     var slide_in_right_2 = 'slide-in-right 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.05s 1 normal forwards';
-    const widthBool = 570;
+    const widthBool = localwidthBool;
     try {
         if ((fifthEl || sixthEl || seventhEl).isElementInViewport() === undefined) throw err;
     }
@@ -183,6 +189,10 @@ function scrollInWork() {
             seventhEl.target_elem.style.animation = slide_in_left_2;
         }
     } else if (window.innerWidth <= widthBool) {
+        setVarsWithMobileWork();
+    }
+
+    function setVarsWithMobileWork() {
         fifthEl.target_elem.style.animation = slide_in_left_2;
         sixthEl.target_elem.style.animation = slide_in_right_2;
         seventhEl.target_elem.style.animation = slide_in_left_2;
@@ -191,4 +201,84 @@ function scrollInWork() {
 function hideModal(e) {
     var warningEl = document.getElementById(e);
     warningEl.style.display = 'none';
+}
+function mobileTextSwap() {
+    if (window.innerWidth <= localwidthBool) {
+        const projectsTextMobile = {
+            bcFerries: {
+                title: "BC Ferries",
+                subText: "A case study.",
+                titleRef: document.getElementById('bc-ferries-title'),
+                textRef: document.getElementById('bc-ferries-subtext')
+            },
+            portfolio: {
+                title: "Portfolio",
+                subText: "2019",
+                titleRef: document.getElementById('portfolio-title'),
+                textRef: document.getElementById('portfolio-text')
+            },
+            emilyBandel: {
+                title: "Web Design",
+                subText: "Filmography",
+                titleRef: document.getElementById('eb-title'),
+                textRef: document.getElementById('eb-subtext')
+            },
+            schoolProjects: {
+                title: "Projects",
+                subText: "School Year 1",
+                titleRef: document.getElementById('school-title'),
+                textRef: document.getElementById('school-subtext')
+            }
+        }
+        const workTextMobile = {
+            hootsuite: {
+                title: "Hootsuite",
+                subText: "Software Development",
+                titleRef: document.getElementById('hootsuite-title'),
+                textRef: document.getElementById('hootsuite-subtext')
+            },
+            fingerFood: {
+                title: "Finger Food Studios",
+                subText: "QA Lead",
+                titleRef: document.getElementById('ffatg-title'),
+                textRef: document.getElementById('ffatg-subtext')
+            },
+            ecccTD: {
+                title: "ECCC",
+                subText: "Software Engineer",
+                titleRef: document.getElementById('eccc-title'),
+                textRef: document.getElementById('eccc-subtext')
+            }
+        }
+        changeCardText(projectsTextMobile, workTextMobile);
+        return true;
+    } else {
+        return false;
+    }
+}
+function changeCardText(p, w) {
+    //projects (p)
+    //bc ferries
+    p.bcFerries.titleRef.innerHTML = p.bcFerries.title;
+    p.bcFerries.textRef.innerHTML = p.bcFerries.subText;
+    //portfolio
+    p.portfolio.titleRef.innerHTML = p.portfolio.title;
+    p.portfolio.textRef.innerHTML = p.portfolio.subText;
+    //emily bandel
+    p.emilyBandel.titleRef.innerHTML = p.emilyBandel.title;
+    p.emilyBandel.textRef.innerHTML = p.emilyBandel.subText;
+    //school projects
+    p.schoolProjects.titleRef.innerHTML = p.schoolProjects.title;
+    p.schoolProjects.textRef.innerHTML = p.schoolProjects.subText;
+    //work (w)
+    //hootsuite
+    w.hootsuite.titleRef.innerHTML = w.hootsuite.title;
+    w.hootsuite.textRef.innerHTML = w.hootsuite.subText;
+    //finger foods
+    w.fingerFood.titleRef.innerHTML = w.fingerFood.title;
+    w.fingerFood.textRef.innerHTML = w.fingerFood.subText;
+    //eccc
+    w.ecccTD.titleRef.innerHTML = w.ecccTD.title;
+    w.ecccTD.textRef.innerHTML = w.ecccTD.subText;
+
 }
