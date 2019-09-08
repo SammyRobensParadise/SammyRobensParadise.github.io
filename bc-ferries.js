@@ -12,6 +12,7 @@ function setBCFerriesVars() {
     window.data_handler = new WebHandler(true, "github");
     window.data_handler._getDataFromGithub("github");
     window.TimelineHasBeenScrolled = false;
+    addMobileClasses()
 }
 window.addEventListener("scroll", function () {
     scrollTimeline();
@@ -145,5 +146,13 @@ function scrollToEl(e, cb) {
     el.scrollIntoView({ behavior: 'smooth', block: 'center'})
     if (isFunction(cb)) {
         return cb();
+    }
+}
+function addMobileClasses(){
+    var bcFerriesNode = document.getElementById('user-interviews-text');
+    var designandDevNode = document.getElementById('design-development-text');
+    if(window.innerWidth < 768){
+        bcFerriesNode.classList.add('order-first');
+        designandDevNode.classList.add('order-first');
     }
 }

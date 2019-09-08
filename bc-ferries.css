@@ -325,3 +325,128 @@ body {
     padding-bottom: 2rem;
     margin-bottom: 1rem;
 }
+@media screen and (max-width: 780px){
+    .text-container{
+        margin-right: 15px;
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width: 992px){
+    .timeline-outer{
+        margin-left: 0rem;
+    }
+    .timeline{
+        margin-left: 2rem;
+    }
+}
+@media screen and (max-width: 915px){
+    .timeline-outer{
+        transform: scale(0.9);
+        margin-top: 2.5rem;
+    }
+}
+@media screen and (max-width: 815px){
+    .timeline-outer{
+        transform: scale(0.8);
+        margin-top: 2rem;
+    }
+    .timeline{
+        margin-left: 1rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .timeline-outer{
+        transform: scale(0.7);
+        padding-top: 1rem;
+        margin-bottom: 0rem;
+    }
+    .timeline{
+        margin-left: 0rem;
+    }
+    .timeline-s-des{
+        transform: translateX(-6rem);
+    }
+}
+@media screen and (max-width: 570px){
+    .timeline-s-des{
+        transform: translateX(-10rem);
+    }
+}
+@media screen and (max-width: 510px){
+    .timeline-s-des{
+        transform: translateX(-18rem);
+    }
+    .timeline-s-des-b1{
+        transform: translateX(-4rem);
+    }
+}
+@media screen and (max-width: 396px){
+    .timeline-outer{
+        transform: translateX(-2rem) scale(0.7);
+    }
+}
+/*Display*/
+@media screen and (max-width:1100px){
+    .display-4{
+        font-size: 2rem !important;
+
+    }
+    .display-3{
+        font-size: 3.5rem !important;
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
+    }
+}
+@media screen and (max-width: 1040px){
+    .display-3{
+        font-size: 2rem !important;
+}
+@media screen and (max-width: 985px){
+    .display-4{
+        font-size: 1.2rem !important;
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
+    }
+    
+}
+}
+@media screen and (max-width:450px){
+    .display-3{
+        font-size: 1.5rem !important;
+    }
+}
+@media screen and (max-width: 610px){
+    .landing-image-bc-ferries{
+        margin-bottom: 0rem;
+        padding-bottom: 0rem;
+        height: 23rem;
+    }
+}
+@media screen and (max-width: 460px){
+    .landing-image-bc-ferries{
+        height: 18rem;
+    }
+}
+@media screen and (max-width: 400px){
+    .landing-image-bc-ferries{
+        height: 15rem;
+    }
+}
+.col-md-6{
+    flex-direction: row-reverse !important;
+}
+@media screen and (max-width: 768px){
+    .user-interviews-img{
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+    }
+    .design-img{
+        margin-bottom: 0rem;
+    }
+    .coding-img{
+        margin-bottom: 0rem;
+    }
+    .deploy-img{
+        margin-bottom: 0rem;
+    }
+}
