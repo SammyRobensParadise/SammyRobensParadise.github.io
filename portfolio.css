@@ -23,9 +23,12 @@ body {
     transition: top 0.3s ease, box-shadow 0.3s ease-in-out;
     position: relative;
     top: 0rem;
+    margin-left: 30px;
 
 }
-
+.center-image-{
+    text-align:center;
+}
 .user-trigger-img {
     height: 26rem;
     background-size: contain;
@@ -35,8 +38,8 @@ body {
     margin-right: -4rem; */
     z-index: 22;
     background-image: url(./src/assets/portfolio.svg);
-    padding-bottom: 2rem;
-    margin-bottom: 1rem;
+    background-position: center;
+    margin-left: 4%;
 }
 
 .text-container:hover {
@@ -68,4 +71,48 @@ body {
 
 .button-des:hover {
     background-color: #7164b9;
+}
+
+@media screen and (max-width:1100px) {
+    .display-4 {
+        font-size: 2rem !important;
+
+    }
+
+    .display-3 {
+        font-size: 3.5rem !important;
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .display-3 {
+        font-size: 2rem !important;
+    }
+
+    @media screen and (max-width: 985px) {
+        .display-4 {
+            font-size: 1.2rem !important;
+            margin-left: 2rem !important;
+            margin-right: 2rem !important;
+        }
+
+    }
+}
+
+@media screen and (max-width:450px) {
+    .display-3 {
+        font-size: 1.5rem !important;
+    }
+}
+@media screen and (max-width: 500px){
+    .button-des{
+        width: 18rem;
+    }
+}
+@media screen and (max-width: 353px){
+    .button-des{
+        width: 14rem;
+    }
 }
