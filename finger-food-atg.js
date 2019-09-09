@@ -1,3 +1,7 @@
+window.addEventListener("load",setFingerFoodVars);
+function setFingerFoodVars(){
+    addMobileClasses();
+}
 function getMobileOperatingSystemAndOpen(val) {
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
     if (val === 1) {
@@ -42,5 +46,11 @@ function getMobileOperatingSystemAndOpen(val) {
                 }
     } else{
         return false;
+    }
+}
+function addMobileClasses(){
+    var LegoNode = document.getElementById('technic-text');
+    if(window.innerWidth < 768){
+        LegoNode.classList.add('order-first');
     }
 }
