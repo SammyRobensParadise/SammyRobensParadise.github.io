@@ -75,6 +75,8 @@ h1 {
     }
     .center-content{
         text-align: center;
+        margin-left: 15px !important;
+        
     }
     .landing-image{
         text-align: center;
@@ -575,4 +577,9 @@ footer {
     .display-3{
         font-size: 1.5rem !important;
     }
+}
+@media screen and (max-width: 780px){
+.center-content {
+    margin-left: 15px !important;
+}
 }
