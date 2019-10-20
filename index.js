@@ -180,7 +180,6 @@ function scollInProj() {
     if (initEl.isElementInViewport(initEl.elem)) {
       initEl.target_elem.style.animation = slide_in_right;
     }
-    debugger
     if (activeEl.isElementInViewport(activeEl.elem)) {
       activeEl.target_elem.style.animation = slide_in_left;
     }
