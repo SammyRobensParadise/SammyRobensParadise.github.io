@@ -271,7 +271,9 @@ footer {
 .local-content {
     margin-block-start: 6rem;
 }
-
+.grape-section {
+    margin-top: 3rem;
+}
 .bc-ferries-section {
     margin-top: 3rem;
 }
@@ -299,7 +301,26 @@ footer {
 .eccc-section {
     margin-top: 3rem;
 }
+.projects-section-grape {
+    opacity: 0;
+    margin-left: -50rem;
+    padding-top: 1rem;
+    width: 100%;
+    background-image: url(./src/assets/grape_promo.svg);
+    height: 34rem;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 0px 5px 10px rgb(201, 201, 201);
+    top: 0;
+    transition: top 0.3s ease, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    position: relative;
 
+}
 .projects-section-bc-ferries {
     opacity: 0;
     margin-left: -50rem;
@@ -355,7 +376,12 @@ footer {
         opacity: 1;
     }
 }
-
+.projects-section-grape:hover {
+    top: -1rem;
+    box-shadow: 0px 5px 16px #32228a;
+    background-color: rgb(233, 232, 232);
+    cursor: pointer;
+}
 .projects-section-bc-ferries:hover {
     top: -1rem;
     box-shadow: 0px 5px 16px #32228a;
