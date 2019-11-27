@@ -63,6 +63,14 @@ h1 {
     text-decoration-color: #32228a;
     margin-bottom: 4rem;
 }
+@media screen and (min-width: 781px){
+    .center-content{
+        text-align: center;
+        margin-left: 15px !important;
+        margin-top: 100px;
+        
+    }
+}
 @media screen and (max-width: 780px){
     .find-out-what-working-on{
         margin-top: 6rem;
