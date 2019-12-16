@@ -16,8 +16,8 @@
     "test": "test",
     "git": "git add . && git commit -m",
     "postgit": "git push",
-    "lint": "eslint --ext .jsx --ext .js ./ && eslint --ext .jsx --ext .js ./src",
-    "doctor": "eslint --fix *.js ./ && eslint --fix *.js ./src"
+    "lint": "echo linting... && eslint --ext .jsx --ext .js ./ && echo done!",
+    "doctor": "echo linting... && eslint --fix *.js ./ && eslint --fix *.js ./src"
   },
   "repository": {
     "type": "git",
