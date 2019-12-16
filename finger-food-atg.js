@@ -1,7 +1,5 @@
-window.addEventListener('load', setFingerFoodVars);
-function setFingerFoodVars() {
-  addMobileClasses();
-}
+
+// eslint-disable-next-line no-unused-vars
 function getMobileOperatingSystemAndOpen(val) {
   const userAgent = navigator.userAgent || navigator.vendor || window.opera;
   if (val === 1) {
@@ -43,3 +41,7 @@ function addMobileClasses() {
     LegoNode.classList.add('order-first');
   }
 }
+function setFingerFoodVars() {
+  addMobileClasses();
+}
+window.addEventListener('load', setFingerFoodVars);
