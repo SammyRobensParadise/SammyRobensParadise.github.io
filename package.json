@@ -1,6 +1,6 @@
 {
   "name": "sammyrp",
-  "version": "1.0.0",
+  "version": "3.0.4",
   "description": "scripts for building and cleaning",
   "main": "index.js",
   "dependencies": {
@@ -16,8 +16,8 @@
     "test": "test",
     "git": "git add . && git commit -m",
     "postgit": "git push",
-    "lint": "echo linting... && eslint --ext .jsx --ext .js ./ && echo done!",
-    "doctor": "echo linting... && eslint --fix *.js ./ && eslint --fix *.js ./src"
+    "lint": "echo linting... && eslint --ext .jsx --ext .js ./ && echo done! Issues listed above",
+    "doctor": "echo linting... && eslint --fix *.js ./ && eslint --fix *.js ./src && echo done! Issues listed above"
   },
   "repository": {
     "type": "git",
