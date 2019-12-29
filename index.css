@@ -14,9 +14,11 @@ body {
 body {
     overflow-y: hidden;
 }
-a{
-text-decoration: none !important;
+
+a {
+    text-decoration: none !important;
 }
+
 .navigation-padding {
     fill: none;
     height: 4rem;
@@ -43,16 +45,19 @@ h1 {
     background-image: url(./src/assets/sammybiking.svg);
     padding-bottom: 2rem;
 }
-@media screen and (max-width: 1100px){
-    .landing-image{
+
+@media screen and (max-width: 1100px) {
+    .landing-image {
         height: 24rem;
     }
 }
-@media screen and (max-width: 880px){
-    .landing-image{
+
+@media screen and (max-width: 880px) {
+    .landing-image {
         height: 18rem;
     }
 }
+
 .landing-page-content {
     text-align: center;
     margin-top: 8rem;
@@ -63,46 +68,55 @@ h1 {
     text-decoration-color: #32228a;
     margin-bottom: 4rem;
 }
-@media screen and (min-width: 781px){
-    .center-content{
+
+@media screen and (min-width: 781px) {
+    .center-content {
         text-align: center;
         margin-left: 15px !important;
         margin-top: 100px;
-        
+
     }
 }
-@media screen and (max-width: 780px){
-    .find-out-what-working-on{
+
+@media screen and (max-width: 780px) {
+    .find-out-what-working-on {
         margin-top: 6rem;
         margin-bottom: 4rem;
         opacity: 0;
     }
-    .spacer{
+
+    .spacer {
         height: 4rem;
         width: 100%;
     }
-    .center-content{
+
+    .center-content {
         text-align: center;
         margin-left: 15px !important;
-        
+
     }
-    .landing-image{
+
+    .landing-image {
         text-align: center;
     }
-    .col-md-6{
+
+    .col-md-6 {
         padding-right: 0px !important;
     }
 }
-@media screen and (max-width: 667px){
-    .spacer{
+
+@media screen and (max-width: 667px) {
+    .spacer {
         height: 12rem;
     }
 }
-@media screen and (max-width: 568px){
-    .container{
+
+@media screen and (max-width: 568px) {
+    .container {
         margin-left: 15px !important;
     }
 }
+
 .button-des {
     background-color: #32228a;
     border: none;
@@ -238,7 +252,7 @@ stringname:hover {
 
 .section-p {
     text-align: center;
-    mix-blend-mode: difference  !important;
+    mix-blend-mode: difference !important;
     -webkit-mix-blend-mode: difference;
     -moz-mix-blend-mode: difference;
     color: #afafaf;
@@ -279,9 +293,15 @@ footer {
 .local-content {
     margin-block-start: 6rem;
 }
+
+.portfolio-winter-2020-section {
+    margin-top: 3rem;
+}
+
 .grape-section {
     margin-top: 3rem;
 }
+
 .bc-ferries-section {
     margin-top: 3rem;
 }
@@ -309,6 +329,27 @@ footer {
 .eccc-section {
     margin-top: 3rem;
 }
+
+.projects-section-portfolio-winter-2020 {
+    opacity: 0;
+    margin-left: -50rem;
+    padding-top: 1rem;
+    width: 100%;
+    background-image: url(./src/assets/portfolio-winter-2020-meta.svg);
+    height: 34rem;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 0px 5px 10px rgb(201, 201, 201);
+    top: 0;
+    transition: top 0.3s ease, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    position: relative;
+}
+
 .projects-section-grape {
     opacity: 0;
     margin-left: -50rem;
@@ -329,6 +370,7 @@ footer {
     position: relative;
 
 }
+
 .projects-section-bc-ferries {
     opacity: 0;
     margin-left: -50rem;
@@ -361,6 +403,7 @@ footer {
         opacity: 1;
     }
 }
+
 @keyframes slide-in-left-eb {
     from {
         margin-left: -50rem;
@@ -384,12 +427,21 @@ footer {
         opacity: 1;
     }
 }
+
+.projects-section-portfolio-winter-2020:hover {
+    top: -1rem;
+    box-shadow: 0px 5px 16px #32228a;
+    background-color: rgb(233, 232, 232);
+    cursor: pointer;
+}
+
 .projects-section-grape:hover {
     top: -1rem;
     box-shadow: 0px 5px 16px #32228a;
     background-color: rgb(233, 232, 232);
     cursor: pointer;
 }
+
 .projects-section-bc-ferries:hover {
     top: -1rem;
     box-shadow: 0px 5px 16px #32228a;
@@ -578,7 +630,8 @@ footer {
 .cp {
     margin-top: 2rem;
 }
-.mobile-support-coming{
+
+.mobile-support-coming {
     position: fixed;
     padding-top: 1rem;
     bottom: 0rem;
@@ -589,31 +642,37 @@ footer {
     padding-left: 1rem;
     padding-right: 1rem;
 }
-@media screen and (max-width:480px){
-    .mobile-support-coming{
+
+@media screen and (max-width:480px) {
+    .mobile-support-coming {
         height: 12rem;
     }
 }
-@media screen and (max-width:1000px){
-    .display-4{
+
+@media screen and (max-width:1000px) {
+    .display-4 {
         font-size: 2rem !important;
     }
-    .display-3{
+
+    .display-3 {
         font-size: 3.5rem !important;
     }
 }
-@media screen and (max-width: 750px){
-    .display-3{
+
+@media screen and (max-width: 750px) {
+    .display-3 {
         font-size: 2rem !important;
+    }
 }
-}
-@media screen and (max-width:450px){
-    .display-3{
+
+@media screen and (max-width:450px) {
+    .display-3 {
         font-size: 1.5rem !important;
     }
 }
-@media screen and (max-width: 780px){
-.center-content {
-    margin-left: 15px !important;
-}
+
+@media screen and (max-width: 780px) {
+    .center-content {
+        margin-left: 15px !important;
+    }
 }

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+html,
+body {
+    margin: 0px;
+    padding: 0px !important;
+    overflow-x: hidden !important;
+    font-family: 'Montserrat', sans-serif !important;
+    scroll-behavior: smooth !important;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+.text-container {
+    background-color: #fff;
+    margin-top: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    box-shadow: 0px 5px 10px rgb(201, 201, 201);
+    transition: top 0.3s ease, box-shadow 0.3s ease-in-out;
+    position: relative;
+    top: 0rem;
+    margin-left: 30px;
+
+}
+.center-image-{
+    text-align:center;
+}
+.user-trigger-img {
+    height: 26rem;
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+    /* margin-left: -4rem;
+    margin-right: -4rem; */
+    z-index: 22;
+    background-image: url(./src/assets/portfolio-winter-2020-meta.svg);
+    background-position: center;
+    margin-left: 4%;
+}
+
+.text-container:hover {
+    top: -0.2rem;
+    box-shadow: 0px 5px 16px #32228a;
+}
+
+.hov:hover {
+    cursor: pointer;
+}
+
+.button-des {
+    background-color: #32228a;
+    border: none;
+    color: white;
+    width: 20rem;
+    height: 3rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button-space {
+    text-align: center;
+}
+
+.button-des:hover {
+    background-color: #7164b9;
+}
+
+@media screen and (max-width:1100px) {
+    .display-4 {
+        font-size: 2rem !important;
+
+    }
+
+    .display-3 {
+        font-size: 3.5rem !important;
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .display-3 {
+        font-size: 2rem !important;
+    }
+
+    @media screen and (max-width: 985px) {
+        .display-4 {
+            font-size: 1.2rem !important;
+            margin-left: 2rem !important;
+            margin-right: 2rem !important;
+        }
+
+    }
+}
+
+@media screen and (max-width:450px) {
+    .display-3 {
+        font-size: 1.5rem !important;
+    }
+}
+@media screen and (max-width: 500px){
+    .button-des{
+        width: 18rem;
+    }
+}
+@media screen and (max-width: 353px){
+    .button-des{
+        width: 14rem;
+    }
+}

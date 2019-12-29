@@ -170,6 +170,11 @@ class ViewHandler {
 function setGlobalVars() {
   mobileTextSwap()
   window.data_handler = new WebHandler(true, 'github')
+  window.portfolio_winter_2020_viewer = new ViewHandler(
+    'portfolio-winter-2020-anim-class',
+    'portfolio-winter-2020-container',
+    'portfolio-winter-2020-sec',
+  )
   window.grape_viewer = new ViewHandler('grape-anim-class', 'grape-container', 'grape-sec')
   window.bc_ferries_viewer = new ViewHandler(
     'bc-ferries-anim-class',
@@ -214,6 +219,7 @@ function scrollToEl(e, cb) {
 }
 
 function scollInProj() {
+  const portfolioWinter2020El = window.portfolio_winter_2020_viewer
   const initEl = window.grape_viewer
   const activeEl = window.bc_ferries_viewer
   const secondEl = window.portfolio_viewer
@@ -228,7 +234,14 @@ function scollInProj() {
   }
   try {
     if (
-      (initEl || activeEl || secondEl || thirdEl || fourthEl).isElementInViewport() === undefined
+      (
+        portfolioWinter2020El
+        || initEl
+        || activeEl
+        || secondEl
+        || thirdEl
+        || fourthEl
+      ).isElementInViewport() === undefined
     ) {
       throw err
     }
@@ -236,6 +249,9 @@ function scollInProj() {
     return false
   }
   if (window.innerWidth > widthBool) {
+    if (portfolioWinter2020El.isElementInViewport(portfolioWinter2020El.elem)) {
+      portfolioWinter2020El.target_elem.style.animation = slideInLeft
+    }
     if (initEl.isElementInViewport(initEl.elem)) {
       initEl.target_elem.style.animation = slideInRight
     }
@@ -259,6 +275,8 @@ function scollInProj() {
   }
 
   function setVarsWithMobile() {
+    portfolioWinter2020El.target_elem.style.animation = slideInLeft
+    initEl.target_elem.style.animation = slideInRight
     activeEl.target_elem.style.animation = slideInLeft
     secondEl.target_elem.style.animation = slideInRight
     thirdEl.target_elem.style.animation = 'slide-in-left-eb 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.05s 1 normal forwards'
