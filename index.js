@@ -100,8 +100,8 @@ class WebHandler {
       try {
         const xmlhttp = new XMLHttpRequest()
         xmlhttp.onreadystatechange = () => {
-          if (this.readyState === 4 && this.status === 200) {
-            const gitRef = JSON.parse(this.responseText)
+          if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
+            const gitRef = JSON.parse(xmlhttp.responseText)
             let { date } = gitRef.commit.author
             date = date.substring(0, 10)
             const a = document.getElementById('last-updated')
