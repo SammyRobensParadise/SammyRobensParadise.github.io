@@ -18,6 +18,10 @@ Initially created in spring 2018 this website is currently on its 3rd design ite
 <br/>
 It is on the roadmap to port it over to `react.js` or `vue.js` in the near future.
 
+# Vue April 2020 roadmap
+This website is going to be migrated to `vue` in April 2020.\
+It is going to be deployed using `gh-pages` as the current setup is, but will require an pipeline setup.
+
 # Website & Contact Info
 
 [sammyrp.com](https://sammyrp.com)
