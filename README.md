@@ -3,7 +3,9 @@
 ## Version 3.xx.xx
 
 This website was created by me, Sammy Robens-Paradise
-This Repository is the personal website of Sammy Robens-Paradise It's purpose is to serve as a merketing platform for Sammy's skillseand other possible oppertunities.
+This Repository is the personal website of Sammy Robens-Paradise It's purpose is to serve as a marketing platform for Sammy's skills and other possible opportunities.
+
+![sammybiking](./src/assets/sammybiking.svg)
 
 # About
 
@@ -33,3 +35,5 @@ It is going to be deployed using `gh-pages` as the current setup is, but will re
 [Dribbble](https://dribbble.com/sammyrp)
 <br/>
 [email: srobensparadise@gmail.com](srobensparadise@gmail.com)
+
+![background](./src/assets/trees.svg)
