@@ -335,8 +335,7 @@ footer {
 }
 
 .projects-section-portfolio-winter-2020 {
-    opacity: 0;
-    margin-left: -50rem;
+    opacity: 1;
     padding-top: 1rem;
     width: 100%;
     background-image: url(./src/assets/portfolio-winter-2020-meta.svg);
@@ -355,8 +354,7 @@ footer {
 }
 
 .projects-section-grape {
-    opacity: 0;
-    margin-left: -50rem;
+    opacity: 1;
     padding-top: 1rem;
     width: 100%;
     background-image: url(./src/assets/grape_promo.svg);
@@ -376,8 +374,7 @@ footer {
 }
 
 .projects-section-bc-ferries {
-    opacity: 0;
-    margin-left: -50rem;
+    opacity: 1;
     padding-top: 1rem;
     width: 100%;
     background-image: url(./src/assets/bc_ferries_preview.svg);
@@ -398,8 +395,8 @@ footer {
 
 @keyframes slide-in-left {
     from {
-        margin-left: -50rem;
-        opacity: 0;
+        margin-left: 0rem;
+        opacity: 1;
     }
 
     to {
@@ -410,8 +407,8 @@ footer {
 
 @keyframes slide-in-left-eb {
     from {
-        margin-left: -50rem;
-        opacity: 0;
+        margin-left: 0rem;
+        opacity: 0.8;
     }
 
     to {
@@ -422,8 +419,8 @@ footer {
 
 @keyframes slide-in-right {
     from {
-        margin-left: 50rem;
-        opacity: 0;
+        margin-left: 0rem;
+        opacity: 1;
     }
 
     to {
@@ -465,8 +462,7 @@ footer {
 }
 
 .projects-section-portfolio {
-    opacity: 0;
-    margin-left: 50rem;
+    opacity: 1;
     width: 100%;
     background-image: url(./src/assets/landing_page.svg);
     height: 34rem;
@@ -485,8 +481,7 @@ footer {
 }
 
 .projects-section-eb-web {
-    opacity: 0;
-    margin-left: -50rem;
+    opacity: 1;
     width: 100%;
     background-image: url(./src/assets/eb-landing-page.png);
     height: 34rem;
@@ -514,8 +509,7 @@ footer {
 }
 
 .projects-section-school-rel {
-    margin-left: 50rem;
-    opacity: 0;
+    opacity: 1;
     width: 100%;
     background-image: url(./src/assets/isometric\ design\ safe.svg);
     height: 34rem;
@@ -540,8 +534,7 @@ footer {
 }
 
 .work-section-ffatg {
-    margin-left: 50rem;
-    opacity: 0;
+    opacity: 1;
     width: 100%;
     background-image: url(./src/assets/ffatg-large.png);
     height: 34rem;
@@ -565,8 +558,7 @@ footer {
 }
 
 .work-section-hootsuite {
-    margin-left: -50rem;
-    opacity: 0;
+    opacity: 1;
     width: 100%;
     background-image: url(./src/assets/hootsuite-horizontal-black-registered.png);
     height: 34rem;
@@ -591,8 +583,7 @@ footer {
 }
 
 .work-section-eccc {
-    margin-left: -50rem;
-    opacity: 0;
+    opacity: 1;
     width: 100%;
     background-image: url(./src/assets/eccc_logorref_3.svg);
     height: 34rem;
@@ -616,7 +607,7 @@ footer {
 }
 
 .bc-ferries-anim-class {
-    opacity: 0;
+    opacity: 1;
 }
 
 @media screen and (max-width: 870px) {

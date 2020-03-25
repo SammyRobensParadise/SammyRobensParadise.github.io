@@ -218,7 +218,7 @@ function scrollToEl(e, cb) {
   return null
 }
 
-function scollInProj() {
+/* function scollInProj() {
   const portfolioWinter2020El = window.portfolio_winter_2020_viewer
   const initEl = window.grape_viewer
   const activeEl = window.bc_ferries_viewer
@@ -283,7 +283,7 @@ function scollInProj() {
     fourthEl.target_elem.style.animation = slideInRight
   }
   return true
-}
+} */
 
 function scrollInWork() {
   const fifthEl = window.hootsuite_viewer
