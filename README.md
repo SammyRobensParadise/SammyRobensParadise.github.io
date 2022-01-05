@@ -1,11 +1,6 @@
-# SAMMY ROBENS PARADISE PERSONAL WEBSITE
+This website was created by Sammy Robens-Paradise
 
-## Version 3.xx.xx
-
-This website was created by me, Sammy Robens-Paradise
-This Repository is the personal website of Sammy Robens-Paradise It's purpose is to serve as a marketing platform for Sammy's skills and other possible opportunities.
-
-![sammybiking](./src/assets/sammybiking.svg)
+**It is not under active development. Please refer to [https://sammy.world](https://sammy.world) for my current portfolio**
 
 # About
 
@@ -13,20 +8,9 @@ This Repository is the personal website of Sammy Robens-Paradise It's purpose is
 ![Activity](https://img.shields.io/github/commit-activity/m/SammyRobensParadise/SammyRobensParadise.github.io)
 ![Open Issues](https://img.shields.io/github/issues/SammyRobensParadise/SammyRobensParadise.github.io)
 ![Purpose: Website](https://img.shields.io/badge/Purpose-Website-orange)
-<br/>
-<br/>
-Initially created in spring 2018 this website is currently on its 3rd design iteration. It is built in `vanilla javascript ES6` and is hosted on github pages. It is designed to be lightweight and easily changed.
-<br/>
-<br/>
-It is on the roadmap to port it over to `react.js` or `vue.js` in the near future.
-
-# Vue April 2020 roadmap
-This website is going to be migrated to `vue` in April 2020.\
-It is going to be deployed using `gh-pages` as the current setup is, but will require an pipeline setup.
 
 # Website & Contact Info
 
-[sammyrp.com](https://sammyrp.com)
 <br/>
 [Portfolio](https://sammy.world)
 <br/>
@@ -35,5 +19,3 @@ It is going to be deployed using `gh-pages` as the current setup is, but will re
 [Dribbble](https://dribbble.com/sammyrp)
 <br/>
 [email: srobensparadise@gmail.com](srobensparadise@gmail.com)
-
-![background](./src/assets/trees.svg)
