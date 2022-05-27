@@ -66,12 +66,12 @@
               class="wiki-search-input v-input"
               id="wiki-search-input"
               placeholder="Search by text..."
-              oninput="searchText()"
+              oninput="searchText(value)"
             />
           </label>
-          <button class="clear-search">Clear</button>
+          <button class="clear-search v-btn" onclick="clearSearch()">Clear</button>
         </div>
-        <ol class="list">
+        <ol class="list" id="wiki-list">
           <li class="list-item" id="portfolio">
             <a href="https://sammy.world" class="link">Portfolio (https://sammy.world)</a>
             <p>

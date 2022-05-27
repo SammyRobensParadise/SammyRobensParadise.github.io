@@ -43,6 +43,48 @@
   padding-inline-start: 16px;
 }
 
+.v-btn {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #3f46f3;
+  color: #e5e5e5;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+}
+
+.v-btn:hover {
+  background: #2b2b2b;
+  text-decoration: none;
+  color: #e5e5e5;
+}
+input {
+  height: 24px;
+}
+label {
+  font-size: 18px;
+}
+
+.list {
+  border-top: 1px solid #2b2b2b;
+  padding: 16px;
+}
+.list:last-child {
+  border-bottom: 1px solid #2b2b2b;
+}
+
+.list-item {
+  background-color: #fff;
+  padding: 8px;
+  margin: 6px;
+  border-radius: 4px;
+}
+li::marker {
+  font-size: 18px;
+}
+
 body {
   background: #e5e5e5;
 }
