@@ -8,20 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Sammy Robens-Paradise</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content=" Sammy Robens-Paradie | Website | Resume | About"
-      <!--
-      Global
-      site
-      tag
-      (gtag.js)
-      -
-      Google
-      Analytics
-      --
-    />
+    <meta name="description" content=" Sammy Robens-Paradie | Website | Resume | About" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122502618-1"></script>
+    <script src="./index.js"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
 
@@ -61,8 +50,54 @@
   </head>
 
   <body>
-    <div class="center">
-      <a href="https://sammy.world" class="view-portfolio">View Portfolio</a>
+    <div class="center container">
+      <div class="v-space-64">
+        <a href="https://sammy.world" class="view-portfolio">View Portfolio</a>
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="header">Wiki</h2>
+      <div class="wiki">
+        <div class="wiki-searchbar">
+          <label
+            >Search
+            <input
+              type="text"
+              class="wiki-search-input v-input"
+              id="wiki-search-input"
+              placeholder="Search by text..."
+              oninput="searchText()"
+            />
+          </label>
+          <button class="clear-search">Clear</button>
+        </div>
+        <ol class="list">
+          <li class="list-item" id="portfolio">
+            <a href="https://sammy.world" class="link">Portfolio (https://sammy.world)</a>
+            <p>
+              My current portfolio showcasing my latest design work, experience and key projects
+            </p>
+          </li>
+          <li class="list-item" id="portfolio">
+            <a href="https://SammyRobensParadise.github.io/big-little-worlds" class="link"
+              >Big Little Worlds (https://SammyRobensParadise.github.io/big-little-worlds)</a
+            >
+            <p>
+              Big Little Worlds is an interactive online story exploring the relationship between
+              data, ethics and engineering.
+            </p>
+          </li>
+          <li class="list-item" id="portfolio">
+            <a
+              href="https://SammyRobensParadise.github.io/essential-hebrew-drang-and-drop"
+              class="link"
+              >Hebrew Drag and Drop
+              (https://SammyRobensParadise.github.io/essential-hebrew-drang-and-drop)</a
+            >
+            <p>A drag-and-drop card matching activity to teach the hebrew words for animals.</p>
+          </li>
+        </ol>
+      </div>
     </div>
   </body>
 </html>
