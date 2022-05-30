@@ -11,11 +11,8 @@ This website was created by Sammy Robens-Paradise
 
 # Website & Contact Info
 
-<br/>
+
 [Portfolio](https://sammy.world)
-<br/>
 [Linkedin](https://www.linkedin.com/in/sammy-robens-paradise)
-<br/>
 [Dribbble](https://dribbble.com/sammyrp)
-<br/>
 [email: srobensparadise@gmail.com](srobensparadise@gmail.com)
