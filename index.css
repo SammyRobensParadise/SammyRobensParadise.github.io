@@ -63,6 +63,7 @@
 input {
   height: 36px;
 }
+
 label {
   font-size: 18px;
 }
@@ -83,6 +84,13 @@ label {
 }
 li::marker {
   font-size: 18px;
+}
+
+.v-input {
+  margin-left: 12px;
+  font-size: 14px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 body {
