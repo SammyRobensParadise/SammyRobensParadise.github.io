@@ -1,0 +1,13 @@
+title: Sammy Robens-Paradise
+description: Sammy Robens Paradise, Wiki and Documentation
+theme: just-the-docs
+
+url: https://SammyRobensParadise.github.io
+
+aux_links:
+  Github: https://github.com/SammyRobensParadise
+  Linkedin: https://www.linkedin.com/in/sammy-robens-paradise/
+  Portfolio: https://sammy.world
+
+last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+last_edit_time_format: '%b %e %Y at %I:%M %p' # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
