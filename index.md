@@ -13,7 +13,7 @@ A select set of high touchpoint projects. A full list of software projects/repos
 
 - **[Portfolio](https://sammy.world) 🙋‍♂️** $-$ My latest portfolio build with `Next.js` featuring my latest work, some funky `three.js` and more!
 - **[Github Contributions Counter](https://github.com/SammyRobensParadise/github-contributions-counter) 📊** $-$ A simple Javascript API that will return the public Github contributions history for a user based on a universal function, It can run either browser, or server-side and is available via [`npm`](https://www.npmjs.com/package/github-contributions-counter) as `npm i github-contributions-counter` or [`yarn`](https://yarnpkg.com/package/github-contribution-counter) as `yarn add github-contributions-counter`. Don't forget to leave a ⭐️.
-- **[React Interactive Blob](https://sammyrobensparadise.github.io/react-interactive-blob/?path=/story/blob--blob)🔵** $-$ A React Interactive Blob is an interactive and customizable blob component for react applications. It is built in TypeScript. It can be used just like any other React JSX Component. Drop a ⭐️ on [GitHub](https://github.com/SammyRobensParadise/react-interactive-blob) and open a pull request to improve the physics!
+- **[React Interactive Blob](https://sammyrobensparadise.github.io/react-interactive-blob/?path=/story/blob--blob) 🔵** $-$ A React Interactive Blob is an interactive and customizable blob component for react applications. It is built in TypeScript. It can be used just like any other React JSX Component. Drop a ⭐️ on [GitHub](https://github.com/SammyRobensParadise/react-interactive-blob) and open a pull request to improve the physics!
 - **[Code Your Resume](https://github.com/SammyRobensParadise/code-your-resume) 📄** $-$ Finally! A way to write your resume using HTML and CSS, including any CSS library you want! This is still work-in-progress, but gone are the days of formatting your resume with fickle word processors!
 - **[Spicy Library](https://github.com/SammyRobensParadise/spicy-library) 📕** $-$ A template repository to get the creation of a React component library up and running in no-time with `Yarn 2`.
 - **[CORS Server](https://github.com/SammyRobensParadise/cors-server) 🍛** $-$ A NodeJS proxy which adds CORS headers to the proxied request. Helpful if you need to use a proxy to perform actions such as web scraping!
@@ -45,3 +45,17 @@ Links to my fourth-year engineering capstone design project!
 - **[Application](https://pharmabox.vercel.app/) 💊** $-$ _PharmaBox_ capstone design project, optimizing prescription pickup
 - **[Application Code](https://github.com/pharmaboxfydp/pharmabox) 👨🏻‍💻** $-$ _PharmaBox_ Application Code
 - **[Documentation](https://pharma-box.github.io/docs/) 🩻** $-$ _PharmaBox_ Documentation. Read the [white paper](https://pharma-box.github.io/docs/documents/project-description.html).
+
+## Articles and Papers
+
+### Medium
+
+- **[The Complete Guide to Building and Deploying your (Awesome) React Website](https://medium.com/@srobensparadise/the-complete-guide-to-your-awesome-react-website-2eb3f450fada)**
+- **[Design: AI for Better Vision](https://medium.com/@srobensparadise/design-ai-for-better-vision-1cac400b25ac)**
+- **[Building Accessibility into your React App](https://medium.com/@srobensparadise/building-accessibility-into-your-react-app-f142fc786516)**
+
+### Engineering Reports
+
+- **[Knowledge Dissemination In Complex Problem Spaces](./work-term-reports/srobensp_WKRPT400_v3.pdf)**
+- **[User-Driven Technical Development of Design Systems](./work-term-reports/srobensp_WKRPT300_v5.pdf)**
+- **[A Comparison of Software Source Code Control Systems in Modern Software Development](./work-term-reports/srobensp_WKRPT200_v4.pdf)**
