@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Wiki
 layout: home
 ---
 
@@ -9,15 +9,20 @@ This is a wiki of various projects, portfolios and things that I have worked on 
 
 ## Select Projects
 
+A select set of high touchpoint projects. A full list of software projects/repositories can be found [here](https://github.com/SammyRobensParadise?tab=repositories).
+
 - **[Portfolio](https://sammy.world) 🙋‍♂️** $-$ My latest portfolio build with `Next.js` featuring my latest work, some funky `three.js` and more!
 - **[Github Contributions Counter](https://github.com/SammyRobensParadise/github-contributions-counter) 📊** $-$ A simple Javascript API that will return the public Github contributions history for a user based on a universal function, It can run either browser, or server-side and is available via [`npm`](https://www.npmjs.com/package/github-contributions-counter) as `npm i github-contributions-counter` or [`yarn`](https://yarnpkg.com/package/github-contribution-counter) as `yarn add github-contributions-counter`. Don't forget to leave a ⭐️.
-- **[React Interactive Blob](https://sammyrobensparadise.github.io/react-interactive-blob/?path=/story/blob--blob)🔵** $-$ A React Interactive Blob is an interactive and customizable blob component for react applications. It is built in TypeScript. It can be used just like any other React JSX Component. Drop a ⭐️ on [GitHub](https://github.com/SammyRobensParadise/react-interactive-blob) and open a pull request to improve the physics!
+- **[React Interactive Blob](https://sammyrobensparadise.github.io/react-interactive-blob/?path=/story/blob--blob) 🔵** $-$ A React Interactive Blob is an interactive and customizable blob component for react applications. It is built in TypeScript. It can be used just like any other React JSX Component. Drop a ⭐️ on [GitHub](https://github.com/SammyRobensParadise/react-interactive-blob) and open a pull request to improve the physics!
 - **[Code Your Resume](https://github.com/SammyRobensParadise/code-your-resume) 📄** $-$ Finally! A way to write your resume using HTML and CSS, including any CSS library you want! This is still work-in-progress, but gone are the days of formatting your resume with fickle word processors!
 - **[Spicy Library](https://github.com/SammyRobensParadise/spicy-library) 📕** $-$ A template repository to get the creation of a React component library up and running in no-time with `Yarn 2`.
 - **[CORS Server](https://github.com/SammyRobensParadise/cors-server) 🍛** $-$ A NodeJS proxy which adds CORS headers to the proxied request. Helpful if you need to use a proxy to perform actions such as web scraping!
 - **[Email Resumes](https://github.com/SammyRobensParadise/email-resumes) 💌** $-$ Currently a `Python` script to do an email blast matching student for resume critique sessions! It is currently in the process of being made into an application (so I don't have to run the script anymore)
+- **[The 'Ol Website](https://website-2020-host.web.app/) 🕸️** $-$ Old website. This project is no longer maintained or is being updated, but is fun to look at! You can learn about the design process [here](https://website-2020-host.web.app/this-website).
+- **[Intensive-Eye](https://github.com/SammyRobensParadise/dubhacks-19) 👀** $-$ Hackathon Project! Wohoo! _Intensif-eye_ (app) allows users to take images of text or hand writing and using Google’s vision AI API, extracts the text from the image that can be rendered to a screen. My team and I saw this incredible potential to use this powerful technology to allow people who may be visually impaired in some way to access information quickly without the use of glasses or other technology. We did this by extracting text from images and presenting it to users in a high contrast, and accessible fashion.
+- **[Verify](https://github.com/SammyRobensParadise/verify) 🛡️** $-$ (In Progress and-somewhat-on-hold) React Native application that lets users check the authenticity of social media content using image recognition to extract text from images on social media, and conduct un-bias searches on the content to verify it's authenticity and accuracy. The app is aimed at combating misinformation and disinformation.
 
-## School Projects
+## University Projects
 
 - **[SYDE 556 Simulating Neurobiological Systems](https://sammyrobensparadise.github.io/neurobiological-simulation/) 🧠** $-$ Assignments relating to the simulation of neurobiological systems using spiking neural networks. Topics covered include: single neuron function, neural coding, neural dynamics, attractor networks, learning, statistical inference, locomotion, working memory, spacial semantic pointers (SSPs), semantic pointer architecture (SPA), building large-scale brain models, delay networks, Basal Ganglia (BG) Models, etc
 - **[SYDE 411 Numerical Optimization](https://sammyrobensparadise.github.io/SYDE-411/) ➕** $-$ Linear programming project solving optimal solution the infamous generalized _traveling salesman problem_ known as the [Vehicle Routing Problem](https://www.sciencedirect.com/topics/economics-econometrics-and-finance/vehicle-routing-problem). Code is also available on [GitHub](https://github.com/SammyRobensParadise/SYDE-411)
@@ -27,6 +32,30 @@ This is a wiki of various projects, portfolios and things that I have worked on 
 - **[SYDE 352 Control Theory Labs](https://github.com/SammyRobensParadise/SYDE-352-Labs) 🦾** $-$ Control Theory Lab assignments written in `MATLAB`. Projects include the design of various control types including **P**, **PD** and **PID** Controllers in both closed, and open loop models.
 - **[SYDE 351 State-Space Mechanical Model](https://github.com/SammyRobensParadise/pendulum-spring-model) 🦿** $-$ State-space model of a _time-dependent_ coupled pendulum written in `MATLAB`. The model represents a device with two pendulums, coupled by a spring.
 - **[SYDE 383 Fluid Mechanics Tank Drainage Model](https://github.com/SammyRobensParadise/tank-drainage) 💧** $-$ Fluid Mechanics model of a tank drainage through a inclined spout.
-- **[SYDE 361 Big Little Worlds](https://sammyrobensparadise.github.io/big-little-worlds/story-2/build/) 🌎** Audio-story experience combined with a choose-your-own-adventure model designed to educate engineers about the ethical implications of big data and the importance of proper ethical data practices. You can also checkout the [GitHub](https://github.com/SammyRobensParadise/big-little-worlds)
+- **[SYDE 361 Big Little Worlds](https://sammyrobensparadise.github.io/big-little-worlds/story-2/build/) 🌎** $-$ Audio-story experience combined with a choose-your-own-adventure model designed to educate engineers about the ethical implications of big data and the importance of proper ethical data practices. You can also checkout the [GitHub](https://github.com/SammyRobensParadise/big-little-worlds)
 - **[SYDE 252 Systems and Signals Cochlear Implant](https://github.com/SammyRobensParadise/cochlear-implant) 🦻** $-$ Multi-channel cochlear implant model built in `MATLAB`! Very cool!
 - **[SYDE 292 Circuits Labs](https://github.com/SammyRobensParadise/SYDE-292L) ⚡️** $-$ SYDE 292 Circuits Labs written in `MATLAB`
+- **[SYDE 192 Arduino Screaming](https://github.com/SammyRobensParadise/arduino-screaming) 🔊** $-$ School Project! Project uses a sound sensor to detect when someone screams at certain points in time and then will open a lock box if the sequence is correct.
+- **[SYDE 121 Lab Assignments](https://github.com/SammyRobensParadise/SYDE-121) 🔬** $-$ SYDE 121, Into to Computer Science Lab Assignments! Written in `C++`, Topics Covered range from basic variables, looping and functions up to inheritance, abstract class definitions and dynamic memory management.
+
+## Engineering Capstone Project
+
+Links to my fourth-year engineering capstone design project!
+
+- **[Application](https://pharmabox.vercel.app/) 💊** $-$ _PharmaBox_ capstone design project, optimizing prescription pickup
+- **[Application Code](https://github.com/pharmaboxfydp/pharmabox) 👨🏻‍💻** $-$ _PharmaBox_ Application Code
+- **[Documentation](https://pharma-box.github.io/docs/) 🩻** $-$ _PharmaBox_ Documentation. Read the [white paper](https://pharma-box.github.io/docs/documents/project-description.html).
+
+## Articles and Papers
+
+### Medium
+
+- **[The Complete Guide to Building and Deploying your (Awesome) React Website](https://medium.com/@srobensparadise/the-complete-guide-to-your-awesome-react-website-2eb3f450fada)**
+- **[Design: AI for Better Vision](https://medium.com/@srobensparadise/design-ai-for-better-vision-1cac400b25ac)**
+- **[Building Accessibility into your React App](https://medium.com/@srobensparadise/building-accessibility-into-your-react-app-f142fc786516)**
+
+### Engineering Reports
+
+- **[Knowledge Dissemination In Complex Problem Spaces](./work-term-reports/srobensp_WKRPT400_v3.pdf)**
+- **[User-Driven Technical Development of Design Systems](./work-term-reports/srobensp_WKRPT300_v5.pdf)**
+- **[A Comparison of Software Source Code Control Systems in Modern Software Development](./work-term-reports/srobensp_WKRPT200_v4.pdf)**
