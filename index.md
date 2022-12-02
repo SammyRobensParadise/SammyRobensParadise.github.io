@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Wiki
 layout: home
 ---
 
@@ -16,6 +16,9 @@ This is a wiki of various projects, portfolios and things that I have worked on 
 - **[Spicy Library](https://github.com/SammyRobensParadise/spicy-library) 📕** $-$ A template repository to get the creation of a React component library up and running in no-time with `Yarn 2`.
 - **[CORS Server](https://github.com/SammyRobensParadise/cors-server) 🍛** $-$ A NodeJS proxy which adds CORS headers to the proxied request. Helpful if you need to use a proxy to perform actions such as web scraping!
 - **[Email Resumes](https://github.com/SammyRobensParadise/email-resumes) 💌** $-$ Currently a `Python` script to do an email blast matching student for resume critique sessions! It is currently in the process of being made into an application (so I don't have to run the script anymore)
+- **[The 'Ol Website](https://website-2020-host.web.app/) 🕸️** $-$ Old website. This project is no longer maintained or is being updated, but is fun to look at! You can learn about the design process [here](https://website-2020-host.web.app/this-website).
+- **[Intensif-Eye](https://github.com/SammyRobensParadise/dubhacks-19) 👀** $-$ Hackathon Project! Wohoo! _Intensif-eye_ (app) allows users to take images of text or hand writing and using Google’s vision AI API, extracts the text from the image that can be rendered to a screen. My team and I saw this incredible potential to use this powerful technology to allow people who may be visually impaired in some way to access information quickly without the use of glasses or other technology. We did this by extracting text from images and presenting it to users in a high contrast, and accessible fashion.
+- **[Verify](https://github.com/SammyRobensParadise/verify) 🛡️** $-$ (In Progress and-somewhat-on-hold) React Native application that lets users check the authenticity of social media content using image recognition to extract text from images on social media, and conduct un-bias searches on the content to verify it's authenticity and accuracy. The app is aimed at combating misinformation and disinformation.
 
 ## School Projects
 
